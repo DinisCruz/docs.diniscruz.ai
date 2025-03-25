@@ -1,0 +1,18 @@
+site_name: Dinis Cruz - Documents and Research
+site_description: Site for Dinis Cruz - Documents and Research
+site_url: https://github.com/DinisCruz/docs.diniscruz.ai
+
+theme: material
+
+nav:
+  - Home: index.md
+  - Provenance: provenance/index.md
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

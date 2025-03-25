@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+package-mode = false
+
+[project]
+name = "docs-diniscruz-ai"
+version = "0.1.0"
+description = "Dinis Cruz - Documents and Research"
+readme = "README.md"
+authors = [{name = "Dinis Cruz", email = "dinis.cruz@owasp.org"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs>=1.4.0",
+    "mkdocs-material>=8.5.0",
+    "pymdown-extensions>=9.0",
+]

@@ -1,0 +1,20 @@
+name       : CD Pipeline - MAIN
+on:
+  push:
+    branches:
+      - main
+
+
+env:
+  GIT__BRANCH         : 'main'
+  RELEASE_TYPE        : 'major'
+
+jobs:
+
+  deploy-mkdocs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy MKDocs to GH Static Pages
+        uses: ./.github/actions/gh-pages__deploy-mkdocs
+
