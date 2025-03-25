@@ -13,7 +13,7 @@ runs:
 
     - name: Install MkDocs
       shell: bash
-      run: pip install -e ".[docs]
+      run: pip install -e ".[docs]"
 
     - name: Deploy Documentation
       shell: bash
