@@ -12,6 +12,16 @@ env:
   RELEASE_TYPE: 'major'
 
 jobs:
+  increment-tag:
+    name: Increment Tag - Main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Increment Tag
+        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/git__increment-tag@dev
+        with:
+          release_type: ${{ env.RELEASE_TYPE }}
+
   deploy-mkdocs:
     runs-on: ubuntu-latest
     steps:
