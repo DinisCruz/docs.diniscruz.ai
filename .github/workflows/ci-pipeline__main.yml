@@ -15,8 +15,9 @@ jobs:
   deploy-mkdocs:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Deploy MkDocs Site to S3
         uses: ./.github/actions/s3__deploy-mkdocs
         with:
-          aws-region: "eu-west-2"  
+          aws-region: "eu-west-2"
           s3-bucket: "749670524505--docs-diniscruz-ai"
