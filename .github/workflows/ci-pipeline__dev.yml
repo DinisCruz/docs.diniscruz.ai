@@ -1,0 +1,33 @@
+name: CD Pipeline - DEV
+
+on:
+  push:
+    branches:
+      - dev
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  GIT__BRANCH: 'dev'
+  RELEASE_TYPE: 'minor'
+
+jobs:
+  increment-tag:
+    name: Increment Tag - Main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Increment Tag
+        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/git__increment-tag@dev
+        with:
+          release_type: ${{ env.RELEASE_TYPE }}
+
+  deploy-mkdocs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy MkDocs Site to S3
+        uses: ./.github/actions/s3__deploy-mkdocs
+        with:
+          aws-region: "eu-west-2"
+          s3-bucket: "749670524505--docs-diniscruz-ai"
