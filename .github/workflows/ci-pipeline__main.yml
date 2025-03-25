@@ -1,20 +1,22 @@
-name       : CD Pipeline - MAIN
+name: CD Pipeline - MAIN
+
 on:
   push:
     branches:
       - main
 
-
 env:
-  GIT__BRANCH         : 'main'
-  RELEASE_TYPE        : 'major'
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  GIT__BRANCH: 'main'
+  RELEASE_TYPE: 'major'
 
 jobs:
-
   deploy-mkdocs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Deploy MKDocs to GH Static Pages
-        uses: ./.github/actions/gh-pages__deploy-mkdocs
-
+      - name: Deploy MkDocs Site to S3
+        uses: ./.github/actions/s3__deploy-mkdocs
+        with:
+          aws-region: "eu-west-2"  
+          s3-bucket: "749670524505--docs-diniscruz-ai"

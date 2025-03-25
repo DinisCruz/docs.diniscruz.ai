@@ -1,0 +1,39 @@
+name: "s3__deploy-mkdocs"
+description: "Build MkDocs site and deploy to AWS S3 Bucket"
+
+inputs:
+  aws-region:
+    required: true
+    description: "AWS region for the S3 bucket"
+  s3-bucket:
+    required: true
+    description: "AWS S3 bucket name"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install MkDocs dependencies
+      shell: bash
+      run: pip install -e ".[docs]"
+
+    - name: Build MkDocs Site
+      shell: bash
+      run: mkdocs build --clean
+
+    - name: Configure AWS CLI Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ inputs.aws-region }}
+
+    - name: Deploy to S3
+      shell: bash
+      run: aws s3 sync ./site/ s3://${{ inputs.s3-bucket }}/ --delete
