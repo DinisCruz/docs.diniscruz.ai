@@ -1,8 +1,8 @@
-site_name: Dinis Cruz - Documents and Research
-site_description: Site for Dinis Cruz - Documents and Research
-site_url: https://github.com/DinisCruz/docs.diniscruz.ai
-
-theme: material
+site_name         : Dinis Cruz - Documents and Research
+site_description  : Site for Dinis Cruz - Documents and Research
+site_url          : https://docs.diniscruz.ai/
+use_directory_urls: false
+theme             : material
 
 nav:
   - Home: index.md
