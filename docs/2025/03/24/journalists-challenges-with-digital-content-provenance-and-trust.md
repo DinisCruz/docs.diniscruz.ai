@@ -2,7 +2,7 @@
 ## How Semantic Knowledge Graphs Enable Traceability and Context
 _by Dinis Cruz and ChatGPT Deep Research, 24 March 2025_ 
 
-[:fontawesome-solid-file-pdf: Download ](pdfs/Journalists-Challenges-with-Digital-Content-Provenance-and-Trust.pdf){ .md-button .md-button--primary }
+[:fontawesome-solid-file-pdf: Download ](https://files.diniscruz.ai/pdfs/2025/03/24/journalists-challenges-with-digital-content-provenance-and-trust.pdf){ .md-button .md-button--primary }
 
 
 Digital content is being produced at an unprecedented scale, largely driven by AI technologies. Generative AI can churn out articles, images, and videos in seconds, contributing to a veritable flood of content online. _“For good and bad, AI-written content will flood the internet, an amalgamation of the work of millions of human writers and journalists who came before it,”_ as one media expert put it ([The AI content flood » Nieman Journalism Lab](https://www.niemanlab.org/2022/12/the-ai-content-flood/#:~:text=For%20good%20and%20bad%2C%20AI,journalists%20who%20came%20before%20it)). In this environment of **digital abundance**, the competition for audience attention is fierce, and the **integrity** of information is under strain. Audiences are increasingly asking: _“Can I trust what I’m reading?”_

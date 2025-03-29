@@ -1,4 +1,4 @@
-# Dinis Cruz - Documents and Research
+# Home
 
 This site will contain the code and PDFs for Dinis Cruz research
 
