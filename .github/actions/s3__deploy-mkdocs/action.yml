@@ -17,6 +17,9 @@ runs:
   steps:
     - uses: actions/checkout@v4
 
+    - name: Git Update Current Branch
+      uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/git__update_branch@dev
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:

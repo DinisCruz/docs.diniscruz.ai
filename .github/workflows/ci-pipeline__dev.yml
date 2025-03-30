@@ -27,9 +27,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Git Update Current Branch
-        uses: owasp-sbot/OSBot-GitHub-Actions/.github/actions/git__update_branch@dev
-
       - name: Deploy MkDocs Site to S3
         uses: ./.github/actions/s3__deploy-mkdocs
         with:
