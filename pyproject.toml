@@ -17,5 +17,8 @@ docs = [
     "mkdocs>=1.4.0",
     "mkdocs-material>=8.5.0",
     "pymdown-extensions>=9.0",
-    "mkdocs-awesome-pages-plugin"
+    "mkdocs-awesome-pages-plugin",
+    "mkdocs-macros-plugin"
 ]
+
+# pip install -e ".[docs]"
