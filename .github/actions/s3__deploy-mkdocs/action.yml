@@ -8,6 +8,9 @@ inputs:
   s3-bucket:
     required: true
     description: "AWS S3 bucket name"
+  cloudfront-distribution-id:
+    required: true
+    description: "AWS cloud front distribution ID"
 
 runs:
   using: "composite"
@@ -39,3 +42,7 @@ runs:
     - name: Deploy to S3
       shell: bash
       run: aws s3 sync ./site/ s3://${{ inputs.s3-bucket }}/ --delete
+
+    - name: Invalidate CloudFront Cache
+      shell: bash
+      run: aws cloudfront create-invalidation --distribution-id ${{ inputs.cloudfront-distribution-id }} --paths "/*"
