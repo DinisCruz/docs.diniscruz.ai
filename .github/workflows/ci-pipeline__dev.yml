@@ -31,3 +31,5 @@ jobs:
         with:
           aws-region: "eu-west-2"
           s3-bucket: "749670524505--docs-diniscruz-ai"
+    needs:
+      - increment-tag
