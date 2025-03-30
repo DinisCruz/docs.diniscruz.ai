@@ -21,7 +21,9 @@ runs:
 
     - name: Install MkDocs dependencies
       shell: bash
-      run: pip install -e ".[docs]"
+      run: |
+        pip install -e .
+        pip install -e ".[docs]"
 
     - name: Build MkDocs Site
       shell: bash

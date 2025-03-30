@@ -2,7 +2,13 @@ site_name         : Dinis Cruz - Documents and Research
 site_description  : Site for Dinis Cruz - Documents and Research
 site_url          : https://docs.diniscruz.ai/
 use_directory_urls: false
-theme             : material
+
+
+plugins:
+  - search
+  - awesome-pages
+  - macros
+  - custom-footer
 
 extra_css:
   - styles/custom.css
@@ -16,7 +22,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-plugins:
-  - search
-  - awesome-pages
-  - macros
+
+theme:
+  name: material
+  custom_dir: overrides
