@@ -4,9 +4,10 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/03/29
 pdf_file: from-top-down-to-organic-evolving-graphs-ontologies-taxonomies.pdf
 ---
+
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_url) }}
+{{ download_pdf(date, pdf_file) }}
 
 ## Introduction  
 The way we organize knowledge is undergoing a paradigm shift. Traditional top-down approaches to ontologies and taxonomies — where experts rigidly define schemas in advance — are giving way to more **organic, adaptive models** that evolve over time. Instead of imposing a fixed hierarchy from above, modern knowledge graphs and ontologies are often shaped dynamically by data and community input. Researchers and practitioners now argue that schemas should **grow and refine themselves continuously**, much like a living system, rather than remain static blueprints. 

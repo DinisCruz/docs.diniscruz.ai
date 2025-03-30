@@ -2,7 +2,7 @@
 title: "Monetising Trust and Knowledge: How News Providers can leverage Personalised Semantic Graphs"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/02/02
-pdf_file: journalists-challenges-with-digital-content-provenance-and-trust.pdf
+pdf_file: monetising-trust-and-knowledge__for-news-providers.pdf
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
