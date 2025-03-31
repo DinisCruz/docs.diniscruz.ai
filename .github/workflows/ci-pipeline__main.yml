@@ -31,3 +31,6 @@ jobs:
         with:
           aws-region: "eu-west-2"
           s3-bucket: "749670524505--docs-diniscruz-ai"
+          cloudfront-distribution-id: "E37IGWXZ4KT1T7"
+    needs:
+      - increment-tag
