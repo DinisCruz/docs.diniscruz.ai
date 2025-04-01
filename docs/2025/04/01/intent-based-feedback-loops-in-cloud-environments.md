@@ -1,7 +1,7 @@
 ---
 title: "Intent-Based Feedback Loops in Cloud Environments"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
-date: 2025/03/24
+date: 2025/04/01
 pdf_file: intent-based-feedback-loops-in-cloud-environments.pdf
 ---
 

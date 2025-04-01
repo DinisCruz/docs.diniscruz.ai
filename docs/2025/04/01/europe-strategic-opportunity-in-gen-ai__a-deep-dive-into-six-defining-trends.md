@@ -1,7 +1,7 @@
 ---
 title: "Europe’s Strategic Opportunity in GenAI: A Deep Dive into Six Defining Trends"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
-date: 2025/03/24
+date: 2025/04/01
 pdf_file: europe-strategic-opportunity-in-gen-ai__a-deep-dive-into-six-defining-trends.pdf
 ---
 
