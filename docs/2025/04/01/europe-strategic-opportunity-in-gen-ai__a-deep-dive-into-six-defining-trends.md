@@ -3,13 +3,22 @@ title: "Europe’s Strategic Opportunity in GenAI: A Deep Dive into Six Defining
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/01
 pdf_file: europe-strategic-opportunity-in-gen-ai__a-deep-dive-into-six-defining-trends.pdf
+wav_file: europe-strategic-opportunity-in-gen-ai__a-deep-dive-into-six-defining-trends.wav
+spotify_id: 2sgwNpvfCBBUAqvDDbujBi
 ---
 
 # {{title}} 
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }}
+
+## Podcast
+
+<iframe src="https://open.spotify.com/embed/episode/{{spotify_id}}?utm_source=generator" 
+        width="100%" height="152" frameborder="0" 
+        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe>
 
 ## Introduction 
 Generative AI (GenAI) has transitioned from a novelty to a core technological force, sparking an evolution in how models are built, deployed, and governed. 
