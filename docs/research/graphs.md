@@ -6,3 +6,7 @@
 ## Cloud 
 
 - [Intent-Based Feedback Loops in Cloud Environments](../2025/04/01/intent-based-feedback-loops-in-cloud-environments.md)
+
+## Standards and Governance
+
+- [Maturity Models vs. Traditional Standards in Application Security](../2025/04/02/maturity-modes-vs-traditional-standards-in-application-security.md)

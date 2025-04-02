@@ -3,11 +3,20 @@ title: "The Future of News Monetization: Embracing Micro and Nano Payments"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/02
 pdf_file: the-future-of-news-monetization__embracing-micro-and-nano-payments.pdf
+wav_file: the-future-of-news-monetization__embracing-micro-and-nano-payments.wav
+spotify_id: 2Oj1J1KksbxTwdrK9kx9ky
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }}
+
+## Podcast
+
+<iframe src="https://open.spotify.com/embed/episode/{{spotify_id}}?utm_source=generator" 
+        width="100%" height="152" frameborder="0" 
+        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe>
 
 
 ## Executive Summary
