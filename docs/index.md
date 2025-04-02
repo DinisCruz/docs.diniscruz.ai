@@ -2,7 +2,7 @@
 
 This site will contain the code and PDFs for Dinis Cruz research
 
-- [Graphs](research-areas/graphs.md)
+- [Europe and Learning](./research/europe-and-learning.md)
+- [Graphs](./research/graphs.md)
     - Jira as GraphDB
-- [The Future of News](research-areas/the-future-of-news.md)
-- [Europe GenAI Opportunity](./research-areas/europe.md)
+- [The Future of News](./research/the-future-of-news.md)
