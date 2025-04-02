@@ -16,9 +16,9 @@ Today, a successful deployment typically yields only a confirmation that resourc
 
 This white paper argues for an **intent-based feedback loop** model in cloud operations, where users declare *what* they intend (their goal or outcome) and the cloud platform provides continuous feedback including:
 
-1) Confirmation that the intended goal has been achieved
-2) Insights into side effects (security, performance, cost, consistency issues, etc.)
-3) A framework for acknowledging or mitigating risks introduced by the change.
+1. Confirmation that the intended goal has been achieved
+2. Insights into side effects (security, performance, cost, consistency issues, etc.)
+3. A framework for acknowledging or mitigating risks introduced by the change.
 
 We also explore how recent advances in generative AI – such as Amazon Q and ChatGPT – could facilitate this model by interpreting user intent, predicting side effects, and suggesting remediations. 
 
