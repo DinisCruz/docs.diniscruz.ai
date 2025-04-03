@@ -3,11 +3,17 @@ title: "Semantic OWASP: Leveraging GenAI and Graphs to Customise and Scale Secur
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/02
 pdf_file: semantic-owasp__leveraging-genai-and-graphs-to-customise-and-scale-security-knowledge.pdf
+wav_file: semantic-owasp__leveraging-genai-and-graphs-to-customise-and-scale-security-knowledge.wav
+spotify_id: 3cFm0lvdD33VPSBsl121px
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }}
+
+{{ show_spotify_ui(spotify_id) }}
+
+{{ show_infographic(date, pdf_file) }}
 
 ## Introduction
 
