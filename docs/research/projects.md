@@ -1,3 +1,3 @@
 # Projects 
 
-- [Project Plan - GenAI-Powered Productivity Team MVP](../2025/04/10/project_plan__gen-ai-powered-productivity-team-mvp.md)
+- [Project Agenda: GenAI-Powered Transformation of Meetings and Documentation](../2025/04/10/project-agenda__gen-ai-powered-transformation-of-meetings-and-documentation.md)
