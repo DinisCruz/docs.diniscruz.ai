@@ -1,7 +1,7 @@
 ---
 title: "Project Plan: GenAI-Powered Productivity Team MVP"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
-date: 2025/04/06
+date: 2025/04/10
 pdf_file: project_plan__gen-ai-powered-productivity-team-mvp.pdf
 ---
 
