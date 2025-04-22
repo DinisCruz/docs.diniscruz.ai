@@ -12,3 +12,4 @@
 ## Standards and Governance
 
 - [Maturity Models vs. Traditional Standards in Application Security](../2025/04/02/maturity-modes-vs-traditional-standards-in-application-security.md)
+- [Graph-Powered Legal Knowledge: An Open, Distributed, and AI-Assisted Roadmap](../2025/04/22/graph-powered-legal-knowledge__an-open-distributed-and-ai-assisted-roadmap.md)
