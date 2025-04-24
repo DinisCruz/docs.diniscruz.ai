@@ -29,3 +29,23 @@ def define_env(env):
 <iframe src="{url}"
         width="100%" height="512px" style="border: none;"></iframe>
 '''
+
+    @env.macro
+    def show_slides(file_date, file_name):
+        url = f'https://files.diniscruz.ai/s3/pdf/{file_date}/{file_name}'
+        return f'''
+## Slides    
+<iframe src="{url}"
+        width="100%" height="512px" style="border: none;"></iframe>
+'''
+    @env.macro
+    def show_youtube(youtube_id):
+        return f'''
+## Video
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/{youtube_id}" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+'''

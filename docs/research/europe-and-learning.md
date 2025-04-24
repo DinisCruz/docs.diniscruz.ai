@@ -12,3 +12,4 @@
 ## Learning
 
 - [Generative AI and the Future of Learning](../2025/02/12/generative-ai-and-the-future-of-learning.md)
+- [Navigating the AI Revolution: A Student’s Guide to Generative AI in Education](../2025/04/22/navigating-the-ai-revolution__a_university_students_guide_to_generative-ai-in-education.md)
