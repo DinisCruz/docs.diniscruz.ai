@@ -14,8 +14,10 @@ OWASP Summits (collaborative events that later evolved into the Open Security Su
 
 He continues to publish tools and research aimed at improving how organizations understand and act on cyber risk.
 
-This LinkedIn post collects links to many of Dinis' topic-specific updates, each with supporting documents
-or examples: https://www.linkedin.com/feed/update/urn:li:activity:7294758873347837954/
+This [LinkedIn post](https://www.linkedin.com/posts/diniscruz_since-its-just-about-impossible-to-search-activity-7294758873347837954-ocFa) collects links to many of Dinis' topic-specific updates, each with supporting documents
+or examples
+
+A list of past presentations delivered by Dinis is [available here](/resources/presentations.html)
 
 This site hosts Dinis current research into AI, security governance, and the future of knowledge sharing.
 
