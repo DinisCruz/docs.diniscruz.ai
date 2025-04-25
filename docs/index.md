@@ -1,8 +1,8 @@
 # Home
 
-Dinis Cruz is the founder of The Cyber Boardroom, a GenAI-powered platform helping organizations 
+Dinis Cruz is the founder of [The Cyber Boardroom](https://www.thecyberboardroom.com/), a GenAI-powered platform helping organizations 
 improve cybersecurity communication and decision-making at the board level. He is also Chief 
-Scientist at Glasswall and a Director at the Open Security Summit CIC.
+Scientist at Glasswall and the Director of the [Open Security Summit](https://open-security-summit.org/).
 
 With a background in application security and leadership roles including CISO at companies like Photobox, 
 Moonpig, and Holland & Barrett, Dinis has deep experience translating complex security challenges into 

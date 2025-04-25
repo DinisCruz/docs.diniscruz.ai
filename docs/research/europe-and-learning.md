@@ -1,5 +1,7 @@
 # Europe and Learning
 
+{{back_button('/index')}}
+
 ## Europe GenAI Opportunity
 
  - [Scaling Europe’s Regulatory Superpower: From Static Cybersecurity Standards to Semantic Graphs](../2025/03/31/scaling-europe-regulatory-superpower.md)

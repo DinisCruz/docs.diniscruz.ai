@@ -4,10 +4,14 @@ authors: ["Dinis Cruz"]
 date: 2024/06/28
 file_name: deterministic-genai-outputs-with-provenance__owasp-appsec-lisbon__gslides.pdf
 youtube_id: IEN9Ittv4V0
+linkedin: diniscruz_deterministic-genai-output-with-provenance-activity-7212796282044588032-SVPW/
+back_link: /resources/presentations
 ---
 
 # {{title}}
 _by {{ authors | join(" and ") }}, {{ date }}_
+
+{{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 Presentation delivered at the Global OWASP AppSec in Lisbon in 28th June 2024
 

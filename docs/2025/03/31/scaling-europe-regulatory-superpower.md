@@ -7,7 +7,7 @@ pdf_file: scaling-europe-regulatory-superpower.pdf
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }}  {{back_button('/research/europe-and-learning')}}
 
 ## Introduction  
 Europe has established itself as a **global regulatory superpower** in the digital realm, exporting its standards and norms well beyond its borders. Landmark frameworks like the GDPR have set **worldwide benchmarks** for data protection, a phenomenon often dubbed the “Brussels effect,” where the EU’s large single market forces multinational companies to adopt European rules globally. 

@@ -10,6 +10,16 @@ def define_env(env):
         url = f'https://files.diniscruz.ai/s3/wav/{file_date}/{file_name}'
         return f'[:fontawesome-solid-headphones: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
 
+    @env.macro
+    def linkedin_post(linkedin_id, label="View LinkedIn Post"):
+        url = f'https://www.linkedin.com/posts/{linkedin_id}'
+        return f'[:fontawesome-brands-linkedin: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
+
+    @env.macro
+    def back_button(path):
+        parts = path.strip('/').split('/')
+        label = ":material-arrow-left: Back to " + parts[-1].replace('-', ' ').replace('_', ' ').title()
+        return f'[{label}]({path}.html){{ .md-button .md-button--secondary .md-button--small .no-print }}'
 
     @env.macro
     def show_spotify_ui(spotify_id):
