@@ -49,10 +49,10 @@ def define_env(env):
         width="100%" height="512px" style="border: none;"></iframe>
 '''
     @env.macro
-    def show_youtube(youtube_id):
+    def show_youtube(youtube_id, start=0):
         return f'''
 ## Video
-<iframe width="100%" height="450px" src="https://www.youtube.com/embed/{youtube_id}" 
+<iframe width="100%" height="450px" src="https://www.youtube.com/embed/{youtube_id}?start={start} "        
         title="YouTube video player" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
