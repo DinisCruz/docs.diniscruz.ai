@@ -4,7 +4,7 @@ authors: ["Dinis Cruz"]
 date: 2025/04/23
 file_name: semantic_owasp__leveraging_genai_and_graphs_to_customise_and_scale_security_knowledge.pdf
 linkedin: diniscruz_semanticowaspleveraginggenaiandgraphs-activity-7321590637282160640-roS3
-youtube_id: uhFpUjd1R7Y
+youtube_id: XH-qcK2yu6I
 back_link: /resources/presentations
 slide_id: 1cfwAKGHOpVly3LXKu8S61Gr9KC_WgKPLEYtJOQcfTkE
 ---
