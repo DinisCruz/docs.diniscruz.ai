@@ -18,5 +18,3 @@ Presentation delivered at the OWASP London Chapter meeting on the 22nd Feb 2024
 {{ show_slides(date, file_name) }}
 
 {{ show_youtube(youtube_id)}}
-
-

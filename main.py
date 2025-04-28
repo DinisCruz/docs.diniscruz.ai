@@ -11,14 +11,14 @@ def define_env(env):
         return f'[:fontawesome-solid-headphones: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
 
     @env.macro
-    def linkedin_post(linkedin_id, label="View LinkedIn Post"):
+    def linkedin_post(linkedin_id, label="LinkedIn Post"):
         url = f'https://www.linkedin.com/posts/{linkedin_id}'
         return f'[:fontawesome-brands-linkedin: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
 
     @env.macro
     def google_slides(slides_id):
         url = f'https://docs.google.com/presentation/d/{slides_id}'
-        return f'[:simple-googleslides: slides]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
+        return f'[:simple-googleslides: GSlides]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
 
     @env.macro
     def back_button(path):
