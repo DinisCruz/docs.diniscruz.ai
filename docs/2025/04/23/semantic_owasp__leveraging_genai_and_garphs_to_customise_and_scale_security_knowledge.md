@@ -18,5 +18,4 @@ Presentation delivered at the OWASP London Chapter meeting on the 23rd Apr 2025
 
 {{ show_slides(date, file_name) }}
 
-{{ show_youtube(youtube_id, 4500)}}
-> NOTE: Presentation starts at 1h:15m (which should be where the play starts)
+{{ show_youtube(youtube_id)}}
