@@ -4,11 +4,12 @@ authors  : ["Dinis Cruz", "ChatGPT Deep Research", "Claude 3.7"]
 date     : 2025/04/29
 pdf_file : fail-safe-not-fail-big__cyber-security-inspired-strategies-to-prevent-the-next-iberian-grid-crisis.pdf
 back_link: /research/cyber-security
+linkedin : diniscruz_ail-safe-not-fail-bigcyber-security-inspired-strategies-activity-7322945532006412290-flBE
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Disclaimer
 
