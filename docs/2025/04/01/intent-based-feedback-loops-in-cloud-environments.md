@@ -3,11 +3,12 @@ title: "Intent-Based Feedback Loops in Cloud Environments"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/01
 pdf_file: intent-based-feedback-loops-in-cloud-environments.pdf
+back_link: /research/graphs
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
 
 ## Introduction  
 Cloud computing has revolutionized how we deploy and manage infrastructure, but it still faces a critical gap: after making changes to cloud resources (for example, deploying an AWS CloudFormation stack or updating an Azure Resource Manager template), users receive limited feedback about the *consequences* of those changes. 

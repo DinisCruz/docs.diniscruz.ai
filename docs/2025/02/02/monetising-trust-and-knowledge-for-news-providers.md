@@ -3,11 +3,12 @@ title: "Monetising Trust and Knowledge: How News Providers can leverage Personal
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/02/02
 pdf_file: monetising-trust-and-knowledge__for-news-providers.pdf
+back_link: /research/the-future-of-news
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }}  {{back_button(back_link)}}
 
 The rise of GenAI-driven content consumption is reshaping how news organisations deliver and monetise information. As platforms, search engines, and GenAI-powered assistants increasingly rely on structured, machine-readable content, publishers must adapt to remain competitive. 
 

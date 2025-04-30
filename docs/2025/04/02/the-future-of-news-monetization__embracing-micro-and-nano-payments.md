@@ -5,11 +5,12 @@ date: 2025/04/02
 pdf_file: the-future-of-news-monetization__embracing-micro-and-nano-payments.pdf
 wav_file: the-future-of-news-monetization__embracing-micro-and-nano-payments.wav
 spotify_id: 2Oj1J1KksbxTwdrK9kx9ky
+back_link: /research/the-future-of-news
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }}
+{{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }} {{back_button(back_link)}}
 
 {{ show_spotify_ui(spotify_id) }}
 

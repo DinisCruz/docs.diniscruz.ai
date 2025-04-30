@@ -3,11 +3,12 @@ title: "Graph-Powered Legal Knowledge: An Open, Distributed, and GenAI-Assisted 
 authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude 3.7"]
 date: 2025/04/22
 pdf_file: graph-powered-legal-knowledge__an-open-distributed-and-ai-assisted-roadmap.pdf
+back_link: /research/graphs
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
 
 ## Abstract
 
