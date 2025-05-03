@@ -5,6 +5,7 @@
 
 ## Projects briefs 
 
+- [Project InsightFlow: GenAI-Powered Transformation of Regulatory and News Feeds](../2025/05/03/project-insightflow__genai-powered-transformation-of-regulatory-and-news-feeds.md)
 - [Project Cybersage: AI-Powered Risk Contextualization & Security Reporting](../2025/04/10/project-cybersage__ai-powered-risk-contextualization_security-reporting.md)
 - [Project Agenda: GenAI-Powered Transformation of Meetings and Documentation](../2025/04/10/project-agenda__gen-ai-powered-transformation-of-meetings-and-documentation.md)
 - [Project StartLLM: Technical Proposal for 5x GenAI Projects](../2025/03/01/project-startllm__technical-proposal-for-5x-genai-projects.md)
