@@ -3,11 +3,12 @@ title: "Project Agenda: GenAI-Powered Transformation of Meetings and Documentati
 authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude 3.7"]
 date: 2025/04/10
 pdf_file: project-agenda__gen-ai-powered-transformation-of-meetings-and-documentation.pdf
+back_link: /research/projects
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
 
 ## Executive Summary and MVP
 
