@@ -127,3 +127,33 @@ Implementing this solution will be an iterative process. We will start with a **
 **Leveraging Open-Source Tools and Existing Work:** Throughout implementation, we will heavily reference Dinis Cruz’s published work and repositories. The MyFeeds.ai project code (available on GitHub at `the-cyber-boardroom` and `owasp-sbot` repos) provides a baseline for many components. We can reuse and adapt code for the LLM prompts, the JSON schemas for entities, and the integration with MGraph. This jump-starts development and grounds our solution in a proven architecture rather than starting from scratch. The OSBot framework itself is open-source and well-suited to our needs, reducing custom development of deployment and API scaffolding. In essence, Company X’s internal team will be standing on the shoulders of these open tools – gaining a solution that is *cutting-edge yet already tested in analogous scenarios*. There is no proprietary lock-in; the stack runs in Company X’s cloud and the knowledge graphs and data remain fully under Company X’s control.
 
 By following this implementation plan, within months Company X can have an **automated, scalable personalized news feed system** in production. This system will dramatically reduce the manual effort required to serve each client, allow the company to scale up the number of sources and clients it can handle, and **enhance the value delivered to clients through deeper personalization and clear explanations** for each included item. Crucially, the solution is built with transparency and human governance in mind – aligning with the trust and reliability expectations in financial and regulatory domains. Together, GenAI and semantic graphs will enable Company X to maintain its competitive edge in delivering timely, relevant information to clients, while controlling the process and intellectual property through open-source innovation.
+
+
+### 📚 References
+
+The following resources were used to inform the architecture, methodology, and technical strategy outlined in the *Project InsightFlow* proposal. These references include prior open-source implementations, foundational concepts on semantic knowledge graphs, and practical insights into LLM-driven workflows for personalized content delivery.
+
+1. **[Semantic Knowledge Graphs (Research Overview)](https://docs.diniscruz.ai/research/graphs.html)**
+   Provided the conceptual and technical basis for building memory-first, ontology-driven knowledge graphs using the MGraph framework.
+
+2. **[How Semantic News Feeds Work (Blog Series)](https://mvp.myfeeds.ai/tag/how-it-works/)**
+   Detailed walkthroughs of the GenAI + Graph-based feed generation pipeline, including architecture design, persona modeling, triplet extraction, and LLM integration.
+
+3. **[Presentation: Leveraging GenAI & Graphs to Customise and Scale Security Knowledge](https://files.diniscruz.ai/github/pdf/2025/04/02/semantic-owasp__leveraging-genai-and-graphs-to-customise-and-scale-security-knowledge.pdf)**
+   Served as a high-level summary of the overall vision and the impact of combining LLMs with semantic graphs to create explainable, client-specific intelligence products.
+
+4. **[MyFeeds.ai Source Code (GitHub)](https://github.com/the-cyber-boardroom/myfeeds_ai)**
+   Reference implementation of the end-to-end semantic feed pipeline, demonstrating serverless ingestion, ontology/taxonomy generation, and LLM-based summarization.
+
+5. **[OSBot-Fast-API](https://github.com/owasp-sbot/OSBot-Fast-API)**
+   Used as the technical foundation for implementing modular, event-driven APIs to support ingestion, processing, and publication workflows.
+
+6. **[MGraph: Memory-First Graph DB and Ontology Engine](https://github.com/owasp-sbot/MGraph)**
+   Core engine for representing, merging, and querying JSON-based knowledge graphs, central to the graph-driven personalization and provenance tracking logic.
+
+7. **[CyberBoardroom Project (Graph-Based Security Intelligence)](https://github.com/the-cyber-boardroom/)**
+   Demonstrated prior successful use of similar techniques in cybersecurity domains, reinforcing the generalizability of the approach to regulatory/financial content.
+
+8. **[OSBot Utils / Prefect-Inspired Workflow Engine](https://github.com/owasp-sbot/OSBot-Utils)**
+   Provided workflow orchestration patterns (Flows, Tasks) to sequence the graph processing stages with visibility and modularity.
+
