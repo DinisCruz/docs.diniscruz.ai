@@ -18,3 +18,8 @@
 
 - [LinkedIn Vault: Professional Data Preservation Service](../2025/03/03/linkedin-vault__professional-data-preservation-servic.md)
 - [Scaling a Solo Cybersecurity Consulting Practice: Business Plan Research](../2025/04/07/scaling-a-solo-cybersecurity-consulting-practice__business-plan-research.md)
+
+## Misc research and possible projects
+
+- [Research - AI-Powered Customer Service Solutions for Multi-Property Airbnb Hosts](../2025/05/04/research__ai-powered-customer-service-solutions-for-multi-property-airbnb-hosts.md)
+
