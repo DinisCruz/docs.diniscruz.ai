@@ -5,6 +5,7 @@
 
 ## Projects briefs 
 
+- [Project GenBnB: Enhancing Airbnb Host Workflows with GenAI](../2025/05/04/project-genbnb__enhancing-airbnb-host-workflows-with-gen-ai.md)
 - [Project InsightFlow: GenAI-Powered Transformation of Regulatory and News Feeds](../2025/05/03/project-insightflow__genai-powered-transformation-of-regulatory-and-news-feeds.md)
 - [Project Cybersage: AI-Powered Risk Contextualization & Security Reporting](../2025/04/10/project-cybersage__ai-powered-risk-contextualization_security-reporting.md)
 - [Project Agenda: GenAI-Powered Transformation of Meetings and Documentation](../2025/04/10/project-agenda__gen-ai-powered-transformation-of-meetings-and-documentation.md)
