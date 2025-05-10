@@ -3,7 +3,6 @@ title: "Research - AI-Powered Customer Service Solutions for Multi-Property Airb
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/04
 pdf_file: research__ai-powered-customer-service-solutions-for-multi-property-airbnb-hosts.pdf
-linkedin: 
 back_link: /research/projects
 ---
 
