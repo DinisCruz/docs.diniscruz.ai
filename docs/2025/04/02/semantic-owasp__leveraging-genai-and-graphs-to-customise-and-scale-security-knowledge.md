@@ -12,6 +12,8 @@ _by {{ authors | join(" and ") }}, {{ date }}_
 
 {{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }} {{back_button(back_link)}}
 
+See also this slides and video [presented at OWASP's London Chapter Meeting](../23/semantic_owasp__leveraging_genai_and_garphs_to_customise_and_scale_security_knowledge.md)
+
 {{ show_spotify_ui(spotify_id) }}
 
 {{ show_infographic(date, pdf_file) }}

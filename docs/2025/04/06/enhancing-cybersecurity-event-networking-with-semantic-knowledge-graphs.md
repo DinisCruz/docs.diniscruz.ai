@@ -3,12 +3,13 @@ title: "Enhancing Cybersecurity Event Networking with Semantic Knowledge Graphs"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/06
 pdf_file: enhancing-cybersecurity-event-networking-with-semantic-knowledge-graphs.pdf
+linkedin: diniscruz_enhancing-cybersecurity-event-networking-activity-7314785536810905601-_QAP
 back_link: /research/graphs
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Problem Statement: The Serendipity Dilemma in Event Networking
 

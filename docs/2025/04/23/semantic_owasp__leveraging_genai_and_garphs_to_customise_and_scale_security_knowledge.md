@@ -14,7 +14,9 @@ _by {{ authors | join(" and ") }}, {{ date }}_
   
 {{google_slides(slide_id)}} {{ linkedin_post(linkedin) }}  {{back_button(back_link)}}
 
-Presentation delivered at the OWASP London Chapter meeting on the 23rd Apr 2025
+Presentation delivered at the OWASP London Chapter meeting on the 23rd Apr 2025.
+
+See also this [research paper and podcast](../02/semantic-owasp__leveraging-genai-and-graphs-to-customise-and-scale-security-knowledge.md)
 
 {{ show_slides(date, file_name) }}
 
