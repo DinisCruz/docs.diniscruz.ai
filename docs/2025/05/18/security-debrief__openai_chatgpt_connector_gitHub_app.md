@@ -3,14 +3,13 @@ title: "Security Debrief: OpenAI’s ChatGPT Connector GitHub App"
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/18
 pdf_file: security-debrief__openai_chatgpt_connector_gitHub_app.pdf
-#linkedin: diniscruz_briefing-on-canadas-new-minister-of-ai-activity-7329812648915517440-mDGx
-#{{ linkedin_post(linkedin) }}
+linkedin: diniscruz_security-debrief-openais-chatgpt-connector-activity-7329986369353650176-eUNV
 back_link: /research/cyber-security
 ---
  
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}  {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ##  Executive Summary
 
