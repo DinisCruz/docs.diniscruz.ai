@@ -3,8 +3,9 @@
 {{back_button('/index')}}
 
 
-## Projects briefs 
+## Projects briefs
 
+- [Project: Web Content Capture Extension with Pyodide and Serverless Backend](../2025/05/18/project__web-content-capture-extension-with-pyodide-and-serverless-backend.md)
 - [Project GenBnB: Enhancing Airbnb Host Workflows with GenAI](../2025/05/04/project-genbnb__enhancing-airbnb-host-workflows-with-gen-ai.md)
 - [Project InsightFlow: GenAI-Powered Transformation of Regulatory and News Feeds](../2025/05/03/project-insightflow__genai-powered-transformation-of-regulatory-and-news-feeds.md)
 - [Project Cybersage: AI-Powered Risk Contextualization & Security Reporting](../2025/04/10/project-cybersage__ai-powered-risk-contextualization_security-reporting.md)
