@@ -3,7 +3,7 @@
 {{back_button('/index')}}
 
 ## Europe GenAI Opportunity
-
+ - [Briefing on Canada’s New Minister of Artificial Intelligence and Digital Innovation (vs UK and PT)](../2025/05/18/briefing-on-canada-new-minister-of-artificial-intelligence-and-digital-innovation-vs-uk-and-pt.md)
  - [Scaling Europe’s Regulatory Superpower: From Static Cybersecurity Standards to Semantic Graphs](../2025/03/31/scaling-europe-regulatory-superpower.md)
  - [An Open-Source Sovereign Cloud for an Open Europe: The Case for a Federated, AI-Enabled, and Multilingual Digital Infrastructure](../2025/02/24/an-open-source-sovereign-cloud-for-an-open-europe.md)
  - [Portuguese as a Programming Language in the AI Era](../2025/02/11/portuguese-as-a-programming-language-in-the-AI-Era.md)
