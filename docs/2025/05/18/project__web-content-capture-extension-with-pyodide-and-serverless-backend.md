@@ -3,13 +3,12 @@ title: "Project: Web Content Capture Extension with Pyodide and Serverless Backe
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/18
 pdf_file: project__web-content-capture-extension-with-pyodide-and-serverless-backend.pdf
-#linkedin: diniscruz_security-debrief-openais-chatgpt-connector-activity-7329986369353650176-eUNV
-#  {{ linkedin_post(linkedin) }}
+linkedin: diniscruz_project-brief-web-content-capture-extension-activity-7330166771137613824-NI5Y
 back_link: /research/projects
 ---
  
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 {{ view_pdf(date, pdf_file) }}
