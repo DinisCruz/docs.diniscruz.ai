@@ -4,7 +4,7 @@ authors: ["ChatGPT Deep Research"]
 date: 2025/05/21
 pdf_file: project__electron-based-web-content-capture-app-with-playwright-and-python.pdf
 back_link: /research/projects
-#linkedin: diniscruz_project-brief-web-content-capture-extension-activity-7330166771137613824-NI5Y
+linkedin: diniscruz_projectelectron-based-web-content-capture-app-activity-7330898777412694017-iC5i
 #youtube_id: OQiCjD0BN3s
 ---
 
