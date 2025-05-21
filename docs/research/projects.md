@@ -4,7 +4,7 @@
 
 
 ## Projects briefs
-
+- [Project: Electron-Based Web Content Capture App (with Playwright & Python)](../2025/05/21/project__electron-based-web-content-capture-app-with-playwright-and-python.md)
 - [Project: Web Content Capture Extension with Pyodide and Serverless Backend](../2025/05/18/project__web-content-capture-extension-with-pyodide-and-serverless-backend.md)
 - [Project GenBnB: Enhancing Airbnb Host Workflows with GenAI](../2025/05/04/project-genbnb__enhancing-airbnb-host-workflows-with-gen-ai.md)
 - [Project InsightFlow: GenAI-Powered Transformation of Regulatory and News Feeds](../2025/05/03/project-insightflow__genai-powered-transformation-of-regulatory-and-news-feeds.md)

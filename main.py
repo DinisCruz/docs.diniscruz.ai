@@ -12,6 +12,8 @@ def define_env(env):
 
     @env.macro
     def linkedin_post(linkedin_id, label="LinkedIn Post"):
+        if not linkedin_id:
+            return ''
         url = f'https://www.linkedin.com/posts/{linkedin_id}'
         return f'[:fontawesome-brands-linkedin: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
 
@@ -55,6 +57,8 @@ def define_env(env):
 '''
     @env.macro
     def show_youtube(youtube_id, start=0):
+        if not youtube_id:
+            return ''
         return f'''
 ## Video
 <iframe width="100%" height="450px" src="https://www.youtube.com/embed/{youtube_id}?start={start} "        

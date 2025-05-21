@@ -12,6 +12,8 @@ _by {{ authors | join(" and ") }}, {{ date }}_
 
 {{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
-{{ view_pdf(date, pdf_file) }}
+The implementation (in May 2025) failed to create a viable solution, see [this LinkedIn post](https://www.linkedin.com/posts/diniscruz_when-failing-to-make-something-work-is-a-activity-7330536672520007680-6029/) for the details and technical debrief documents.
 
+{{ view_pdf(date, pdf_file) }}
+ 
 {{ show_youtube(youtube_id)}}
