@@ -4,6 +4,7 @@
 
 
 ## Projects briefs
+- [Technical Debrief: Evolution from Electron‑Based to Python‑Native Web Content Capture App](../2025/05/22/technical-debrief__evolution-from-electron%E2%80%91based-to-python%E2%80%91native-web-content-capture-app.md)
 - [Project: Electron-Based Web Content Capture App (with Playwright & Python)](../2025/05/21/project__electron-based-web-content-capture-app-with-playwright-and-python.md)
 - [Project: Web Content Capture Extension with Pyodide and Serverless Backend](../2025/05/18/project__web-content-capture-extension-with-pyodide-and-serverless-backend.md)
 - [Project GenBnB: Enhancing Airbnb Host Workflows with GenAI](../2025/05/04/project-genbnb__enhancing-airbnb-host-workflows-with-gen-ai.md)
