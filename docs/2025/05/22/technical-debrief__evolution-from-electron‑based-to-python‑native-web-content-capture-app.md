@@ -5,7 +5,7 @@ date: 2025/05/22
 pdf_file: technical-debrief__evolution-from-electron‑based-to-python‑native-web-content-capture-app.pdf
 back_link: /research/projects
 linkedin: diniscruz_technical-debrief-evolution-from-electronbased-activity-7330989236768145408-KXUz
-#youtube_id: OQiCjD0BN3s
+youtube_id: s7G42SIdAX8
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
