@@ -2,7 +2,7 @@
 title: "Technical Debrief: Evolution from Electron‑Based to Python‑Native Web Content Capture App"
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/22
-pdf_file: technical-debrief__evolution-from-electron-based-to-python-native-web-content-capture-app.md.pdf
+pdf_file: technical-debrief__evolution-from-electron-based-to-python-native-web-content-capture-app.pdf
 back_link: /research/projects
 linkedin: diniscruz_technical-debrief-evolution-from-electronbased-activity-7330989236768145408-KXUz
 youtube_id: s7G42SIdAX8
