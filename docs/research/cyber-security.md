@@ -3,15 +3,18 @@
 
 {{back_button('/index')}}
 
-### Misc topics 
+### Threat Modeling
+ - [Advancing Threat Modeling with Semantic Knowledge Graphs](../2025/05/29/advancing-threat-modeling-with-semantic-knowledge-graphs.md)
+ - [Threat Models as Mandatory Disclosures: A Vision for Security Transparency](../2025/05/29/threat-models-as-mandatory-disclosures__a-vision-for-security-transparency.md)
+
+
+### Misc topics
+ - [Semantic Knowledge Graphs for LLM-Driven Source Code Analysis](../2025/05/29/semantic-knowledge-graphs-for-llm-driven-source-code-analysis.md)
  - [OAuth Security Concerns and Implications for the Model Context Protocol (MCP)](../2025/05/18/oauth-security-concerns-and-implications-for-the-model-context-protocol.md)
  - [Security Debrief: OpenAI’s ChatGPT Connector GitHub App](../2025/05/18/security-debrief__openai_chatgpt_connector_gitHub_app.md)
  - [Fail Safe, Not Fail Big: Cyber-Security-Inspired Strategies to Prevent the Next Iberian Grid Crisis](../2025/04/29/fail-safe-not-fail-big__cyber-security-inspired-strategies-to-prevent-the-next-iberian-grid-crisis.md)
  - [Second Stories: From Three Mile Island to Cybersecurity](../2025/02/10/second-stories__from-three-mile-island-to-cybersecurity.md)
 
-### Threat Modeling
-
- - [Threat Models as Mandatory Disclosures: A Vision for Security Transparency](../2025/05/29/threat-models-as-mandatory-disclosures__a-vision-for-security-transparency.md)
 
 
 --- 
