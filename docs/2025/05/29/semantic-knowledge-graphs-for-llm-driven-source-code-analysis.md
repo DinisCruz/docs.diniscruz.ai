@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/29
 pdf_file: semantic-knowledge-graphs-for-llm-driven-source-code-analysis.pdf
 back_link: /research/cyber-security
-#linkedin: diniscruz_threat-models-as-mandatory-disclosures-activity-7333890904111374337-GnjN
+#linkedin: to-do
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  

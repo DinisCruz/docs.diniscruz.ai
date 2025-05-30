@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/30
 pdf_file: using-threat-modeling-and-semantic-graphs-to-secure-the-digital-supply-chain.pdf
 back_link: /research/cyber-security
-#linkedin: diniscruz_threat-models-as-mandatory-disclosures-activity-7333890904111374337-GnjN
+#linkedin: to-do
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
