@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/29
 pdf_file: advancing-threat-modeling-with-semantic-knowledge-graphs.pdf
 back_link: /research/cyber-security
-#linkedin: diniscruz_threat-models-as-mandatory-disclosures-activity-7333890904111374337-GnjN
+linkedin: diniscruz_advancing-threat-modeling-with-semantic-knowledge-activity-7334009715133177858-5uN3
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
