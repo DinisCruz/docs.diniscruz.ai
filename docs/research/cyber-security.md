@@ -9,6 +9,7 @@
  - [Using Threat Modeling and Semantic Graphs to Secure the Digital Supply Chain](../2025/05/30/using-threat-modeling-and-semantic-graphs-to-secure-the-digital-supply-chain.md)
  - [Graphs of Graphs of Graphs (G3) in Threat Modeling](../2025/05/30/graphs-of-graphs-of-graphs-g3-in-threat-modeling.md)
  - [Scaling Supply Chain Security using Threat Modeling Semantic Knowledge Graphs and Maps](../2025/05/30/scaling-supply-chain-security-using-threat-modeling-semantic-knowledge-graphs-and-maps.md)
+ - [Linking Threat Models with Semantic Business Graphs](../2025/06/02/linking-threat-models-with-semantic-business-graphs.md)
 
 
 ### Misc topics
