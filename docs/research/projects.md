@@ -17,6 +17,11 @@
 - [Project Lumos: Serverless JIRA-to-GraphDB XYZ Connector](../2025/02/13/project-lumos__serverless-jira-to-graphdb-xyz-connector.md)
 - [Project JSync: JIRA Exporter and Synchronization System](../2025/02/09/project-jsync__jira-exporter-and-synchronization-system.md)
 
+## Collaboration proposals
+ - [Proposal for Neo4j Collaboration with Dinis Cruz](../2025/06/03/proposal-for-neo4j-collaboration-with-dinis-cruz.md)
+ - [Jira as a Graph Database – Proposal for Atlassian Executives](../2025/06/03/jira-as-a-graph-database%E2%80%93proposal-for-atlassian-executives.md) 
+ - [Proposal: Strategic AWS Partnership with Dinis Cruz’s GenAI and Graph Innovations](../2025/06/03/proposal-strategic-aws-partnership-with-dinis-cruz-genai-and-graph-innovations.md)
+
 ## Business Ideas/Plans
 
 - [LinkedIn Vault: Professional Data Preservation Service](../2025/03/03/linkedin-vault__professional-data-preservation-servic.md)
