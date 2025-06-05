@@ -3,11 +3,12 @@ title: "Journalists' Challenges with Digital Content Provenance and Trust"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/03/24
 pdf_file: journalists-challenges-with-digital-content-provenance-and-trust.pdf
+back_link: /research/the-future-of-news
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
 
 ## How Semantic Knowledge Graphs Enable Traceability and Context
 

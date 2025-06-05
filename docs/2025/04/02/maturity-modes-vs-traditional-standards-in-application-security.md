@@ -3,11 +3,12 @@ title: "Maturity Models vs. Traditional Standards in Application Security"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/02
 pdf_file: maturity-modes-vs-traditional-standards-in-application-security.pdf
+back_link: /research/graphs
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
 
 **Introduction:** In cybersecurity, organizations often struggle to measure and improve their application security. Traditional security standards and policies offer checklists of controls, but they can be rigid and one-size-fits-all. Maturity models like the OWASP Software Assurance Maturity Model (SAMM) and the Building Security In Maturity Model (BSIMM) provide a more flexible roadmap. They reflect how security practices can evolve over time rather than just meeting a static list of requirements. This paper explores the value of maturity models compared to traditional standards, using OWASP SAMM, BSIMM, and OWASP’s Application Security Verification Standard (ASVS) as examples. We’ll see how maturity models capture real-world variations in security, support risk-based decisions, scale controls to application criticality, promote continuous improvement, and adapt to different teams and products. Practical examples – such as using maturity levels to gate data access between systems – will illustrate how mapping current practices to maturity levels drives pragmatic security improvements. We’ll also discuss how maturity models can feed into security scorecards or labels to transparently communicate an application’s security posture.
 

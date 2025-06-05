@@ -7,3 +7,7 @@
 pip install -e ".[docs]"
 mkdocs serve -a localhost:8111
 ```
+
+## dev accounts and collaborators
+
+ - @diniscruz-genai-agent

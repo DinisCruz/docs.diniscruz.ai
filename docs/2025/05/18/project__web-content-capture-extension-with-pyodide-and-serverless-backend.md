@@ -1,0 +1,19 @@
+---
+title: "Project: Web Content Capture Extension with Pyodide and Serverless Backend"
+authors: ["ChatGPT Deep Research"]
+date: 2025/05/18
+pdf_file: project__web-content-capture-extension-with-pyodide-and-serverless-backend.pdf
+linkedin: diniscruz_project-brief-web-content-capture-extension-activity-7330166771137613824-NI5Y
+back_link: /research/projects
+youtube_id: OQiCjD0BN3s
+---
+ 
+_by {{ authors | join(" and ") }}, {{ date }}_  
+
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
+
+The implementation (in May 2025) failed to create a viable solution, see [this LinkedIn post](https://www.linkedin.com/posts/diniscruz_when-failing-to-make-something-work-is-a-activity-7330536672520007680-6029/) for the details and technical debrief documents.
+
+{{ view_pdf(date, pdf_file) }}
+ 
+{{ show_youtube(youtube_id)}}
