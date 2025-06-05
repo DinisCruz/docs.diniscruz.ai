@@ -37,15 +37,14 @@ The submodule commit will be referenced from the main repository after the next 
 3. Set the `file_name` property to the PDF filename and the `date` property to the folder's date.
 4. Immediately after the front matter, include:
 
-    {% raw %}
-    ```markdown
-    _by {{ authors | join(" and ") }}, {{ date }}_
+    
+```markdown
+ _by {{ authors | join(" and ") }}, {{ date }}_
 
-    {{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
-    ```
-    {% endraw %}
+ {{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
+ ``` 
 
-5. Insert `{{ show_slides(date, file_name) }}` where you want the PDF to appear, or use `{{ download_pdf(date, file_name) }}` for a simple download link.
+5. Insert `{{ view_pdf(date, file_name) }}` where you want the PDF to appear, or use `{{ download_pdf(date, file_name) }}` for a simple download link.
 6. Do **not** include a top‑level `#` heading—the page title is automatically generated from the `title` value in the front matter.
 
 Example front matter:
