@@ -3,13 +3,14 @@ title: "The Future of News: Building Trust Through Fact Provenance"
 authors: ["Dinis Cruz", "Claude 3.5"]
 date: 2025/02/05
 pdf_file: the-future-of-news-building-trust-through-fact-provenance.pdf
+linkedin: diniscruz_the-future-of-news-building-trust-through-activity-7292879121225793536-sJbl
 back_link: /research/the-future-of-news
 ---
 
 # {{ title }}
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }}  {{back_button(back_link)}}
 
 
 ## Introduction

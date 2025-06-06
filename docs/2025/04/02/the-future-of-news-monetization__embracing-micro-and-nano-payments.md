@@ -5,12 +5,13 @@ date: 2025/04/02
 pdf_file: the-future-of-news-monetization__embracing-micro-and-nano-payments.pdf
 wav_file: the-future-of-news-monetization__embracing-micro-and-nano-payments.wav
 spotify_id: 2Oj1J1KksbxTwdrK9kx9ky
+linkedin: diniscruz_the-future-of-news-monetization-activity-7313197799121039360-8PKH
 back_link: /research/the-future-of-news
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{ download_wav(date, wav_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{ download_wav(date, wav_file) }}  {{back_button(back_link)}}
 
 {{ show_spotify_ui(spotify_id) }}
 

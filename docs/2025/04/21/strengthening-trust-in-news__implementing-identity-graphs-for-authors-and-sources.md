@@ -3,12 +3,13 @@ title: "Strengthening Trust in News: Implementing Identity Graphs for Authors an
 authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude 3.7"]
 date: 2025/04/21
 pdf_file: strengthening-trust-in-news__implementing-identity-graphs-for-authors-and-sources.pdf
+linkedin: diniscruz_strengthening-trust-in-news-activity-7320155565526036482-Kdpt
 back_link: /research/the-future-of-news
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Executive Summary  
 Widespread exposure of fabricated “experts” such as the *Barbara Santini* hoax has revealed a systemic vulnerability in modern newsrooms: speed‑driven workflows too often publish quotes from unverified or entirely fictional commentators, eroding public confidence in journalism. This white paper argues that manual vetting cannot keep pace with increasingly sophisticated fakery—and that trust in news will continue to decline unless audiences can see, not just assume, who is behind every claim.
