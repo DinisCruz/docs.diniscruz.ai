@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/06
 pdf_file: personalised-briefing-for-dan-raywood-on-the-future-of-news.pdf
 back_link: /research/the-future-of-news
-#linkedin: diniscruz_proposal-for-neo4j-collaboration-with-dinis-activity-7335623659497189376-7L2t
+linkedin: diniscruz_personalised-briefing-for-dan-raywood-on-activity-7336773283159203842-RyBb
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
