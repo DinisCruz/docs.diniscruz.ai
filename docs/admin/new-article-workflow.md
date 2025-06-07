@@ -34,7 +34,7 @@ The submodule commit will be referenced from the main repository after the next 
 
 1. Inside `docs`, create a folder structure that matches the article date (`YYYY/MM/DD`).
 2. Add a Markdown file with front‑matter fields similar to the examples under `docs/2025/`.
-3. Set the `file_name` property to the PDF filename and the `date` property to the folder's date.
+3. Set the `pdf_file` property to the PDF filename and the `date` property to the folder's date.
 4. Immediately after the front matter, include:
 
     
@@ -44,7 +44,8 @@ The submodule commit will be referenced from the main repository after the next 
  {{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
  ``` 
 
-5. Insert `{{ view_pdf(date, file_name) }}` where you want the PDF to appear, or use `{{ download_pdf(date, file_name) }}` for a simple download link.
+5. For presentations/slides: Insert `{{ view_pdf(date, pdf_file) }}` where you want the PDF to appear.
+   For research documents with full content: Only use the download link at the top (no embedded viewer needed).
 6. Do **not** include a top‑level `#` heading—the page title is automatically generated from the `title` value in the front matter.
 
 Example front matter:
@@ -54,7 +55,7 @@ Example front matter:
 title: "My New Presentation"
 authors: ["Dinis Cruz"]
 date: 2025/06/05
-file_name: my-document.pdf
+pdf_file: my-document.pdf
 back_link: /resources/presentations
 youtube_id: <optional>
 ---
@@ -74,4 +75,49 @@ git commit -m "Add article and PDF for 2025‑06‑05"
 ```
 
 Finally push the main repository and the submodule to GitHub.
+
+## Processing Research Documents from Drafts
+
+When processing research documents that include both PDF and markdown content:
+
+### 1. File naming convention
+Convert filenames to lowercase with dashes instead of spaces:
+- Original: `History.and.Analysis.of.OWASP.In-Person.Summits.pdf`
+- Converted: `history-and-analysis-of-owasp-in-person-summits.pdf`
+
+### 2. File placement
+```bash
+# Move markdown file
+mv drafts/Document.Name.pdf.md docs/YYYY/MM/DD/document-name.md
+
+# Move PDF file (create directory first)
+mkdir -p files/files/pdf/YYYY/MM/DD/
+mv drafts/Document.Name.pdf files/files/pdf/YYYY/MM/DD/document-name.pdf
+```
+
+### 3. Front matter for research documents
+```markdown
+---
+title: "Document Title"
+authors: ["Author Name"]
+date: YYYY/MM/DD
+pdf_file: document-name.pdf
+back_link: /research/cyber-security
+# linkedin: (add when post has been created in LinkedIn)
+---
+
+_by {{ authors | join(" and ") }}, {{ date }}_
+
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
+
+[Document content continues here...]
+```
+
+### 4. Key differences for research documents
+- **No PDF viewer at the end**: Research documents with full markdown content don't need `{{ view_pdf() }}`
+- **Full content in markdown**: The entire document text should be in the markdown file
+- **Download link only**: The PDF download button at the top is sufficient
+
+### 5. Update the research index
+Add the new article to the appropriate research page (e.g., `docs/research/cyber-security.md`)
 

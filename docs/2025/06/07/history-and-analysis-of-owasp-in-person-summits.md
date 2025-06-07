@@ -2,13 +2,14 @@
 title: "History and Analysis of OWASP In-Person Summits"
 authors: ["Dinis Cruz"]
 date: 2025/06/07
-file_name: history-and-analysis-of-owasp-in-person-summits.pdf
+pdf_file: history-and-analysis-of-owasp-in-person-summits.pdf
 back_link: /research/cyber-security
+# linked-in : (add when post has been created in LinkedIn) 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
 
-{{ download_pdf(date, file_name) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 The OWASP in-person summits are intensive, collaborative gatherings of the Open Web Application Security Project’s community. These summits (distinct from regular OWASP conferences) bring together OWASP leaders, project contributors, and application security experts from around the world to work on the organization’s projects, set agendas, and tackle key security challenges in a face-to-face setting. Unlike typical conferences with one-way presentations, OWASP summits emphasize working sessions, planning meetings, and hands-on collaboration. Below is a comprehensive chronological overview of all fully in-person OWASP summits since the concept’s inception, followed by detailed analysis of each event’s logistics, organization, and outcomes.
 
@@ -153,5 +154,3 @@ Over the years, OWASP’s in-person summits have evolved in format, scale, and r
 In conclusion, OWASP’s in-person summits have played a vital role in shaping the direction of the organization and the wider application security community. They started as a bold experiment in 2008 to set the agenda for a nascent field, and over time they proved to be a powerful model for knowledge exchange, consensus-building, and rapid content development. Each summit built upon the lessons of the previous – improving logistics (e.g. better track management, funding approaches), expanding participation, and honing the focus on outcomes. While not annual events, when they do occur, OWASP summits leave a lasting legacy: new ideas, published guidance, stronger networks among experts, and a clear roadmap for the future of application security. This legacy continues to inspire collaborative events (such as the Open Security Summit series) using the OWASP summit blueprint. The OWASP community’s experience with in-person summits underscores that bringing people together in the same room – with the right structure and goals – can significantly advance the state of software security in ways that teleconferences or scattered efforts cannot.
 
 **Sources:** Primary sources include official OWASP Summit pages, press releases, and post-summit reports, as well as contemporary accounts from participants and OWASP leaders. Notable references are the OWASP Summit 2011 Press Release, Michael Coates’ 2011 summit preview, Dinis Cruz’s 2017 summit announcements, and participant write-ups like the Minded Security blog recap of 2017. These, along with OWASP’s own blog posts and documentation, provide the detailed insights into planning, execution, and outcomes of each in-person summit. The above report has drawn on those sources to ensure accuracy and completeness in chronicling the OWASP summits’ rich history.
-
-{{ view_pdf(date, file_name) }}

@@ -68,6 +68,40 @@ Each article uses front matter with these fields:
 3. Use the provided macros for consistent formatting
 4. Update relevant index pages (e.g., `docs/resources/presentations.md`)
 
+### Processing Research Documents from Drafts
+
+When adding research documents (typically found in the `drafts/` folder):
+
+1. **File Naming**: Convert filenames to lowercase with dashes instead of spaces
+   - Example: `History.and.Analysis.of.OWASP.In-Person.Summits.pdf` → `history-and-analysis-of-owasp-in-person-summits.pdf`
+
+2. **File Placement**:
+   - Move markdown file to: `docs/YYYY/MM/DD/article-name.md`
+   - Move PDF to: `files/files/pdf/YYYY/MM/DD/article-name.pdf`
+
+3. **Front Matter**: Use `pdf_file` (not `file_name`) and include:
+   ```yaml
+   ---
+   title: "Article Title"
+   authors: ["Author Name"]
+   date: YYYY/MM/DD
+   pdf_file: article-name.pdf
+   back_link: /research/cyber-security
+   # linkedin: (add when post has been created in LinkedIn)
+   ---
+   ```
+
+4. **Document Header**: Add after front matter:
+   ```markdown
+   _by {{ authors | join(" and ") }}, {{ date }}_
+   
+   {{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
+   ```
+
+5. **PDF Viewer**: For research documents with full content in markdown, DO NOT add `{{ view_pdf() }}` at the end. The download link at the top is sufficient.
+
+6. **Update Index**: Add the article to the appropriate research index page (e.g., `docs/research/cyber-security.md`)
+
 ### Version Management
 
 The version is automatically incremented on each push and stored in the `version` file. The custom footer plugin reads this version for display.
