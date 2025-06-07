@@ -24,6 +24,7 @@
 
 ## Business Ideas/Plans
 
+- [GenAI Legacy Code Refactoring – Business Plan](../2025/06/07/genai-legacy-code-refactoring-business-plan.md)
 - [LinkedIn Vault: Professional Data Preservation Service](../2025/03/03/linkedin-vault__professional-data-preservation-servic.md)
 - [Scaling a Solo Cybersecurity Consulting Practice: Business Plan Research](../2025/04/07/scaling-a-solo-cybersecurity-consulting-practice__business-plan-research.md)
 

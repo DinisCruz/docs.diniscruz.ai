@@ -4,7 +4,7 @@ authors: ["Dinis Cruz"]
 date: 2025/06/07
 pdf_file: history-and-analysis-of-owasp-in-person-summits.pdf
 back_link: /research/cyber-security
-# linked-in : (add when post has been created in LinkedIn) 
+linkedin : diniscruz_history-and-analysis-of-owasp-in-person-summits-activity-7337079726424961025-C1KF 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_

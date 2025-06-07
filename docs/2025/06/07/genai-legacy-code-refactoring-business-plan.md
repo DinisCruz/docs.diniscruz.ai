@@ -1,5 +1,15 @@
-# GenAI Legacy Code Refactoring – Business Plan
-*by Dinis Cruz, Chat GPT Deep Research and Claude Opus 4 Research*
+---
+title: "GenAI Legacy Code Refactoring – Business Plan"
+authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude Opus 4 Research"]
+date: 2025/06/07
+pdf_file: genai-legacy-code-refactoring-business-plan.pdf
+back_link: /research/projects
+# linkedin: (add when post has been created in LinkedIn)
+---
+
+_by {{ authors | join(" and ") }}, {{ date }}_
+
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Meta Information
 This is a proposed business model for the idea of creating a company focused on refactoring legacy code. This document is released under the CC Zero license in the hope that it helps entrepreneurs who want to implement this idea. This represents how I (Dinis Cruz) would build such a company, leveraging the technologies, methodologies, and philosophies I've developed through projects like The Cyber Boardroom, MGraph-DB, and OSBot.
@@ -197,33 +207,33 @@ This business model is offered freely under CC Zero license to inspire entrepren
 
 ## References
 
-1. Feathers, Michael (via LinkedIn post comment): "Legacy code is any code base that has no unit test for them."
-2. GAO Report via DataCenterDynamics – 60–80% of IT budget is spent on maintaining existing on-site hardware and legacy apps
-3. NTT Data – Average technical debt cost is $361k per 100k lines; traditional "rip and replace" modernization is high-risk
-4. NTT Data – Generative AI is automating tasks like code refactoring in legacy app modernization, allowing incremental updates that preserve business logic
-5. TurinTech (Artemis) – Manual legacy code rewrites are 6× more likely to fail vs automated conversion
-6. TurinTech (Artemis) – one VB6 app refactor took 3.5 years, $750k
-7. Dinis Cruz – 100% test coverage with GenAI support enables confident code evolution; tests immediately reveal side-effects of changes
-8. Dinis Cruz – "Bug-first" testing approach to make tests especially meaningful
-9. Beyond 100% Code Coverage: How GenAI and "Bug-First" Testing Transform Software Quality
-10. Dinis Cruz – LLM (Claude) was able to read source code and produce accurate documentation of its behavior
-11. Dinis Cruz – Semantic Knowledge Graphs for LLM-Driven Source Code Analysis
-12. Spyrosoft Case Study – AI-powered refactoring suggestions improved code performance, readability, maintainability; also generated UML diagrams
-13. Dinis Cruz – The AI-generated knowledge graph can be used to answer questions and produce high-level architecture descriptions
-14. Spyrosoft Case Study – Used GenAI to automatically analyze and document legacy code
-15. Dinis Cruz – When refactoring, GenAI helps adapt tests to new implementations, preserving bug patterns and keeping test intent clear
-16. Dinis Cruz – Comprehensive tests lead to cleaner refactoring and more confident deployments
-17. Dinis Cruz (MGraph-DB) – Memory-first graph DB can be used in a serverless function
-18. Dinis Cruz (MGraph-DB) – Built to be lightweight and serverless-friendly
-19. Dinis Cruz – Serverless financial model: eliminating fixed costs while maximizing scalability
-20. Dinis Cruz – Type_Safe modeling library from the OSBot project
-21. Cyber Boardroom – Multi-cloud and runs-everywhere design
-22. Dinis Cruz – Background as CISO and GenAI in AppSec expertise
-23. Dinis Cruz – Dynamic cost pass-through model
-24. Dinis Cruz – Serverless startup philosophy avoiding fixed expenses
-25. TurinTech – Artemis AI tool for code refactoring
-26. Spyrosoft – GenAI for code documentation and optimization
-27. Cyber Boardroom investment strategy
-28. Cyber Boardroom Business Plan
-29. Dinis Cruz – GenAI Startup Journey writings
-30. Wardley Mapping for AI strategy
+1. Feathers, Michael (via LinkedIn post comment): ["Legacy code is any code base that has no unit test for them."](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+2. GAO Report via DataCenterDynamics – [60–80% of IT budget is spent on maintaining existing on-site hardware and legacy apps](https://www.datacenterdynamics.com/en/opinions/the-hidden-costs-of-legacy-technology/)
+3. NTT Data – [Average technical debt cost is $361k per 100k lines; traditional "rip and replace" modernization is high-risk](https://www.nttdata.com/global/en/insights/focus/2025/generative-ai-a-transformative-force-in-legacy-app-modernization)
+4. NTT Data – [Generative AI is automating tasks like code refactoring in legacy app modernization, allowing incremental updates that preserve business logic](https://www.nttdata.com/global/en/insights/focus/2025/generative-ai-a-transformative-force-in-legacy-app-modernization)
+5. TurinTech (Artemis) – [Manual legacy code rewrites are 6× more likely to fail vs automated conversion](https://www.turintech.ai/accelerate-cloud-migration-with-gen-ai-powered-code-refactoring/)
+6. TurinTech (Artemis) – [one VB6 app refactor took 3.5 years, $750k](https://www.turintech.ai/accelerate-cloud-migration-with-gen-ai-powered-code-refactoring/)
+7. Dinis Cruz – [100% test coverage with GenAI support enables confident code evolution; tests immediately reveal side-effects of changes](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+8. Dinis Cruz – ["Bug-first" testing approach to make tests especially meaningful](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+9. [Beyond 100% Code Coverage: How GenAI and "Bug-First" Testing Transform Software Quality](https://www.linkedin.com/pulse/beyond-100-code-coverage-how-genai-bug-first-testing-transform-cruz-0mpre)
+10. Dinis Cruz – [LLM (Claude) was able to read source code and produce accurate documentation of its behavior](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+11. Dinis Cruz – [Semantic Knowledge Graphs for LLM-Driven Source Code Analysis](https://docs.diniscruz.ai/2025/05/29/semantic-knowledge-graphs-for-llm-driven-source-code-analysis.html)
+12. Spyrosoft Case Study – [AI-powered refactoring suggestions improved code performance, readability, maintainability; also generated UML diagrams](https://spyro-soft.com/case/transforming-legacy-code-documentation-with-genai)
+13. Dinis Cruz – [The AI-generated knowledge graph can be used to answer questions and produce high-level architecture descriptions](https://docs.diniscruz.ai/2025/05/29/semantic-knowledge-graphs-for-llm-driven-source-code-analysis.html)
+14. Spyrosoft Case Study – [Used GenAI to automatically analyze and document legacy code](https://spyro-soft.com/case/transforming-legacy-code-documentation-with-genai)
+15. Dinis Cruz – [When refactoring, GenAI helps adapt tests to new implementations, preserving bug patterns and keeping test intent clear](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+16. Dinis Cruz – [Comprehensive tests lead to cleaner refactoring and more confident deployments](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+17. Dinis Cruz (MGraph-DB) – [Memory-first graph DB can be used in a serverless function](https://www.linkedin.com/pulse/introducing-mgraph-ai-memory-first-graph-database-genai-dinis-cruz-wxmde)
+18. Dinis Cruz (MGraph-DB) – [Built to be lightweight and serverless-friendly](https://www.linkedin.com/pulse/introducing-mgraph-ai-memory-first-graph-database-genai-dinis-cruz-wxmde)
+19. Dinis Cruz – [Serverless financial model: eliminating fixed costs while maximizing scalability](https://www.linkedin.com/posts/diniscruz_serverless-financial-model-and-growth-strategy-activity-7291102699931017216-RhdM)
+20. Dinis Cruz – [Type_Safe modeling library from the OSBot project](https://www.linkedin.com/posts/diniscruz_the-power-of-a-powerful-test-framework-and-activity-7287182135709319172-w-Jq)
+21. Cyber Boardroom – [Multi-cloud and runs-everywhere design](https://www.linkedin.com/posts/diniscruz_the-cyber-boardroom-business-plan-activity-7296167423597039617-pC0c)
+22. Dinis Cruz – [Background as CISO and GenAI in AppSec expertise](https://www.linkedin.com/posts/diniscruz_i-have-some-exciting-news-to-share-tl-activity-7166371292898672641-FqNS)
+23. Dinis Cruz – [Dynamic cost pass-through model](https://www.linkedin.com/posts/diniscruz_serverless-financial-model-and-growth-strategy-activity-7291102699931017216-RhdM)
+24. Dinis Cruz – [Serverless startup philosophy avoiding fixed expenses](https://www.linkedin.com/posts/diniscruz_serverless-financial-model-and-growth-strategy-activity-7291102699931017216-RhdM)
+25. TurinTech – [Artemis AI tool for code refactoring](https://www.turintech.ai/artemis)
+26. Spyrosoft – [GenAI for code documentation and optimization](https://spyro-soft.com/case/transforming-legacy-code-documentation-with-genai)
+27. [Cyber Boardroom investment strategy](https://www.linkedin.com/feed/update/urn:li:activity:7290863252261990400/)
+28. [Cyber Boardroom Business Plan](https://www.linkedin.com/posts/diniscruz_the-cyber-boardroom-business-plan-activity-7296167423597039617-pC0c)
+29. Dinis Cruz – [GenAI Startup Journey writings](https://www.linkedin.com/posts/diniscruz_i-have-some-exciting-news-to-share-tl-activity-7166371292898672641-FqNS)
+30. [Wardley Mapping for AI strategy](https://www.linkedin.com/posts/diniscruz_scenario-analysis-with-wardley-maps-activity-7151671690853285890-Or_v)
