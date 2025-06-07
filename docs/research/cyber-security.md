@@ -23,6 +23,10 @@
 
  -  [O2 Platform's MethodStreams (2010 Open Source SAST engine)](../2025/02/11/o2-platforms-methodstreams-2010-open-source-sast-engine.md)
 
+### OWASP
+
+ - [History and Analysis of OWASP In-Person Summits](../2025/06/07/history-and-analysis-of-owasp-in-person-summits.md)
+
 
 --- 
 
