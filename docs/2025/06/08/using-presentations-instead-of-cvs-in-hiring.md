@@ -4,7 +4,7 @@ authors: ["Dinis Cruz"]
 date: 2025/06/08
 pdf_file: using-presentations-instead-of-cvs-in-hiring.pdf
 back_link: /research/europe-and-learning
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_using-presentations-instead-of-cvs-in-hiring-activity-7337502266649636864-JG1E
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
