@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude Opus 4 Research"]
 date: 2025/06/07
 pdf_file: genai-legacy-code-refactoring-business-plan.pdf
 back_link: /research/projects
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_genai-legacy-code-refactoring-business-activity-7337504795127152640-aCNZ
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
