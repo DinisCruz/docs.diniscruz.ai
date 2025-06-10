@@ -26,7 +26,7 @@ This site hosts Dinis current research into AI, security governance, and the fut
 - [The Future of News](./research/the-future-of-news.md)
 - [Cyber-Security](./research/cyber-security.md)
 - [Projects and Business Ideas](./research/projects.md)
-- [Development](./research/development.md)
+- [Development and GenAI](./research/development-and-genai.md)
 
 
 

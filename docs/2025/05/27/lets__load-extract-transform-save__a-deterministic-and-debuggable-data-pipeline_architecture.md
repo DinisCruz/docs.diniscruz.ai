@@ -3,7 +3,7 @@ title: "LETS (Load, Extract, Transform, Save): A Deterministic and Debuggable Da
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/27
 pdf_file: lets__load-extract-transform-save__a-deterministic-and-debuggable-data-pipeline_architecture.pdf
-back_link: /research/development
+back_link: /research/development-and-genai
 linkedin: diniscruz_lets-load-extract-transform-save-activity-7333166696649621505-ZjqA
 ---
 

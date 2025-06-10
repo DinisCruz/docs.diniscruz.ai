@@ -1,4 +1,4 @@
-# Development
+# Development and GenAI
 
 {{back_button('/index')}}
 
