@@ -4,7 +4,7 @@ authors: ["ChatGPT Deep Research"]
 date: 2025/05/18
 pdf_file: briefing-on-canada-new-minister-of-artificial-intelligence-and-digital-innovation-vs-uk-and-pt.pdf
 linkedin: diniscruz_briefing-on-canadas-new-minister-of-ai-activity-7329812648915517440-mDGx
-back_link: /research/europe-and-learning
+back_link: /research/development-and-genai
 ---
  
 _by {{ authors | join(" and ") }}, {{ date }}_  

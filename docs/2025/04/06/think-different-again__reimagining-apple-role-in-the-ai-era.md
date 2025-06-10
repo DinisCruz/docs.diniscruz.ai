@@ -3,11 +3,13 @@ title: "Think Different, Again: Reimagining Apple’s Role in the AI Era"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/06
 pdf_file: think-different-again__reimagining-apple-role-in-the-ai-era.pdf
+linkedin: diniscruz_think-different-again-activity-7314767894788149249-eqSt
+back_link: /research/development-and-genai
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Introduction
 

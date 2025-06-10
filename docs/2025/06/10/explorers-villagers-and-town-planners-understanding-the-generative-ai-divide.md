@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/10
 pdf_file: explorers-villagers-and-town-planners-understanding-the-generative-ai-divide.pdf
 back_link: /research/development-and-genai
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_explorers-and-town-planners-understanding-the-genai-divide-activity-7338325660324544512-NOAw
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_

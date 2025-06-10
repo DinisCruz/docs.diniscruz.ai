@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/09
 pdf_file: supercharging-appsec-threat-modeling-services-with-genai-and-semantic-graphs.pdf
 back_link: /research/cyber-security
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_appsec-threat-modeling-services-with-genai-activity-7338211045074747392-fg_v
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
