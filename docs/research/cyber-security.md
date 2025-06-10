@@ -4,6 +4,7 @@
 {{back_button('/index')}}
 
 ### Threat Modeling
+ - [Supercharging AppSec Threat Modeling Services with GenAI and Semantic Graphs](../2025/06/09/supercharging-appsec-threat-modeling-services-with-genai-and-semantic-graphs.md)
  - [Threat Models as Mandatory Disclosures: A Vision for Security Transparency](../2025/05/29/threat-models-as-mandatory-disclosures__a-vision-for-security-transparency.md)
  - [Advancing Threat Modeling with Semantic Knowledge Graphs](../2025/05/29/advancing-threat-modeling-with-semantic-knowledge-graphs.md)
  - [Using Threat Modeling and Semantic Graphs to Secure the Digital Supply Chain](../2025/05/30/using-threat-modeling-and-semantic-graphs-to-secure-the-digital-supply-chain.md)
