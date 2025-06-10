@@ -14,6 +14,7 @@
 
 
 ### Misc topics
+ - [Security Implications of the Model Context Protocol (MCP) and the Need for Robust Infrastructure](../2025/06/10/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md)
  - [Semantic Knowledge Graphs for LLM-Driven Source Code Analysis](../2025/05/29/semantic-knowledge-graphs-for-llm-driven-source-code-analysis.md)
  - [OAuth Security Concerns and Implications for the Model Context Protocol (MCP)](../2025/05/18/oauth-security-concerns-and-implications-for-the-model-context-protocol.md)
  - [Security Debrief: OpenAI’s ChatGPT Connector GitHub App](../2025/05/18/security-debrief__openai_chatgpt_connector_gitHub_app.md)
