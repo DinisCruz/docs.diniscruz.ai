@@ -4,6 +4,8 @@
 
 
 ## Projects briefs
+- [Follow-Up Technical Vision: Optimizations, Deployment, and Security](../2025/06/13/follow-up-technical-vision-optimizations-deployment-and-security.md)
+- [Technical Briefing: Web Content Filtering Project](../2025/06/13/technical-briefing-web-content-filtering-project.md)
 - [Technical Debrief: Evolution from Electron‑Based to Python‑Native Web Content Capture App](../2025/05/22/technical-debrief__evolution-from-electron-based-to-python-native-web-content-capture-app.md)
 - [Project: Electron-Based Web Content Capture App (with Playwright & Python)](../2025/05/21/project__electron-based-web-content-capture-app-with-playwright-and-python.md)
 - [Project: Web Content Capture Extension with Pyodide and Serverless Backend](../2025/05/18/project__web-content-capture-extension-with-pyodide-and-serverless-backend.md)
