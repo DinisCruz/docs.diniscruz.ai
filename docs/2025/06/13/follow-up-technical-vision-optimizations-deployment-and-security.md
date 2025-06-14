@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/13
 pdf_file: follow-up-technical-vision-optimizations-deployment-and-security.pdf
 back_link: /research/projects
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_follow-up-tech-vision-optimizations-deployment-activity-7339270303170154497-l2MB
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_

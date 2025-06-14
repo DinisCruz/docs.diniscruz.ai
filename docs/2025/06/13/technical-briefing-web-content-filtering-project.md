@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/13
 pdf_file: technical-briefing-web-content-filtering-project.pdf
 back_link: /research/projects
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_technical-briefing-web-content-filtering-activity-7339265216355921921-R6Zc
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
