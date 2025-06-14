@@ -13,5 +13,11 @@ Available [here](https://www.linkedin.com/posts/diniscruz_examples-from-my-day-t
 👉 https://lnkd.in/e7E5eihQ
 ```
 
+```
+〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️
+⤵️ Listed in my collection of: 
+📍 ChatGPT Pro Deep Research (Part 4): https://lnkd.in/eWpVM9Rj
+```
+
 
 (todo: add the other footers....)

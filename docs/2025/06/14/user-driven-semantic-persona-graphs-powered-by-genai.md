@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/14
 pdf_file: user-driven-semantic-persona-graphs-powered-by-genai.pdf
 back_link: /research/graphs
-# linkedin: (add when post has been created in LinkedIn)
+linkedin: diniscruz_user-driven-semantic-persona-graphs-powered-activity-7339663903787761665-sVzz
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
