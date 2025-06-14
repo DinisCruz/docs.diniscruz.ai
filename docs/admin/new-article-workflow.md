@@ -2,6 +2,26 @@
 
 This guide explains the steps required to publish a new article and associated PDF in this repository.
 
+## Manual vs Automated Steps
+
+### Manual Steps (Done by User):
+1. Place documents in `drafts/to-process/` folder
+2. Ask Claude Code to process the documents
+3. Review the processed documents
+4. Handle all git operations (add, commit, push)
+5. Add LinkedIn reference to front matter after posting
+
+### Automated Steps (Done by Claude Code):
+1. Check `drafts/to-process/` folder for new documents
+2. Rename files to lowercase-dash format
+3. Create date folders (using current date)
+4. Move files to proper locations
+5. Add front matter to markdown files
+6. Update research index pages
+7. Verify date accuracy and fix if needed
+
+---
+
 ## 1. Clone the repository with the `files` submodule
 
 ```bash
@@ -15,15 +35,17 @@ The `files` directory contains PDFs and other binary assets. It is a separate re
 
 ## 2. Add the PDF to the submodule
 
+**Note:** The PDF directory structure is `files/files/pdf/YYYY/MM/DD/` (not `github/pdf/`).
+
 1. Navigate into the `files` folder.
-2. Create the required date‑based directory structure if it doesn't exist. For example, to add a PDF dated `2025/06/05`, create `github/pdf/2025/06/05/`.
-3. Copy your PDF into that folder.
+2. Create the required date‑based directory structure if it doesn't exist. For example, to add a PDF dated `2025/06/05`, create `files/pdf/2025/06/05/`.
+3. Move (not copy) your PDF into that folder.
 4. Commit the change **inside the submodule**:
 
 ```bash
 cd files
 git checkout -b add-new-pdf
-git add github/pdf/2025/06/05/my-document.pdf
+git add files/pdf/2025/06/05/my-document.pdf
 git commit -m "Add PDF for 2025‑06‑05 article"
 cd ..
 ```
@@ -76,24 +98,26 @@ git commit -m "Add article and PDF for 2025‑06‑05"
 
 Finally push the main repository and the submodule to GitHub.
 
-## Processing Research Documents from Drafts
+## Processing Research Documents from Drafts (Claude Code Workflow)
 
-When processing research documents that include both PDF and markdown content:
+When processing research documents that include both PDF and markdown content, Claude Code will:
 
 ### 1. File naming convention
 Convert filenames to lowercase with dashes instead of spaces:
-- Original: `History.and.Analysis.of.OWASP.In-Person.Summits.pdf`
+- Original: `History and Analysis of OWASP In-Person Summits.pdf`
 - Converted: `history-and-analysis-of-owasp-in-person-summits.pdf`
 
 ### 2. File placement
 ```bash
-# Move markdown file
-mv drafts/Document.Name.pdf.md docs/YYYY/MM/DD/document-name.md
+# Move markdown file (Claude Code will use the current date)
+mv drafts/to-process/Document-Name.md docs/YYYY/MM/DD/document-name.md
 
 # Move PDF file (create directory first)
 mkdir -p files/files/pdf/YYYY/MM/DD/
-mv drafts/Document.Name.pdf files/files/pdf/YYYY/MM/DD/document-name.pdf
+mv drafts/to-process/Document-Name.pdf files/files/pdf/YYYY/MM/DD/document-name.pdf
 ```
+
+**Important:** Files are MOVED, not copied, to avoid duplication.
 
 ### 3. Front matter for research documents
 ```markdown
@@ -119,5 +143,46 @@ _by {{ authors | join(" and ") }}, {{ date }}_
 - **Download link only**: The PDF download button at the top is sufficient
 
 ### 5. Update the research index
-Add the new article to the appropriate research page (e.g., `docs/research/cyber-security.md`)
+Claude Code will add the new article to the appropriate research page (e.g., `docs/research/cyber-security.md`) maintaining date order (newest first).
 
+### 6. Date handling
+Claude Code will use the current date when processing documents. If the date is incorrect:
+- Claude Code will create the correct date folders
+- Move all files to the new location
+- Update the front matter date
+- Update all index references
+
+## Common Research Sections and back_link Values
+
+- **Cyber Security**: `/research/cyber-security`
+- **Development and GenAI**: `/research/development-and-genai`
+- **Europe and Learning**: `/research/europe-and-learning`
+- **Graphs**: `/research/graphs`
+- **Projects**: `/research/projects`
+- **The Future of News**: `/research/the-future-of-news`
+
+## Git Operations (Manual)
+
+After Claude Code processes the documents:
+
+1. Review the changes
+2. Add and commit in the main repository:
+   ```bash
+   git add -A
+   git commit -m "Added new research document: [title]"
+   ```
+3. If PDFs were added, also commit in the files submodule:
+   ```bash
+   cd files
+   git add -A
+   git commit -m "Added PDFs for new research documents"
+   cd ..
+   git add files
+   git commit -m "Updated files submodule reference"
+   ```
+4. Push both repositories:
+   ```bash
+   git push
+   cd files
+   git push
+   ```
