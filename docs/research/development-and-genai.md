@@ -4,6 +4,7 @@
 
 ## Development 
 
+ - [The Hidden Cost of Ephemeral Testing and the Case for Automation](../2025/06/15/the-hidden-cost-of-ephemeral-testing-and-the-case-for-automation.md)
  - [LETS (Load, Extract, Transform, Save): A Deterministic and Debuggable Data Pipeline Architecture](../2025/05/27/lets__load-extract-transform-save__a-deterministic-and-debuggable-data-pipeline_architecture.md)
 
 ## GenAI

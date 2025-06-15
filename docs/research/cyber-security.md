@@ -14,6 +14,7 @@
 
 
 ### Misc topics
+ - [Personal Content Rights: Protecting Individuals in the Age of Deepfakes and AI Cloning](../2025/06/15/personal-content-rights-protecting-individuals-in-the-age-of-deepfakes-and-ai-cloning.md)
  - [Security Implications of the Model Context Protocol (MCP) and the Need for Robust Infrastructure](../2025/06/10/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md)
  - [Semantic Knowledge Graphs for LLM-Driven Source Code Analysis](../2025/05/29/semantic-knowledge-graphs-for-llm-driven-source-code-analysis.md)
  - [OAuth Security Concerns and Implications for the Model Context Protocol (MCP)](../2025/05/18/oauth-security-concerns-and-implications-for-the-model-context-protocol.md)
