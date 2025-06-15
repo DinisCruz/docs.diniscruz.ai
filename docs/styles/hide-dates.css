@@ -1,0 +1,38 @@
+/* Hide date-based navigation in sidebar */
+/* This CSS specifically targets and hides year/month/day folders */
+
+/* Hide 2024 and 2025 year folders in navigation */
+.md-nav__item--nested > .md-nav > .md-nav__item:has(.md-nav__link[href*="/2024/"]),
+.md-nav__item--nested > .md-nav > .md-nav__item:has(.md-nav__link[href*="/2025/"]) {
+    display: none !important;
+}
+
+/* Alternative: Hide any nav item that looks like a year (4 digits) */
+.md-nav__link[href$="/2024"],
+.md-nav__link[href$="/2025"],
+.md-nav__link[href$="/2024/"],
+.md-nav__link[href$="/2025/"] {
+    display: none !important;
+}
+
+/* Hide parent containers if they only contain date navigation */
+.md-nav__item--nested:has(> .md-nav__link[href$="/2024"]),
+.md-nav__item--nested:has(> .md-nav__link[href$="/2025"]) {
+    display: none !important;
+}
+
+/* Hide month folders (01-12) */
+.md-nav__link[href*="/01/"],
+.md-nav__link[href*="/02/"],
+.md-nav__link[href*="/03/"],
+.md-nav__link[href*="/04/"],
+.md-nav__link[href*="/05/"],
+.md-nav__link[href*="/06/"],
+.md-nav__link[href*="/07/"],
+.md-nav__link[href*="/08/"],
+.md-nav__link[href*="/09/"],
+.md-nav__link[href*="/10/"],
+.md-nav__link[href*="/11/"],
+.md-nav__link[href*="/12/"] {
+    display: none !important;
+}

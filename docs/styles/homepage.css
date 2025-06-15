@@ -1,0 +1,55 @@
+/* Homepage Styles for Research Hub */
+
+/* General Homepage Enhancements */
+.md-content h1:first-child {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--md-primary-fg-color);
+}
+
+/* Research Area Cards */
+.md-content h3 a {
+    text-decoration: none;
+    color: var(--md-default-fg-color);
+    transition: color 0.2s;
+}
+
+.md-content h3 a:hover {
+    color: var(--md-primary-fg-color);
+}
+
+/* Latest Research Section */
+.md-content h2 + p + ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.md-content h2 + p + ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.md-content h2 + p + ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--md-primary-fg-color);
+}
+
+/* Philosophy Section */
+.md-content h2 + p + ul li strong {
+    color: var(--md-primary-fg-color);
+}
+
+/* Icon Enhancements */
+.md-content h3:before {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .md-content h1:first-child {
+        font-size: 2rem;
+    }
+}

@@ -1,28 +1,129 @@
-site_name         : Dinis Cruz - Documents and Research
-site_description  : Site for Dinis Cruz - Documents and Research
-site_url          : https://docs.diniscruz.ai/
+site_name: Dinis Cruz - Research Hub
+site_description: Exploring the future of AI, cybersecurity, and knowledge sharing
+site_url: https://docs.diniscruz.ai/
 use_directory_urls: false
 
-
+# Theme Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.instant      # Instant loading
+    - navigation.tracking     # Anchor tracking
+    - navigation.tabs         # Top-level tabs
+    - navigation.tabs.sticky  # Sticky tabs
+    - navigation.sections     # Collapsible sections
+    - navigation.expand       # Expand all sections
+    - navigation.top         # Back to top button
+    - navigation.indexes      # Section index pages
+    - search.suggest         # Search suggestions
+    - search.highlight       # Search highlighting
+    - search.share          # Share search
+    - content.tabs.link     # Link tabs
+    - content.code.annotate  # Code annotations
+    - announce.dismiss       # Dismissible announcements
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+  
+# Plugins
 plugins:
-  - search
-  - awesome-pages
-  - macros
+  - search:
+      lang: en
+      separator: '[\s\-\.]+'
+  - awesome-pages:
+      collapse_single_pages: false
+      strict: false
+  - macros:
+      module_name: main
   - custom-footer
+#  - tags:                    # NEW: Tag support
+#      tags_file: tags.md
+  - rss:                     # NEW: RSS feed
+      match_path: docs/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+#        - tags
 
-extra_css:
-  - styles/custom.css
-
+# Extensions
 markdown_extensions:
   - attr_list
   - admonition
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:    # NEW: Better code blocks
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:         # NEW: Content tabs
+      alternate_style: true
+  - pymdownx.details         # NEW: Collapsible details
+  - pymdownx.highlight:      # NEW: Better syntax highlighting
+      anchor_linenums: true
+  - pymdownx.inlinehilite    # NEW: Inline code highlighting
+  - pymdownx.snippets        # NEW: Include external files
+  - pymdownx.keys           # NEW: Keyboard keys
+  - pymdownx.smartsymbols   # NEW: Smart symbols
+  - pymdownx.tasklist:      # NEW: Task lists
+      custom_checkbox: true
+  - pymdownx.tilde          # NEW: Strikethrough
+  - def_list                # NEW: Definition lists
+  - footnotes               # NEW: Footnotes
+  - meta                    # NEW: Meta tags
+  - md_in_html              # NEW: Markdown in HTML
 
+# Extra Configuration
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/diniscruz
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/diniscruz
+      name: GitHub
+  generator: false  # Remove "Made with Material for MkDocs"
 
-theme:
-  name: material
-  custom_dir: overrides
+# Extra CSS
+extra_css:
+  - styles/custom.css
+  - styles/homepage.css      # NEW: Homepage-specific styles
+  - styles/hide-dates.css    # NEW: Hide date navigation
+
+# Navigation (if not using .pages files)
+nav:
+  - Home: index.md
+  - Research Hub:
+    - Overview: research/index.md
+    - Cyber-Security: research/cyber-security.md
+    - AI & Development: research/development-and-genai.md
+    - Knowledge Graphs: research/graphs.md
+    - The Future of News: research/the-future-of-news.md
+    - Europe & Learning: research/europe-and-learning.md
+  - Projects: research/projects.md
+  - Resources:
+    - Presentations: resources/presentations.md
+  - About: about.md

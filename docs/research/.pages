@@ -1,0 +1,9 @@
+title: Research Hub
+nav:
+  - index.md
+  - cyber-security.md: Cyber-Security & Threat Modeling
+  - development-and-genai.md: AI & Development
+  - graphs.md: Knowledge Graphs
+  - the-future-of-news.md: The Future of News
+  - europe-and-learning.md: Europe & Learning
+  - projects.md: Projects & Innovation Lab

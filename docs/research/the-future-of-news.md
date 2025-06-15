@@ -1,4 +1,4 @@
-# Future of news
+# The Future of news
 
 {{back_button('/index')}}
 
