@@ -4,11 +4,12 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/15
 pdf_file: the-hidden-cost-of-ephemeral-testing-and-the-case-for-automation.pdf
 back_link: /research/development-and-genai
+linkedin: diniscruz_the-hidden-cost-of-ephemeral-testing-activity-7340018101876391937-Dot2
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Executive Summary
 

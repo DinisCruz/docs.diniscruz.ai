@@ -18,7 +18,8 @@ This guide explains the steps required to publish a new article and associated P
 4. Move files to proper locations
 5. Add front matter to markdown files
 6. Update research index pages
-7. Verify date accuracy and fix if needed
+7. Update homepage Latest Research section
+8. Verify date accuracy and fix if needed
 
 ---
 
@@ -145,7 +146,23 @@ _by {{ authors | join(" and ") }}, {{ date }}_
 ### 5. Update the research index
 Claude Code will add the new article to the appropriate research page (e.g., `docs/research/cyber-security.md`) maintaining date order (newest first).
 
-### 6. Date handling
+### 6. Update homepage Latest Research section
+Claude Code will update the homepage (`docs/index.md`) to include the new article in the "Latest Research" section:
+- Replace the oldest entry (4th item) with the new article
+- Maintain the 4 most recent articles
+- Include a brief one-line description of the article
+
+Example update:
+```markdown
+### 🔥 Latest Research (June 2025)
+
+- **[New Article Title](./2025/06/15/new-article-url.md)** - Brief description of the article
+- **[Previous Article 1](./2025/06/14/...)** - Description
+- **[Previous Article 2](./2025/06/13/...)** - Description  
+- **[Previous Article 3](./2025/06/12/...)** - Description
+```
+
+### 7. Date handling
 Claude Code will use the current date when processing documents. If the date is incorrect:
 - Claude Code will create the correct date folders
 - Move all files to the new location

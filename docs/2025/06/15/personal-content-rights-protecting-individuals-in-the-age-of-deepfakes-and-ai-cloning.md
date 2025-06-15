@@ -4,11 +4,12 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/15
 pdf_file: personal-content-rights-protecting-individuals-in-the-age-of-deepfakes-and-ai-cloning.pdf
 back_link: /research/cyber-security
+linkedin: diniscruz_personal-content-rights-protecting-individuals-activity-7340013978602881024-NBQM
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
 
-{{ download_pdf(date, pdf_file) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 ## Executive Summary
 
