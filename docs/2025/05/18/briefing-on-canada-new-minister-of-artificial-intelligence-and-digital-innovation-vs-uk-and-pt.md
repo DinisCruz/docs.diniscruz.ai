@@ -13,7 +13,7 @@ _by {{ authors | join(" and ") }}, {{ date }}_
 
 {{ view_pdf(date, pdf_file) }}
 
-# Introduction
+Introduction
 
 Canada has recently established a new cabinet position: **Minister of Artificial Intelligence and Digital Innovation**. This unprecedented role signals a heightened focus on AI governance and digital transformation at the highest level of the Canadian government. Below, we outline the official responsibilities, placement, priorities, and initiatives of this new ministry, and then compare it to similar or equivalent roles in the **United Kingdom** and **Portugal**, highlighting key similarities and differences in title, scope, institutional positioning, responsibilities, and recent initiatives.
 
