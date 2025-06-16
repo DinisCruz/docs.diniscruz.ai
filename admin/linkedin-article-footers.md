@@ -19,5 +19,12 @@ Available [here](https://www.linkedin.com/posts/diniscruz_examples-from-my-day-t
 📍 ChatGPT Pro Deep Research (Part 4): https://lnkd.in/eWpVM9Rj
 ```
 
+```
+〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️
+⤵️ Listed in my collection of: 
+📍 Examples from day-to-day GenAI powered development workflows (Part 2)
+👉 https://lnkd.in/e7E5eihQ
+```
+
 
 (todo: add the other footers....)
