@@ -3,6 +3,8 @@
 {{back_button('/index')}}
 
 ## Graph Creation and Management
+- [Empowering the Graph Thinkers in the Age of Generative AI](../2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)
+- [Bridging Niklas Luhmann's Ideas with Semantic Knowledge Graphs and G³](../2025/06/18/bridging-niklas-luhmanns-ideas-with-semantic-knowledge-graphs-and-g3.md)
 - [User-Driven Semantic Persona Graphs Powered by GenAI](../2025/06/14/user-driven-semantic-persona-graphs-powered-by-genai.md)
 
 ## Ontologies and Taxonomies

@@ -6,10 +6,10 @@ Welcome to my research hub where I explore practical applications of generative 
 
 ### 🔥 Latest Research (June 2025)
 
+- **[No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](./2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)** - Why AI-assisted development needs a better name and how NCD transforms software creation
 - **[Workshop Plan: User-Driven Semantic Persona Graphs Powered by GenAI](./2025/06/16/workshop-plan-user-driven-semantic-persona-graphs-powered-by-genai.md)** - Hands-on guide to building AI-driven compliance tools with multi-phase GPT pipelines
 - **[Personal Content Rights: Protecting Individuals in the Age of Deepfakes](./2025/06/15/personal-content-rights-protecting-individuals-in-the-age-of-deepfakes-and-ai-cloning.md)** - A framework for protecting digital identity in the AI era
 - **[The Hidden Cost of Ephemeral Testing](./2025/06/15/the-hidden-cost-of-ephemeral-testing-and-the-case-for-automation.md)** - Why automated testing is essential for sustainable development velocity
-- **[User-Driven Semantic Persona Graphs](./2025/06/14/user-driven-semantic-persona-graphs-powered-by-genai.md)** - Building dynamic knowledge graphs through interactive AI conversations
 
 [View All Recent Updates →](./research/index.md#latest-research)
 
