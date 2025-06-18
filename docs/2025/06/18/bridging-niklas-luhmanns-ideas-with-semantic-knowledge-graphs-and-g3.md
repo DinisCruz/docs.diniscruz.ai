@@ -1,6 +1,6 @@
 ---
 title: "Bridging Niklas Luhmann's Ideas with Semantic Knowledge Graphs and G³"
-authors: ["Dinis Cruz"]
+authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/18
 pdf_file: bridging-niklas-luhmanns-ideas-with-semantic-knowledge-graphs-and-g3.pdf
 back_link: /research/graphs

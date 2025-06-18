@@ -1,6 +1,6 @@
 ---
 title: "Comparing the EU FED Cloud vs. an Open-Source Federated Cloud Proposal"
-authors: ["Dinis Cruz"]
+authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/18
 pdf_file: comparing-the-eu-fed-cloud-vs-an-open-source-federated-cloud-proposal.pdf
 back_link: /research/development-and-genai

@@ -1,9 +1,10 @@
 ---
 title: "No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'"
-authors: ["Dinis Cruz"]
+authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/18
 pdf_file: no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.pdf
 back_link: /research/development-and-genai
+linkedin: diniscruz_no-code-development-ncd-a-paradigm-shift-activity-7341124154353496064-OtAz
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_

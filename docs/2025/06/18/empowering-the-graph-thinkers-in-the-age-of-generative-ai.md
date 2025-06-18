@@ -1,6 +1,6 @@
 ---
 title: "Empowering the Graph Thinkers in the Age of Generative AI"
-authors: ["Dinis Cruz"]
+authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/18
 pdf_file: empowering-the-graph-thinkers-in-the-age-of-generative-ai.pdf
 back_link: /research/graphs

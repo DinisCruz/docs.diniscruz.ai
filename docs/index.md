@@ -7,9 +7,9 @@ Welcome to my research hub where I explore practical applications of generative 
 ### 🔥 Latest Research (June 2025)
 
 - **[No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](./2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)** - Why AI-assisted development needs a better name and how NCD transforms software creation
-- **[Workshop Plan: User-Driven Semantic Persona Graphs Powered by GenAI](./2025/06/16/workshop-plan-user-driven-semantic-persona-graphs-powered-by-genai.md)** - Hands-on guide to building AI-driven compliance tools with multi-phase GPT pipelines
-- **[Personal Content Rights: Protecting Individuals in the Age of Deepfakes](./2025/06/15/personal-content-rights-protecting-individuals-in-the-age-of-deepfakes-and-ai-cloning.md)** - A framework for protecting digital identity in the AI era
-- **[The Hidden Cost of Ephemeral Testing](./2025/06/15/the-hidden-cost-of-ephemeral-testing-and-the-case-for-automation.md)** - Why automated testing is essential for sustainable development velocity
+- **[Empowering the Graph Thinkers in the Age of Generative AI](./2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)** - How GenAI democratizes graph-based innovation for visual thinkers
+- **[Comparing the EU FED Cloud vs. an Open-Source Federated Cloud Proposal](./2025/06/18/comparing-the-eu-fed-cloud-vs-an-open-source-federated-cloud-proposal.md)** - Analysis of two approaches to European cloud sovereignty
+- **[Bridging Niklas Luhmann's Ideas with Semantic Knowledge Graphs and G³](./2025/06/18/bridging-niklas-luhmanns-ideas-with-semantic-knowledge-graphs-and-g3.md)** - Connecting analog knowledge systems to modern graph architectures
 
 [View All Recent Updates →](./research/index.md#latest-research)
 

@@ -1,6 +1,6 @@
 ---
 title: "Workshop Plan: User-Driven Semantic Persona Graphs Powered by GenAI"
-authors: ["Dinis Cruz"]
+authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/16
 pdf_file: workshop-plan-user-driven-semantic-persona-graphs-powered-by-genai.pdf
 back_link: /research/development-and-genai
