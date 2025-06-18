@@ -3,6 +3,10 @@ title: "Project InsightFlow: GenAI-Powered Transformation of Regulatory and News
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/03
 pdf_file: project-insightflow__genai-powered-transformation-of-regulatory-and-news-feeds.pdf
+description: |
+  Describes a semantic knowledge graph pipeline that ingests regulations and
+  news, using generative AI to deliver personalized client newsletters.
+tags: [regulations, news, semantic-knowledge-graph, genai, personalization]
 linkedin: diniscruz_insightflow-genai-transformation-of-regulatory-activity-7324404009560137728-LC0r
 back_link: /research/projects
 ---
