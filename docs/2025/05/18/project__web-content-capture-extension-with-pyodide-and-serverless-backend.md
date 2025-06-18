@@ -3,6 +3,11 @@ title: "Project: Web Content Capture Extension with Pyodide and Serverless Backe
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/18
 pdf_file: project__web-content-capture-extension-with-pyodide-and-serverless-backend.pdf
+description: |
+  Prototype browser extension leveraging Pyodide and a serverless backend to
+  capture webpage content, including a debrief on why the initial approach
+  failed.
+tags: [web-extension, pyodide, serverless, content-capture, prototype]
 linkedin: diniscruz_project-brief-web-content-capture-extension-activity-7330166771137613824-NI5Y
 back_link: /research/projects
 youtube_id: OQiCjD0BN3s

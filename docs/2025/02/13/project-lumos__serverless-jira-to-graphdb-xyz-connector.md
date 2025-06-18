@@ -3,6 +3,10 @@ title: "Project Lumos: Serverless JIRA-to-GraphDB XYZ Connector"
 authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude 3.5 Sonnet"]
 date: 2025/02/13
 pdf_file: project-lumos__serverless-jira-to-graphdb-xyz-connector.pdf
+description: |
+  Working Backwards plan for an open-source connector that streams JIRA data
+  into GraphDB XYZ using a fully serverless architecture.
+tags: [JIRA, GraphDB, serverless, data-streaming, open-source]
 linkedin: diniscruz_project-lumos-activity-7295968679869972480-NYGC
 back_link: /research/projects
 ---

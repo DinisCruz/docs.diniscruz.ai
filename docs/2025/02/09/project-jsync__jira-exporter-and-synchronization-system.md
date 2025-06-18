@@ -3,6 +3,10 @@ title: "Project JSync: JIRA Exporter and Synchronization System"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/02/09
 pdf_file: project-jsync__jira-exporter-and-synchronization-system.pdf
+description: |
+  Serverless pipeline that captures JIRA issue changes in real time and stores
+  them in S3 and GitHub, exposing a FastAPI interface for querying the data.
+tags: [serverless, JIRA, data-synchronization, AWS, devops]
 linkedin: diniscruz_project-plan-jira-export-to-s3-and-git-activity-7294766710589456385-9XBZ
 back_link: /research/projects
 ---

@@ -3,6 +3,11 @@ title: "Project Cybersage: AI-Powered Risk Contextualization & Security Reportin
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/04/10
 pdf_file: project-cybersage__ai-powered-risk-contextualization_security-reporting.pdf
+description: |
+  Proposal for an AI platform that contextualizes vulnerability data and
+  generates clear, risk-based security reports for technical and executive
+  audiences.
+tags: [risk-contextualization, vulnerability-reporting, AI, security, automation]
 linkedin: diniscruz_ai-powered-risk-contextualization-security-activity-7295442983603064834-PVFZ
 back_link: /research/projects
 ---

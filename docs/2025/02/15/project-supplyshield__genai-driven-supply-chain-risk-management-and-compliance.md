@@ -3,6 +3,10 @@ title: "Project SupplyShield: GenAI-Driven Supply Chain Risk Management and Comp
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/02/15
 pdf_file: project-supplyshield__genai-driven-supply-chain-risk-management-and-compliance.pdf
+description: |
+  Introduces an AI-powered third-party risk platform that uses generative
+  models and knowledge graphs to deliver continuous supply chain compliance.
+tags: [genai, supply-chain, risk-management, compliance, knowledge-graph]
 linkedin: diniscruz_genai-driven-supply-chain-risk-management-activity-7296674764733992961-4otf
 back_link: /research/projects
 ---

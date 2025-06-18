@@ -3,6 +3,10 @@ title: "Project GenBnB: Enhancing Airbnb Host Workflows with GenAI"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/04
 pdf_file: project-genbnb__enhancing-airbnb-host-workflows-with-gen-ai.pdf
+description: |
+  Explores using generative AI to automate property listings and customer
+  interactions so Airbnb hosts can focus on high-value tasks.
+tags: [airbnb, generative-ai, automation, property-management, customer-interaction]
 back_link: /research/projects
 ---
 _by {{ authors | join(" and ") }}, {{ date }}_

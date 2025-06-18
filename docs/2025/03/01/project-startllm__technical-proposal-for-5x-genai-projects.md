@@ -3,6 +3,10 @@ title: "Project StartLLM: Technical Proposal for 5x GenAI Projects"
 authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude 3.7"]
 date: 2025/03/01
 pdf_file: project-startllm__technical-proposal-for-5x-genai-projects.pdf
+description: |
+  Strategic proposal outlining five focused generative AI projects designed to
+  deliver quick wins and accelerate organizational adoption.
+tags: [genai, strategy, adoption, quick-wins, proposals]
 linkedin: diniscruz_project-startllm-activity-7301579711359442944-jtkn
 back_link: /research/projects
 ---
