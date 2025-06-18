@@ -38,8 +38,9 @@
 }
 
 /* Philosophy Section */
+/* Remove custom color for bold text to avoid link-like blue styling */
 .md-content h2 + p + ul li strong {
-    color: var(--md-primary-fg-color);
+    color: inherit;
 }
 
 /* Icon Enhancements */
