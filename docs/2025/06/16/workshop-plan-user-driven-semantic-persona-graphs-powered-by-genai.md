@@ -4,6 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/16
 pdf_file: workshop-plan-user-driven-semantic-persona-graphs-powered-by-genai.pdf
 back_link: /research/development-and-genai
+linkedin: diniscruz_user-driven-semantic-persona-graphs-powered-activity-7339663903787761665-sVzz
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
