@@ -4,6 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/18
 pdf_file: empowering-the-graph-thinkers-in-the-age-of-generative-ai.pdf
 back_link: /research/graphs
+linkedin: diniscruz_empowering-the-graph-thinkers-in-the-age-activity-7341128446976139265-iHH8
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_

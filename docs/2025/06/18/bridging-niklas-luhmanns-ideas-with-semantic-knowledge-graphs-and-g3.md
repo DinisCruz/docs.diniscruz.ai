@@ -4,6 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/18
 pdf_file: bridging-niklas-luhmanns-ideas-with-semantic-knowledge-graphs-and-g3.pdf
 back_link: /research/graphs
+linkedin: diniscruz_bridging-niklas-luhmanns-ideas-with-semantic-activity-7341126921713319938-HIbR
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
