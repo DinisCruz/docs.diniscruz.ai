@@ -10,6 +10,7 @@
 
 ## GenAI
 
+ - [Empowering Workshops with Custom GPTs for GenAI Training](../2025/06/19/empowering-workshops-with-custom-gpts-for-genai-training.md)
  - [Comparing the EU FED Cloud vs. an Open-Source Federated Cloud Proposal](../2025/06/18/comparing-the-eu-fed-cloud-vs-an-open-source-federated-cloud-proposal.md)
  - [Workshop Plan: User-Driven Semantic Persona Graphs Powered by GenAI](../2025/06/16/workshop-plan-user-driven-semantic-persona-graphs-powered-by-genai.md)
  - [Explorers, Villagers, and Town Planners: Understanding the Generative AI Divide](../2025/06/10/explorers-villagers-and-town-planners-understanding-the-generative-ai-divide.md)

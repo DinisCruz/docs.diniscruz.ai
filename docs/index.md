@@ -6,10 +6,10 @@ Welcome to my research hub where I explore practical applications of generative 
 
 ### 🔥 Latest Research (June 2025)
 
+- **[Empowering Workshops with Custom GPTs for GenAI Training](./2025/06/19/empowering-workshops-with-custom-gpts-for-genai-training.md)** - How to use OpenAI's custom GPTs for hands-on AI learning in workshop settings
 - **[No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](./2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)** - Why AI-assisted development needs a better name and how NCD transforms software creation
 - **[Empowering the Graph Thinkers in the Age of Generative AI](./2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)** - How GenAI democratizes graph-based innovation for visual thinkers
 - **[Comparing the EU FED Cloud vs. an Open-Source Federated Cloud Proposal](./2025/06/18/comparing-the-eu-fed-cloud-vs-an-open-source-federated-cloud-proposal.md)** - Analysis of two approaches to European cloud sovereignty
-- **[Bridging Niklas Luhmann's Ideas with Semantic Knowledge Graphs and G³](./2025/06/18/bridging-niklas-luhmanns-ideas-with-semantic-knowledge-graphs-and-g3.md)** - Connecting analog knowledge systems to modern graph architectures
 
 [View All Recent Updates →](./research/index.md#latest-research)
 

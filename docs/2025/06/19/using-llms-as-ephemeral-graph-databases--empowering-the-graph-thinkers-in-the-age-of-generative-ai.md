@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/19
 pdf_file: using-llms-as-ephemeral-graph-databases--empowering-the-graph-thinkers-in-the-age-of-generative-ai.pdf
 back_link: /research/graphs
-#linkedin: 
+linkedin: diniscruz_using-llms-as-ephemeral-graph-databases-activity-7341424915931131904-xo_W 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
