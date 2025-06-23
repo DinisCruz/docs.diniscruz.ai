@@ -6,10 +6,10 @@ Welcome to my research hub where I explore practical applications of generative 
 
 ### 🔥 Latest Research (June 2025)
 
+- **[FIST Meets the Semantic Knowledge Graph](./2025/06/22/fist-meets-the-semantic-knowledge-graph.md)** - Aligning Fast, Inexpensive, Simple, Tiny principles with modern knowledge graph engineering
+- **[High Street GenAI Learning Hub](./2025/06/22/high-street-genai-learning-hub.md)** - Creating community spaces for AI education that revive the "third place" concept
 - **[Empowering Workshops with Custom GPTs for GenAI Training](./2025/06/19/empowering-workshops-with-custom-gpts-for-genai-training.md)** - How to use OpenAI's custom GPTs for hands-on AI learning in workshop settings
 - **[No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](./2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)** - Why AI-assisted development needs a better name and how NCD transforms software creation
-- **[Empowering the Graph Thinkers in the Age of Generative AI](./2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)** - How GenAI democratizes graph-based innovation for visual thinkers
-- **[Comparing the EU FED Cloud vs. an Open-Source Federated Cloud Proposal](./2025/06/18/comparing-the-eu-fed-cloud-vs-an-open-source-federated-cloud-proposal.md)** - Analysis of two approaches to European cloud sovereignty
 
 [View All Recent Updates →](./research/index.md#latest-research)
 
@@ -17,13 +17,13 @@ Welcome to my research hub where I explore practical applications of generative 
 
 
 - **🔒 [Cyber-Security & Threat Modeling](./research/cyber-security.md)**  
-17 articles on semantic threat modeling, supply chain security, and next-gen AppSec approaches
+19 articles on semantic threat modeling, supply chain security, and next-gen AppSec approaches
 
 - **🤖 [AI & Development](./research/development-and-genai.md)**  
 5 articles exploring GenAI applications, testing automation, and development best practices
 
 - **🕸️ [Knowledge Graphs](./research/graphs.md)**  
-11 articles on semantic graphs, ontologies, and their applications in security and AI
+12 articles on semantic graphs, ontologies, and their applications in security and AI
 
 - **📰 [The Future of News](./research/the-future-of-news.md)**  
 6 articles on media trust, digital provenance, and new monetization models
@@ -32,7 +32,7 @@ Welcome to my research hub where I explore practical applications of generative 
 8 articles on European AI strategy, sovereign cloud, and AI in education
 
 - **🚀 [Projects & Innovation](./research/projects.md)**  
-36 articles featuring GenAI projects, technical briefs, and business ventures
+38 articles featuring GenAI projects, technical briefs, and business ventures
 
 
 ### 🎯 Quick Navigation by Role
@@ -70,7 +70,7 @@ I'm the founder of [The Cyber Boardroom](https://www.thecyberboardroom.com/), Ch
 
 ### 📈 Research Impact
 
-- **75+** Published Articles (2024-2025)
+- **77+** Published Articles (2024-2025)
 - **6** Major Research Areas
 - **36** Active Projects & MVPs
 - **10+** Open Source Tools

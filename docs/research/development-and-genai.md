@@ -2,7 +2,7 @@
 
 {{back_button('/index')}}
 
-## Development 
+## Development
 
  - [No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](../2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)
  - [The Hidden Cost of Ephemeral Testing and the Case for Automation](../2025/06/15/the-hidden-cost-of-ephemeral-testing-and-the-case-for-automation.md)
