@@ -4,7 +4,7 @@ authors: ["Dinis Cruz"]
 date: 2025/06/22
 pdf_file: project-plan-high-street-genai-learning-hub.pdf
 back_link: /research/cyber-security
-#linkedin:
+linkedin: diniscruz_project-plan-high-street-genai-learning-hub-activity-7342949949099110400-ysLK
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
