@@ -3,7 +3,7 @@
 {{back_button('/index')}}
 
 ## Graph Creation and Management
-- [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph.md)
+- [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)
 - [Empowering the Graph Thinkers in the Age of Generative AI](../2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)
 - [Using LLMs as Ephemeral Graph Databases: Empowering the Graph Thinkers in the Age of Generative AI](../2025/06/19/using-llms-as-ephemeral-graph-databases--empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)
 - [Bridging Niklas Luhmann's Ideas with Semantic Knowledge Graphs and G³](../2025/06/18/bridging-niklas-luhmanns-ideas-with-semantic-knowledge-graphs-and-g3.md)

@@ -6,7 +6,7 @@ Welcome to my research hub where I explore practical applications of generative 
 
 ### 🔥 Latest Research (June 2025)
 
-- **[FIST Meets the Semantic Knowledge Graph](./2025/06/22/fist-meets-the-semantic-knowledge-graph.md)** - Aligning Fast, Inexpensive, Simple, Tiny principles with modern knowledge graph engineering
+- **[FIST Meets the Semantic Knowledge Graph](./2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)** - Aligning Fast, Inexpensive, Simple, Tiny principles with modern knowledge graph engineering
 - **[High Street GenAI Learning Hub](./2025/06/22/high-street-genai-learning-hub.md)** - Creating community spaces for AI education that revive the "third place" concept
 - **[Empowering Workshops with Custom GPTs for GenAI Training](./2025/06/19/empowering-workshops-with-custom-gpts-for-genai-training.md)** - How to use OpenAI's custom GPTs for hands-on AI learning in workshop settings
 - **[No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](./2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)** - Why AI-assisted development needs a better name and how NCD transforms software creation

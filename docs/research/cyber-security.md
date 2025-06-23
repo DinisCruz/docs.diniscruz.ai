@@ -14,7 +14,7 @@
 
 
 ### Misc topics
- - [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph.md)
+ - [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)
  - [Project Plan: High Street GenAI Learning Hub](../2025/06/22/high-street-genai-learning-hub.md)
  - [Personal Content Rights: Protecting Individuals in the Age of Deepfakes and AI Cloning](../2025/06/15/personal-content-rights-protecting-individuals-in-the-age-of-deepfakes-and-ai-cloning.md)
  - [Security Implications of the Model Context Protocol (MCP) and the Need for Robust Infrastructure](../2025/06/10/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md)
