@@ -6,10 +6,10 @@ Welcome to my research hub where I explore practical applications of generative 
 
 ### 🔥 Latest Research (June 2025)
 
+- **[Ephemeral Neo4j Instances for On-Demand Graph Analytics](./2025/06/22/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)** - MVP white paper proposing serverless-style graph database deployment for cost-effective analytics
 - **[FIST Meets the Semantic Knowledge Graph](./2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)** - Aligning Fast, Inexpensive, Simple, Tiny principles with modern knowledge graph engineering
 - **[High Street GenAI Learning Hub](./2025/06/22/project-plan-high-street-genai-learning-hub.md)** - Creating community spaces for AI education that revive the "third place" concept
 - **[Empowering Workshops with Custom GPTs for GenAI Training](./2025/06/19/empowering-workshops-with-custom-gpts-for-genai-training.md)** - How to use OpenAI's custom GPTs for hands-on AI learning in workshop settings
-- **[No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](./2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)** - Why AI-assisted development needs a better name and how NCD transforms software creation
 
 [View All Recent Updates →](./research/index.md#latest-research)
 
@@ -23,7 +23,7 @@ Welcome to my research hub where I explore practical applications of generative 
 5 articles exploring GenAI applications, testing automation, and development best practices
 
 - **🕸️ [Knowledge Graphs](./research/graphs.md)**  
-12 articles on semantic graphs, ontologies, and their applications in security and AI
+13 articles on semantic graphs, ontologies, and their applications in security and AI
 
 - **📰 [The Future of News](./research/the-future-of-news.md)**  
 6 articles on media trust, digital provenance, and new monetization models
@@ -32,7 +32,7 @@ Welcome to my research hub where I explore practical applications of generative 
 8 articles on European AI strategy, sovereign cloud, and AI in education
 
 - **🚀 [Projects & Innovation](./research/projects.md)**  
-38 articles featuring GenAI projects, technical briefs, and business ventures
+39 articles featuring GenAI projects, technical briefs, and business ventures
 
 
 ### 🎯 Quick Navigation by Role
@@ -70,7 +70,7 @@ I'm the founder of [The Cyber Boardroom](https://www.thecyberboardroom.com/), Ch
 
 ### 📈 Research Impact
 
-- **77+** Published Articles (2024-2025)
+- **78+** Published Articles (2024-2025)
 - **6** Major Research Areas
 - **36** Active Projects & MVPs
 - **10+** Open Source Tools
