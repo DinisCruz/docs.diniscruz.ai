@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/25
 pdf_file: ephemeral-neo4j-instances-for-on-demand-graph-analytics.pdf
 back_link: /research/graphs
-#linkedin:
+linkedin: diniscruz_ephemeral-neo4j-instances-for-on-demand-graph-activity-7343599306169352193-Tzfo
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
