@@ -20,7 +20,7 @@
 - [Project JSync: JIRA Exporter and Synchronization System](../2025/02/09/project-jsync__jira-exporter-and-synchronization-system.md)
 
 ## Collaboration proposals
- - [Ephemeral Neo4j Instances for On-Demand Graph Analytics (MVP White Paper)](../2025/06/25/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)
+ - [Ephemeral Neo4j Instances for On-Demand Graph Analytics](../2025/06/25/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)
  - [Proposal for Neo4j Collaboration with Dinis Cruz](../2025/06/03/proposal-for-neo4j-collaboration-with-dinis-cruz.md)
  - [Jira as a Graph Database – Proposal for Atlassian Executives](../2025/06/03/jira-as-a-graph-database%E2%80%93proposal-for-atlassian-executives.md) 
  - [Proposal: Strategic AWS Partnership with Dinis Cruz’s GenAI and Graph Innovations](../2025/06/03/proposal-strategic-aws-partnership-with-dinis-cruz-genai-and-graph-innovations.md)
