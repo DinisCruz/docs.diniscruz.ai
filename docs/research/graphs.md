@@ -3,7 +3,7 @@
 {{back_button('/index')}}
 
 ## Graph Creation and Management
-- [Ephemeral Neo4j Instances for On-Demand Graph Analytics (MVP White Paper)](../2025/06/22/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)
+- [Ephemeral Neo4j Instances for On-Demand Graph Analytics (MVP White Paper)](../2025/06/25/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)
 - [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)
 - [Empowering the Graph Thinkers in the Age of Generative AI](../2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)
 - [Using LLMs as Ephemeral Graph Databases: Empowering the Graph Thinkers in the Age of Generative AI](../2025/06/19/using-llms-as-ephemeral-graph-databases--empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)

@@ -2,7 +2,7 @@
 title: "Ephemeral Neo4j Instances for On-Demand Graph Analytics (MVP White Paper)"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/25
-pdf_file: ephemeral-neo4j-instances-for-on-demand-graph-analytics-mvp-white-paper.pdf
+pdf_file: ephemeral-neo4j-instances-for-on-demand-graph-analytics.pdf
 back_link: /research/graphs
 #linkedin:
 ---
