@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/06/25
 pdf_file: data-tests-for-neo4j-bringing-automated-testing-to-graph-databases.pdf
 back_link: /research/graphs
-# linkedin: 
+linkedin: diniscruz_data-tests-for-neo4j-bringing-automated-activity-7344003512218902530-zuvs 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_
