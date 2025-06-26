@@ -3,6 +3,8 @@
 {{back_button('/index')}}
 
 ## Graph Creation and Management
+- [Data Tests for Neo4j: Bringing Automated Testing to Graph Databases](../2025/06/25/data-tests-for-neo4j-bringing-automated-testing-to-graph-databases.md)
+- [Using Ephemeral Neo4j Instances for a Cybersecurity Risk Graph Scenario](../2025/06/25/using-ephemeral-neo4j-instances-for-a-cybersecurity-risk-graph-scenario.md)
 - [Ephemeral Neo4j Instances for On-Demand Graph Analytics](../2025/06/25/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)
 - [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)
 - [Empowering the Graph Thinkers in the Age of Generative AI](../2025/06/18/empowering-the-graph-thinkers-in-the-age-of-generative-ai.md)
