@@ -14,6 +14,8 @@
 
 
 ### Misc topics
+ - [Ephemeral GenAI SIEM: A Serverless, Graph-Driven Approach to Security Event Management](../2025/07/02/ephemeral-genai-siem-a-serverless-graph-driven-approach-to-security-event-management.md)
+ - [Using Memory_FS to Build a File-Based Representation of the GDPR Standard](../2025/07/02/using-memory_fs-to-build-a-file-based-representation-of-the-gdpr-standard.md)
  - [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)
  - [Project Plan: High Street GenAI Learning Hub](../2025/06/22/project-plan-high-street-genai-learning-hub.md)
  - [Personal Content Rights: Protecting Individuals in the Age of Deepfakes and AI Cloning](../2025/06/15/personal-content-rights-protecting-individuals-in-the-age-of-deepfakes-and-ai-cloning.md)
