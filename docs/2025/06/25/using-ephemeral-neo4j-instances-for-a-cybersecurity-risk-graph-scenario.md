@@ -136,16 +136,16 @@ In risk management, a single technical risk can cascade into multiple **impacts*
 
 * **Sensitive Data Exposed** – if accounts are compromised, sensitive user/customer data could be accessed by an attacker.
 * **Breaks GDPR Compliance** – exposure of personal data likely violates regulations (like GDPR).
-* **Financial Impact (\~ \$500K)** – the data breach and compliance fines could result in an estimated financial loss of, say, \$500K.
+* **Financial Impact (~ $500K)** – the data breach and compliance fines could result in an estimated financial loss of, say, $500K.
 * **Company Performance Risk** – ultimately, such a breach can affect the company’s performance (e.g., reputational damage, stock impact). We use this as a high-level business risk node.
 
 We will create nodes for each of these and then link them to depict the chain of consequences:
 
-* *Account Compromise* **LEADS\_TO** *Sensitive Data Exposed*
+* *Account Compromise* **LEADS_TO** *Sensitive Data Exposed*
 * *Sensitive Data Exposed* **CAUSES** *Breaks GDPR Compliance*
-* *Sensitive Data Exposed* **RESULTS\_IN** *Financial Impact (\~ \$500K)*
-* *Breaks GDPR Compliance* **RESULTS\_IN** *Financial Impact (\~ \$500K)* (regulatory fines contribute to the financial loss)
-* *Financial Impact (\~ \$500K)* **CONTRIBUTES\_TO** *Company Performance Risk*
+* *Sensitive Data Exposed* **RESULTS_IN** *Financial Impact (~ $500K)*
+* *Breaks GDPR Compliance* **RESULTS_IN** *Financial Impact (~ $500K)* (regulatory fines contribute to the financial loss)
+* *Financial Impact (~ $500K)* **CONTRIBUTES_TO** *Company Performance Risk*
 
 Let’s execute this in Cypher. We can do it in batches:
 
@@ -180,7 +180,7 @@ This query traverses all outgoing impact-related links from *Account Compromise*
 
 * "Sensitive Data Exposed"
 * "Breaks GDPR Compliance"
-* "Financial Impact (\~ \$500K)"
+* "Financial Impact (~ $500K)"
 * "Company Performance Risk"
 
 This confirms our consequence chain. To visualize the hierarchy, you can also step through the chain in the Browser: start from *Account Compromise*, expand the `LEADS_TO` relationship to see *Sensitive Data Exposed*, then expand its outgoing relationships, and so on. You will see a branching structure: Account Compromise → Sensitive Data Exposed → (two branches: Breaks GDPR Compliance and Financial Impact) → and both compliance and financial nodes ultimately connect to Company Performance Risk.
@@ -199,7 +199,7 @@ Based on our scenario, three primary causes were identified:
 
 We model each cause as a node and link them into the graph:
 
-* *Credentials Leaked* **CONTRIBUTES\_TO** *Account Compromise*
+* *Credentials Leaked* **CONTRIBUTES_TO** *Account Compromise*
 * *No MFA Enabled* **ALLOWS** *Account Compromise*
 * *Threat Not Detected* **AGGRAVATES** *Account Compromise*
 
@@ -212,7 +212,7 @@ Next, for each cause we have an associated preventive control (a policy or measu
 We will create cause nodes and control nodes, then link each control to the cause it mitigates. Additionally, many organizations tie their controls to industry standards or compliance requirements. In our scenario, assume these controls are part of an **ISO 27001 Standard**:
 
 * We add a node for "ISO 27001 Standard".
-* We link the standard to each control (relationship like **INCLUDES\_CONTROL** or similar) to show these policies are required by the standard.
+* We link the standard to each control (relationship like **INCLUDES_CONTROL** or similar) to show these policies are required by the standard.
 
 Let’s execute these additions:
 
@@ -271,7 +271,7 @@ To verify, we can query a couple of things:
 
   Expected results (order may vary):
 
-  * Cause: "Credentials Leaked" – Relationship: CONTRIBUTES\_TO
+  * Cause: "Credentials Leaked" – Relationship: CONTRIBUTES_TO
   * Cause: "No MFA Enabled" – Relationship: ALLOWS
   * Cause: "Threat Not Detected" – Relationship: AGGRAVATES
 
@@ -329,8 +329,8 @@ Now, we connect these to our risk graph:
 
   * HR Manager **OWNS** HR System.
   * Marketing Manager **OWNS** Marketing System.
-  * HR Manager **REPORTS\_TO** CPO.
-  * Marketing Manager **REPORTS\_TO** CMO.
+  * HR Manager **REPORTS_TO** CPO.
+  * Marketing Manager **REPORTS_TO** CMO.
 
 Let’s add these to the graph:
 
@@ -396,8 +396,8 @@ To check our additions:
 
   Expect:
 
-  * HR System implements \["Password Policy","MFA Policy"]
-  * Marketing System implements \["Password Policy"]
+  * HR System implements ["Password Policy","MFA Policy"]
+  * Marketing System implements ["Password Policy"]
 
   (No MFA in Marketing’s list, indicating the gap.)
 
@@ -480,7 +480,7 @@ MATCH (mkt:Asset {name:"Marketing System"})-[:AT_RISK_OF]->(e:Event)-[:LEADS_TO|
 RETURN DISTINCT impact.name AS Potential_Impact;
 ```
 
-This will find all impact nodes reachable from *Marketing System* via the Account Compromise event. The results would include "Sensitive Data Exposed", "Breaks GDPR Compliance", "Financial Impact (\~ \$500K)", "Company Performance Risk". In other words, if Marketing System accounts are compromised, it could lead to exposure of sensitive customer data, violation of GDPR, a significant financial hit (\~\$500K), and ultimately a broader business impact on company performance. This matches the scenario we modeled.
+This will find all impact nodes reachable from *Marketing System* via the Account Compromise event. The results would include "Sensitive Data Exposed", "Breaks GDPR Compliance", "Financial Impact (~ $500K)", "Company Performance Risk". In other words, if Marketing System accounts are compromised, it could lead to exposure of sensitive customer data, violation of GDPR, a significant financial hit (~$500K), and ultimately a broader business impact on company performance. This matches the scenario we modeled.
 
 **3. Who should be notified about this incident?**
 We want to find the stakeholders responsible for the affected systems. We can traverse the ownership hierarchy from each affected asset:
@@ -514,7 +514,7 @@ OPTIONAL MATCH (mkt)-[:IMPLEMENTS]->(ctrl:Control {name:"MFA Policy"})
 RETURN mkt.name AS System, ctrl IS NULL AS MFA_Missing;
 ```
 
-This will return "Marketing System" with MFA\_Missing = true. So indeed, enabling MFA is an action item. We could also query if any cause nodes are currently not mitigated by controls (though in our graph all causes have a control linked, so that’s covered).
+This will return "Marketing System" with MFA_Missing = true. So indeed, enabling MFA is an action item. We could also query if any cause nodes are currently not mitigated by controls (though in our graph all causes have a control linked, so that’s covered).
 
 By querying and examining the graph, we’ve effectively performed an **analysis of the incident** using our knowledge graph. In the original LLM session, we asked the AI these questions and it reasoned along the graph; here we wrote explicit queries to derive the answers from the data model. The advantage now is that the results are traceable and we can adjust queries or data as needed.
 
