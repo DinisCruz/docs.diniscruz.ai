@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/02
 pdf_file: ephemeral-genai-siem-a-serverless-graph-driven-approach-to-security-event-management.pdf
 back_link: /research/cyber-security
-#linkedin: 
+linkedin: diniscruz_ephemeral-genai-siem-a-serverless-graph-driven-activity-7346534568595795971-LwuF 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  

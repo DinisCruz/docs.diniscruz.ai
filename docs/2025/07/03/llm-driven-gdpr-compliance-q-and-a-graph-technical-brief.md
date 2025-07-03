@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/03
 pdf_file: llm-driven-gdpr-compliance-q-and-a-graph-technical-brief.pdf
 back_link: /research/cyber-security
-#linkedin: 
+linkedin: diniscruz_llm-driven-gdpr-compliance-qa-graph-technical-activity-7346536929854734339-T9uh 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  

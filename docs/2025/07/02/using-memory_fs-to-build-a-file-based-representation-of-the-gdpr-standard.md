@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/02
 pdf_file: using-memory_fs-to-build-a-file-based-representation-of-the-gdpr-standard.pdf
 back_link: /research/cyber-security
-#linkedin: 
+linkedin: diniscruz_using-memoryfs-to-build-a-file-based-gdpr-activity-7346533950166622209-P9wK 
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
