@@ -36,3 +36,5 @@
 
 - [Research - AI-Powered Customer Service Solutions for Multi-Property Airbnb Hosts](../2025/05/04/research__ai-powered-customer-service-solutions-for-multi-property-airbnb-hosts.md)
 
+## LLMs briefs
+ - [LLM-Driven GDPR Compliance Q&A Graph – Technical Brief](../2025/07/03/llm-driven-gdpr-compliance-q-and-a-graph-technical-brief.md)

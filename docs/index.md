@@ -5,8 +5,9 @@
 Welcome to my research hub where I explore practical applications of generative AI, semantic knowledge graphs, and modern security practices. With 75+ published articles and ongoing projects, this site documents my journey building the future of cybersecurity and knowledge management.
 
 ### 🔥 Latest Research (June 2025)
-- **[Ephemeral GenAI SIEM: A Serverless, Graph-Driven Approach to Security Event Management](../2025/07/02/ephemeral-genai-siem-a-serverless-graph-driven-approach-to-security-event-management.md)**
-- **[Using Memory_FS to Build a File-Based Representation of the GDPR Standard](../2025/07/02/using-memory_fs-to-build-a-file-based-representation-of-the-gdpr-standard.md)**
+- **[LLM-Driven GDPR Compliance Q&A Graph – Technical Brief](./2025/07/03/llm-driven-gdpr-compliance-q-and-a-graph-technical-brief.md)**
+- **[Ephemeral GenAI SIEM: A Serverless, Graph-Driven Approach to Security Event Management](./2025/07/02/ephemeral-genai-siem-a-serverless-graph-driven-approach-to-security-event-management.md)**
+- **[Using Memory_FS to Build a File-Based Representation of the GDPR Standard](./2025/07/02/using-memory_fs-to-build-a-file-based-representation-of-the-gdpr-standard.md)**
 - **[Data Tests for Neo4j: Bringing Automated Testing to Graph Databases](./2025/06/25/data-tests-for-neo4j-bringing-automated-testing-to-graph-databases.md)**
 - **[Using Ephemeral Neo4j Instances for a Cybersecurity Risk Graph Scenario](./2025/06/25/using-ephemeral-neo4j-instances-for-a-cybersecurity-risk-graph-scenario.md)**
 - **[Ephemeral Neo4j Instances for On-Demand Graph Analytics](./2025/06/25/ephemeral-neo4j-instances-for-on-demand-graph-analytics.md)** - MVP white paper proposing serverless-style graph database deployment for cost-effective analytics
