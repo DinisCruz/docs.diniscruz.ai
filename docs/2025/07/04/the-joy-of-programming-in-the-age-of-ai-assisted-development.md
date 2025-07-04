@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/04
 pdf_file: the-joy-of-programming-in-the-age-of-ai-assisted-development.pdf
 back_link: /research/cyber-security
-#linkedin:  
+linkedin: diniscruz_the-joy-of-programming-in-the-age-of-genai-activity-7346840414617821184-uy3a  
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  

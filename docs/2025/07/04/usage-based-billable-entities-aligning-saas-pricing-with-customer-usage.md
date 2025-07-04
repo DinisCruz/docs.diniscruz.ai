@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/04
 pdf_file: usage-based-billable-entities-aligning-saas-pricing-with-customer-usage.pdf
 back_link: /research/cyber-security
-#linkedin:  
+linkedin: diniscruz_usage-based-billable-entities-aligning-saas-activity-7346841200500367360-eGMi  
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  

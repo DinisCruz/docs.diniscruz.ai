@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/04
 pdf_file: faq-evolving-semantic-graphs-and-ontologies-with-llms-and-mgraph-db.pdf
 back_link: /research/cyber-security
-#linkedin:  
+linkedin: diniscruz_faq-evolving-semantic-graphs-and-ontologies-activity-7346838389465210880-AZhA  
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
