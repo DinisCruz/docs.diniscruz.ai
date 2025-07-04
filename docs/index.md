@@ -5,6 +5,9 @@
 Welcome to my research hub where I explore practical applications of generative AI, semantic knowledge graphs, and modern security practices. With 75+ published articles and ongoing projects, this site documents my journey building the future of cybersecurity and knowledge management.
 
 ### 🔥 Latest Research (June 2025)
+- **[FAQ - Evolving Semantic Graphs and Ontologies with LLMs and MGraph-DB](./2025/07/04/faq-evolving-semantic-graphs-and-ontologies-with-llms-and-mgraph-db.md)
+- **[The Joy of Programming in the Age of AI-Assisted Development](./2025/07/04/the-joy-of-programming-in-the-age-of-ai-assisted-development.md)**
+- **[Usage-Based Billable Entities: Aligning SaaS Pricing with Customer Usage](./2025/07/04/usage-based-billable-entities-aligning-saas-pricing-with-customer-usage.md)**
 - **[LLM-Driven GDPR Compliance Q&A Graph – Technical Brief](./2025/07/03/llm-driven-gdpr-compliance-q-and-a-graph-technical-brief.md)**
 - **[Ephemeral GenAI SIEM: A Serverless, Graph-Driven Approach to Security Event Management](./2025/07/02/ephemeral-genai-siem-a-serverless-graph-driven-approach-to-security-event-management.md)**
 - **[Using Memory_FS to Build a File-Based Representation of the GDPR Standard](./2025/07/02/using-memory_fs-to-build-a-file-based-representation-of-the-gdpr-standard.md)**

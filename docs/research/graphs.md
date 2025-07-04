@@ -27,5 +27,5 @@
 - [Graph-Powered Legal Knowledge: An Open, Distributed, and AI-Assisted Roadmap](../2025/04/22/graph-powered-legal-knowledge__an-open-distributed-and-ai-assisted-roadmap.md)
 
 ## Personalised Briefings
-
+- [FAQ - Evolving Semantic Graphs and Ontologies with LLMs and MGraph-DB](../2025/07/04/faq-evolving-semantic-graphs-and-ontologies-with-llms-and-mgraph-db.md)
 - [Personalized Briefing: Semantic Knowledge Graphs – Intersection of Dinis Cruz & Kerstin Clessienne's Work](../2025/06/08/personalized-briefing-semantic-knowledge-graphs-dinis-cruz-kerstin-clessienne.md)

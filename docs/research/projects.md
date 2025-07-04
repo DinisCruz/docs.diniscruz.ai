@@ -33,7 +33,7 @@
 - [Scaling a Solo Cybersecurity Consulting Practice: Business Plan Research](../2025/04/07/scaling-a-solo-cybersecurity-consulting-practice__business-plan-research.md)
 
 ## Misc research and possible projects
-
+- [Usage-Based Billable Entities: Aligning SaaS Pricing with Customer Usage](../2025/07/04/usage-based-billable-entities-aligning-saas-pricing-with-customer-usage.md)
 - [Research - AI-Powered Customer Service Solutions for Multi-Property Airbnb Hosts](../2025/05/04/research__ai-powered-customer-service-solutions-for-multi-property-airbnb-hosts.md)
 
 ## LLMs briefs
