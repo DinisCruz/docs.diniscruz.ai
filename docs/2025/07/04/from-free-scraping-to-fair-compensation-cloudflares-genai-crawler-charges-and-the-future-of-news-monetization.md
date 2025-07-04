@@ -4,7 +4,7 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/04
 pdf_file: from-free-scraping-to-fair-compensation-cloudflares-genai-crawler-charges-and-the-future-of-news-monetization.pdf
 back_link: /research/the-future-of-news
-# linkedin:   
+linkedin: diniscruz_from-free-scraping-to-fair-compensation-genai-activity-7346898869386981378--qiS   
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
