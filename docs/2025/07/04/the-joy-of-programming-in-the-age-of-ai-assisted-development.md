@@ -3,7 +3,7 @@ title: "The Joy of Programming in the Age of AI-Assisted Development"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/04
 pdf_file: the-joy-of-programming-in-the-age-of-ai-assisted-development.pdf
-back_link: /research/cyber-security
+back_link: /research/development-and-genai
 linkedin: diniscruz_the-joy-of-programming-in-the-age-of-genai-activity-7346840414617821184-uy3a  
 ---
 

@@ -3,7 +3,7 @@ title: "FAQ - Evolving Semantic Graphs and Ontologies with LLMs and MGraph-DB"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/04
 pdf_file: faq-evolving-semantic-graphs-and-ontologies-with-llms-and-mgraph-db.pdf
-back_link: /research/cyber-security
+back_link: /research/graphs
 linkedin: diniscruz_faq-evolving-semantic-graphs-and-ontologies-activity-7346838389465210880-AZhA  
 ---
 
