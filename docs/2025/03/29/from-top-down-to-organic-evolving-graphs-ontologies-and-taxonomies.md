@@ -3,6 +3,8 @@ title: "From Top-Down to Organic Evolving Graphs, Ontologies, and Taxonomies"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/03/29
 pdf_file: from-top-down-to-organic-evolving-graphs-ontologies-taxonomies.pdf
+description: "Discusses dynamic, community-driven approaches to building knowledge graphs."
+tags: [knowledge-graphs, ontologies, taxonomy, evolution]
 back_link: /research/graphs
 ---
 

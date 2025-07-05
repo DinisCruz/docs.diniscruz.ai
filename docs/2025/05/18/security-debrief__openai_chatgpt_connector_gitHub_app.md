@@ -3,6 +3,8 @@ title: "Security Debrief: OpenAI’s ChatGPT Connector GitHub App"
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/18
 pdf_file: security-debrief__openai_chatgpt_connector_gitHub_app.pdf
+description: "Analyzes security implications of the ChatGPT Connector GitHub app."
+tags: [security, github, chatgpt, connector]
 linkedin: diniscruz_security-debrief-openais-chatgpt-connector-activity-7329986369353650176-eUNV
 back_link: /research/cyber-security
 ---

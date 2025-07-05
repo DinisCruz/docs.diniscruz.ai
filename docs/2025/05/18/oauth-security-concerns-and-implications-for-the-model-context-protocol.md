@@ -3,6 +3,8 @@ title: "OAuth Security Concerns and Implications for the Model Context Protocol 
 authors: ["ChatGPT Deep Research"]
 date: 2025/05/18
 pdf_file: oauth-security-concerns-and-implications-for-the-model-context-protocol.pdf
+description: "Discusses OAuth risks in relation to the Model Context Protocol."
+tags: [oauth, security, mcp, protocol]
 linkedin: diniscruz_oauth-security-concerns-and-implications-activity-7329997030649442305-P0rG
 back_link: /research/cyber-security
 ---

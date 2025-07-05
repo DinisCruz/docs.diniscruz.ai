@@ -3,6 +3,8 @@ title: "My Journey Building a GenAI Startup: The Power of MVPs and CI Pipelines 
 authors: ["Dinis Cruz"]
 date: 2025/01/29
 file_name: my-journey-building_a_genai_startup__the-power-of-mvps-and-ci-pipelines__part-1.pdf
+description: "Presentation covering early lessons from building a GenAI startup."
+tags: [startup, genai, mvp, ci-pipelines]
 linkedin: diniscruz_my-journey-building-a-genai-startup-activity-7290683665934614529-Qejx
 back_link: /resources/presentations
 ---

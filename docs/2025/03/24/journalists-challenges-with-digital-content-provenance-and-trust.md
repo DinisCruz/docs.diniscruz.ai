@@ -3,6 +3,8 @@ title: "Journalists' Challenges with Digital Content Provenance and Trust"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/03/24
 pdf_file: journalists-challenges-with-digital-content-provenance-and-trust.pdf
+description: "Explores how semantic graphs build trust in AI-generated news."
+tags: [journalism, provenance, trust, semantic-graphs]
 linkedin: diniscruz_journalists-challenges-with-digital-content-activity-7309971769845559296-j2j4
 back_link: /research/the-future-of-news
 ---

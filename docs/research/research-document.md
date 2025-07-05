@@ -1,3 +1,8 @@
+---
+description: "Table summarizing research proposals and briefs."
+tags: [catalog, research, summaries]
+---
+
 # Research Document Catalog
 
 This page summarizes recent research proposals and technical briefs. Articles are grouped by month with the most recent entries listed first.
