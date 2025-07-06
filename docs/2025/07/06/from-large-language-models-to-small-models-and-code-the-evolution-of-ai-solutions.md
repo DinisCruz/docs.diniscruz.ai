@@ -3,7 +3,7 @@ title: "From Large Language Models to Small Models and Code: The Evolution of AI
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/06
 pdf_file: from-large-language-models-to-small-models-and-code-the-evolution-of-ai-solutions.pdf
-back_link: /research/cyber-security
+back_link: /research/development-and-genai
 # linkedin:  
 ---
 

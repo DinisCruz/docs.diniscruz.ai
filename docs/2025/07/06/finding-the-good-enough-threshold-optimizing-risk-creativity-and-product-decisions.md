@@ -3,7 +3,7 @@ title: "Finding the “Good Enough” Threshold: Optimizing Risk, Creativity, an
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/07/06
 pdf_file: finding-the-good-enough-threshold-optimizing-risk-creativity-and-product-decisions.pdf
-back_link: /research/development-and-genai
+back_link: /research/cyber-security
 # linkedin:  
 ---
 
