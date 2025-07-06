@@ -42,7 +42,7 @@ Welcome to my research hub where I explore practical applications of generative 
 **For Security Leaders**
 
 - [Threat Modeling with Semantic Graphs](./research/cyber-security.md#threat-modeling)
-- [Security Implications of Model Context Protocol](./2025/06/13/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md)
+ - [Security Implications of Model Context Protocol](./2025/06/10/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md)
 - [The Cyber Boardroom Project](https://www.thecyberboardroom.com/)
 
 **For AI Developers**

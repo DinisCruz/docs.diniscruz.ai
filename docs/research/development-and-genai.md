@@ -1,3 +1,8 @@
+---
+description: "Hub for resources on generative AI and modern development."
+tags: [development, genai, automation]
+---
+
 # Development and GenAI
 
 {{back_button('/index')}}

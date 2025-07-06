@@ -3,6 +3,8 @@ title: "Semantic Knowledge Graphs for LLM-Driven Source Code Analysis"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/29
 pdf_file: semantic-knowledge-graphs-for-llm-driven-source-code-analysis.pdf
+description: "Using knowledge graphs and large language models for analyzing source code."
+tags: [knowledge-graphs, source-code, llm, analysis]
 back_link: /research/cyber-security
 #linkedin: to-do
 ---

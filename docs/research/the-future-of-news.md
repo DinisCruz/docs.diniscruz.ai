@@ -1,3 +1,9 @@
+---
+description: "Articles on news monetization, fact provenance, and trust."
+tags: [news, trust, provenance, monetization]
+---
+
+
 # The Future of news
 
 {{back_button('/index')}}

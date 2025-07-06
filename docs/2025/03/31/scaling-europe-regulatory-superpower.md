@@ -3,6 +3,8 @@ title: "Scaling Europe’s Regulatory Superpower: From Static Cybersecurity Stan
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/03/31
 pdf_file: scaling-europe-regulatory-superpower.pdf
+description: "White paper on using semantic graphs to manage EU cybersecurity standards."
+tags: [europe, regulations, cybersecurity, knowledge-graphs]
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  

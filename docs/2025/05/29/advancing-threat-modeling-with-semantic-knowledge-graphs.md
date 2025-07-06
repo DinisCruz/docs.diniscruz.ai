@@ -3,6 +3,8 @@ title: "Advancing Threat Modeling with Semantic Knowledge Graphs"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/29
 pdf_file: advancing-threat-modeling-with-semantic-knowledge-graphs.pdf
+description: "Shows how semantic knowledge graphs enhance threat modeling practices."
+tags: [threat-modeling, knowledge-graphs, cybersecurity]
 back_link: /research/cyber-security
 linkedin: diniscruz_advancing-threat-modeling-with-semantic-knowledge-activity-7334009715133177858-5uN3
 ---
