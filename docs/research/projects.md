@@ -26,6 +26,7 @@
  - [Proposal: Strategic AWS Partnership with Dinis Cruz’s GenAI and Graph Innovations](../2025/06/03/proposal-strategic-aws-partnership-with-dinis-cruz-genai-and-graph-innovations.md)
 
 ## Business Ideas/Plans
+<a id="business-ideas"></a>
 
 - [Project Plan: High Street GenAI Learning Hub](../2025/06/22/project-plan-high-street-genai-learning-hub.md)
 - [GenAI Legacy Code Refactoring – Business Plan](../2025/06/07/genai-legacy-code-refactoring-business-plan.md)
