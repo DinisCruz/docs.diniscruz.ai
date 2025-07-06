@@ -3,6 +3,8 @@ title: "Threat Models as Mandatory Disclosures: A Vision for Security Transparen
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/05/29
 pdf_file: threat-models-as-mandatory-disclosures__a-vision-for-security-transparency.pdf
+description: "Argues that publishing threat models improves security transparency."
+tags: [threat-modeling, transparency, disclosure]
 back_link: /research/cyber-security
 linkedin: diniscruz_threat-models-as-mandatory-disclosures-activity-7333890904111374337-GnjN
 ---

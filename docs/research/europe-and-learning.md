@@ -1,3 +1,8 @@
+---
+description: "Overview page linking GenAI opportunities in Europe and learning resources."
+tags: [europe, genai, learning, research]
+---
+
 # Europe and Learning
 
 {{back_button('/index')}}

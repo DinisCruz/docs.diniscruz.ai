@@ -1,3 +1,8 @@
+---
+description: "Collection of research projects and business ideas exploring generative AI."
+tags: [projects, genai, innovation]
+---
+
 # Projects and Business Ideas
 
 {{back_button('/index')}}

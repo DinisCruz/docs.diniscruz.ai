@@ -1,3 +1,8 @@
+---
+description: "Guides on graph databases, ontologies, and semantic knowledge graphs."
+tags: [graphs, knowledge-graphs, ontologies]
+---
+
 # Graphs
 
 {{back_button('/index')}}

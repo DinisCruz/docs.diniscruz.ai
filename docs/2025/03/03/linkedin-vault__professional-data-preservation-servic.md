@@ -3,6 +3,8 @@ title: "LinkedIn Vault: Professional Data Preservation Service"
 authors: ["Dinis Cruz", "ChatGPT Deep Research"]
 date: 2025/03/03
 pdf_file: linkedin-vault__professional-data-preservation-service.pdf
+description: "Automates regular backups of LinkedIn career data to user storage."
+tags: [linkedin, data-preservation, automation, professional-data]
 linkedin: diniscruz_linkedinvault-professional-data-preservation-activity-7302308121249497088-uOCF
 back_link: /research/projects
 ---
