@@ -27,7 +27,7 @@ GenAI-driven tools, MVPs, and business ventures at the cutting edge. Over 36 act
 Check out the most recent additions to the research hub:
 
 - [User-Driven Semantic Persona Graphs Powered by GenAI](../2025/06/14/user-driven-semantic-persona-graphs-powered-by-genai.md) (June 14, 2025)
-- [Security Implications of the Model Context Protocol (MCP)](../2025/06/13/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md) (June 13, 2025)
+- [Security Implications of the Model Context Protocol (MCP)](../2025/06/10/security-implications-of-the-model-context-protocol-mcp-and-the-need-for-robust-infrastructure.md) (June 10, 2025)
 - [Technical Briefing: Web Content Filtering Project](../2025/06/13/technical-briefing-web-content-filtering-project.md) (June 13, 2025)
 
 ## Research Philosophy
