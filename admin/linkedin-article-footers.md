@@ -16,7 +16,7 @@ Available [here](https://www.linkedin.com/posts/diniscruz_examples-from-my-day-t
 ```
 〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️〰️
 ⤵️ Listed in my collection of: 
-📍 ChatGPT Pro Deep Research (Part 4): https://lnkd.in/eWpVM9Rj
+📍 ChatGPT Pro Deep Research (Part 5): https://lnkd.in/eUueaKda
 ```
 
 ```
