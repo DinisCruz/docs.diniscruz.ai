@@ -27,7 +27,7 @@ This paper explores the business case for one-node clusters, technical implement
 
 We make the case that, far from being an edge case, one-node clusters represent a forward-thinking evolution in Kubernetes scaling—simplifying operations while unlocking new levels of agility and resilience.
 
-# Introduction
+## Introduction
 
 Kubernetes has become the de facto platform for container orchestration, traditionally designed to manage multi-node clusters of machines. In typical setups, a cluster comprises multiple worker nodes overseen by a control plane, allowing workloads to be distributed for high availability. Over time, organizations have evolved their scaling approaches – from single large clusters to multi-cluster architectures – to meet growing demands for isolation and reliability ([Multi-cluster Kubernetes: Benefits, Challenges and Tools](https://www.groundcover.com/blog/kubernetes-multi-cluster#:~:text=cloud%20architecture)) ([Multi-cluster Kubernetes: Benefits, Challenges and Tools](https://www.groundcover.com/blog/kubernetes-multi-cluster#:~:text=What%20is%20multi)). Conventional wisdom suggests running a few sizable clusters, each with many nodes, to maximize resource sharing and simplify management. However, large multi-node clusters bring challenges: significant overhead for maintaining the control plane, complex networking (CNI plugins, overlay networks, etc.), and operational complexity in upgrades and scaling coordination.
 
@@ -37,7 +37,7 @@ The need for an alternative scaling model is evident – one that prioritizes _s
 
 Importantly, Kubernetes practitioners often push back on single-node clusters due to the lack of built-in high availability and perceived wastefulness of running many control planes ([Single node k8 cluster pros and cons : r/kubernetes](https://www.reddit.com/r/kubernetes/comments/13a7n6f/single_node_k8_cluster_pros_and_cons/#:~:text=If%20you%20don%E2%80%99t%20need%20the,having%20the%20benefits%20of%20HA)) ([Architecting Kubernetes clusters — how many should you have?](https://learnk8s.io/how-many-clusters#:~:text=If%20you%20have%20many%20small,resources%20for%20these%20management%20functions)). We address these concerns by distributing workloads across many one-node clusters behind load balancers, achieving resilience through redundancy. If one cluster (node) fails, its traffic is routed to others, similar to how a multi-node cluster would reschedule pods on healthy nodes. Automation ensures new clusters can spin up quickly to replace failed ones. The following sections detail the business case for this model, its implementation (with a focus on AWS), comparisons with traditional clusters, multi-cloud applicability, and challenges to consider.
 
-# Business Case
+## Business Case
 
 Deploying one-node clusters per instance offers several business and operational advantages. This section examines the benefits in terms of maintenance overhead, cost efficiency, and fault tolerance, building the case that this unconventional model can solve real-world problems.
 
@@ -55,11 +55,11 @@ The resilience of this model also shines during updates. Blue-green or canary de
 
 In summary, the business case for one-node clusters centers on **simplified operations**, **automation-friendly workflows**, **isolation for safety**, and **resilient, modular scaling**. Organizations with many small services or stringent uptime requirements may find this model attractive to reduce the cognitive load of Kubernetes management while still harnessing Kubernetes’s core benefits (consistent API, deployment patterns, etc.). We next delve into how to implement this model on AWS, leveraging cloud capabilities to bring it to life.
 
-# Technical Implementation (AWS-Focused)
+### Technical Implementation (AWS-Focused)
 
 Implementing one-node-per-cluster architecture requires rethinking how we deploy Kubernetes. In an AWS environment, we can utilize EC2 auto-scaling, custom AMIs, and various AWS networking services to automate fleets of one-node clusters. This section outlines a reference implementation on AWS, covering the setup of single-node Kubernetes instances, scaling them with Auto Scaling groups, integrating load balancers (including global traffic management), and considerations for stateful components.
 
-### Immutable One-Node Cluster Instances
+#### Immutable One-Node Cluster Instances
 
 The foundation of this model is an **immutable Kubernetes node image**. We create a custom Amazon Machine Image (AMI) that has Kubernetes pre-installed and configured to run as a single-node cluster. There are a few approaches to achieve this:
 
@@ -72,7 +72,7 @@ The foundation of this model is an **immutable Kubernetes node image**. We creat
 
 Once our AMI is prepared, deploying a cluster is as simple as launching an EC2 instance with that AMI. This is where the **immutable infrastructure** principle shows its power: _identical images yielding identical clusters._ As CloudCaptain’s Axel Fontaine noted, immutable AMIs make scaling trivially simple – whether you need 1 or 1000 instances, you just launch clones of the same image ( [It's Auto-Scaling time! - Blog - CloudCaptain • Immutable Infrastructure Made Easy](https://cloudcaptain.sh/blog/auto-scaling#:~:text=Immutable%20images%20such%20as%20AMIs,Refreshingly%20simple)). Each instance will self-configure as a Kubernetes node on boot, with no unique snowflake setup required. This uniformity lays the groundwork for effortless scaling and replacement.
 
-### Auto Scaling and Load Balancing
+#### Auto Scaling and Load Balancing
 
 With the one-node cluster AMI ready, we leverage **EC2 Auto Scaling Groups (ASGs)** to manage the fleet. An Auto Scaling Group ensures that a specified number of instances are always running, and can adjust that number based on policies or metrics. The steps are as follows:
 
@@ -89,7 +89,7 @@ With the one-node cluster AMI ready, we leverage **EC2 Auto Scaling Groups (ASGs
 
 The result is an _auto-healing, auto-scaling cluster-of-clusters_. We have effectively outsourced Kubernetes’ horizontal pod scaling to the cloud provider’s instance scaling. One might ask about scaling latency: adding a new pod in Kubernetes might take seconds, whereas launching a new EC2 instance might take a couple of minutes. This is a valid observation – scaling out is somewhat slower at the instance granularity. In practice, we can mitigate this by slightly over-provisioning or using smaller instance types such that launching 2-3 in advance is not overly costly. Additionally, AWS’s scale-out policies can be proactive (based on request queue or latency) to trigger new instances before current ones max out.
 
-### Global Deployment and Caching
+#### Global Deployment and Caching
 
 A powerful aspect of the one-node cluster model is how naturally it extends to multi-region or global deployments. Each cluster is independent and doesn’t rely on a central control plane, so deploying clusters in multiple regions is straightforward. On AWS, we can replicate the setup across regions to bring the service closer to users and provide regional redundancy.
 
@@ -112,7 +112,7 @@ In practice, we would set CloudFront’s origin as our load balancer (or perhaps
 
 This setup maximizes scalability (we can always add more regions or more instances), resilience (no single cluster or region failure breaks the app globally ([Using latency-based routing with Amazon CloudFront for a multi-Region active-active architecture | Networking & Content Delivery](https://aws.amazon.com/blogs/networking-and-content-delivery/latency-based-routing-leveraging-amazon-cloudfront-for-a-multi-region-active-active-architecture/#:~:text=Multi,downtime%20for%20your%20global%20users))), and simplicity in the sense that each building block (cluster) is uniform and replaceable.
 
-### Handling Stateful Applications and Databases
+#### Handling Stateful Applications and Databases
 
 Stateful components require special consideration in any stateless horizontal scaling architecture, and one-node clusters are no exception. If our application is completely stateless (e.g., serving computations or transient data only), we can freely scale clusters without worrying about data consistency. But most real applications need state: databases, file storage, user sessions, etc.
 
@@ -128,7 +128,7 @@ If a particular microservice is stateful and can’t easily be scaled as multipl
 
 In summary, for stateful needs our recommendations are: use cloud-managed databases or shared state layers whenever possible, design the application to be stateless at the service level, and if stateful components must exist, consider dedicating special clusters or external services for them rather than mixing into the ephemeral one-node clusters. By doing so, the one-node clusters remain disposable and easy to scale or replace without data loss concerns.
 
-# Comparison with Traditional Multi-Node Clusters
+## Comparison with Traditional Multi-Node Clusters
 
 To evaluate the merits of the one-node-per-instance model, it’s important to compare it against the conventional multi-node cluster approach across several dimensions: complexity, deployment speed, resource utilization, failure handling, and resilience. Below we outline these comparisons:
 
@@ -145,7 +145,7 @@ To evaluate the merits of the one-node-per-instance model, it’s important to c
 
 In summary, **traditional multi-node clusters** excel at efficient resource utilization and central management, but at the cost of intricate internal complexity and potentially slower cluster-wide changes. **One-node clusters** invert that: they bring clarity and simplicity to each unit and make global changes easy by brute-force replacement, but require careful automation to handle the multitude of units and accept some resource overhead. Neither is strictly “better” in all cases; the choice depends on priorities. For maximum simplicity and fault isolation, one-node clusters shine. For maximum efficiency and centralized control, a well-tuned multi-node cluster might be preferable. It’s also possible to adopt a hybrid: e.g., cluster-per-service but each cluster has a couple of nodes for that service; however, here we focus on the extreme end of one node per cluster.
 
-# Extending to Other Cloud Providers & On-Prem
+## Extending to Other Cloud Providers & On-Prem
 
 While our discussion has focused on AWS, the one-node cluster model can be applied to other environments with suitable adaptations. Each cloud provider offers analogous features (VM images, auto-scaling, load balancing) that can enable this pattern. Here’s how the approach translates:
 
@@ -168,7 +168,7 @@ While our discussion has focused on AWS, the one-node cluster model can be appli
 
 In essence, the cloud-agnostic recipe is: **custom image + instance auto-scaling + load balancer + optional global routing**. Each provider has its flavor of those components. The one-node cluster model’s viability does not hinge on any AWS-specific service, so it is quite portable. On-premises, lacking native autoscaling, may require more custom tooling, but it’s feasible especially with virtualization and modern on-prem orchestrators (OpenStack Heat could be another approach in an open cloud environment, to spin up VMs on demand based on metrics).
 
-# Challenges & Considerations
+## Challenges & Considerations
 
 No approach is without trade-offs. Before embracing one-node Kubernetes clusters, engineers should be aware of potential challenges and edge cases. We discuss these pitfalls and considerations, and outline best practices to address them.
 
@@ -200,7 +200,7 @@ No approach is without trade-offs. Before embracing one-node Kubernetes clusters
 
 In conclusion, while the one-node cluster model introduces some challenges – especially around managing scale – these can be addressed with thoughtful design and automation. The model isn’t a one-size-fits-all; it should be applied in contexts where its advantages align with project goals (simplicity, resilience, etc.). For other contexts, a hybrid or traditional approach might be warranted. The key is understanding these trade-offs and making an informed decision.
 
-# Conclusion & Future Outlook
+## Conclusion & Future Outlook
 
 In this paper, we presented an alternative Kubernetes scaling paradigm: deploying one-node clusters per instance to achieve maximum scalability, resilience, and simplicity. Through our exploration, we demonstrated that contrary to initial skepticism, this model **can work and even excel** under the right conditions. By treating each node as an isolated cluster, organizations can gain strong fault tolerance (via many small failure domains), straightforward cluster lifecycle management (immutable replacements), and simplified networking (each cluster is self-contained). We showed how leveraging AWS capabilities like Auto Scaling groups, load balancers, and CloudFront can implement this architecture, and we compared it with traditional multi-node clusters to highlight its strengths and weaknesses.
 
