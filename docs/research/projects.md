@@ -9,6 +9,7 @@ tags: [projects, genai, innovation]
 
 
 ## Projects briefs
+- [Project VulnAI: AI-Powered Vulnerability Risk Management Platform](../2025/07/27/project-vulnai-ai-powered-vulnerability-risk-management-platform.md)
 - [Follow-Up Technical Vision: Optimizations, Deployment, and Security](../2025/06/13/follow-up-technical-vision-optimizations-deployment-and-security.md)
 - [Technical Briefing: Web Content Filtering Project](../2025/06/13/technical-briefing-web-content-filtering-project.md)
 - [Technical Debrief: Evolution from Electron‑Based to Python‑Native Web Content Capture App](../2025/05/22/technical-debrief__evolution-from-electron-based-to-python-native-web-content-capture-app.md)

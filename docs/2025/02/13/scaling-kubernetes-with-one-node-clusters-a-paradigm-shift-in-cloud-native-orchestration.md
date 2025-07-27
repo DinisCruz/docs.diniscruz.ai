@@ -9,7 +9,7 @@ linkedin: diniscruz_scaling-kubernetes-with-one-node-clusters-activity-729584230
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}~~
+{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
 
 Kubernetes has revolutionized container orchestration, providing a powerful abstraction for managing workloads across distributed infrastructure. 
 
