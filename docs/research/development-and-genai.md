@@ -8,7 +8,8 @@ tags: [development, genai, automation]
 {{back_button('/index')}}
 
 ## Development
-
+ - [Iterative Flow Development (IFD) Methodology: JavaScript Web Application Implementation](../2025/08/22/iterative-flow-development-ifd-methodology__javascript-web-application-implementation.md)
+ - [Surrogate Dependencies: Simulating Backends for Offline-First Development](../2025/08/22/surrogate-dependencies-simulating-backends-for-offline-first-development.md)
  - [From Large Language Models to Small Models and Code: The Evolution of AI Solutions](../2025/07/06/from-large-language-models-to-small-models-and-code-the-evolution-of-ai-solutions.md)
  - [No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](../2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)
  - [The Hidden Cost of Ephemeral Testing and the Case for Automation](../2025/06/15/the-hidden-cost-of-ephemeral-testing-and-the-case-for-automation.md)
