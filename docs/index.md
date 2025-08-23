@@ -5,8 +5,10 @@
 Welcome to my research hub where I explore practical applications of generative AI, semantic knowledge graphs, and modern security practices. With 100+ published articles and ongoing projects, this site documents my journey building the future of cybersecurity and knowledge management.
 
 ### 🔥 Latest Research (August 2025)
-- **[Iterative Flow Development (IFD) Methodology: JavaScript Web Application Implementation](./2025/08/22/iterative-flow-development-ifd-methodology__javascript-web-application-implementation.md)** - Revolutionary approach to AI-assisted development achieving 10-20x productivity gains
 - **[Surrogate Dependencies: Simulating Backends for Offline-First Development](./2025/08/22/surrogate-dependencies-simulating-backends-for-offline-first-development.md)** - Enabling fully offline development with prerecorded API data
+- **[Iterative Flow Development (IFD) Methodology](./2025/08/22/iterative-flow-development-ifd-methodology.md)** - Revolutionary approach to AI-assisted development achieving 10-20x productivity gains
+- **[LLM Workflows/Stateflow Service -Technical Brief](./2025/08/23/llm-workflows-stateflow-service-technical-brief.md)** - Architecture for managing complex LLM workflow states
+- **[Personas Service - Technical LLM Brief](./2025/08/23/personas-service-technical-llm-brief.md)** - Dynamic persona management system for LLM interactions
 
 ### 📊 Recent Highlights (July 2025)
 - **[Project VulnAI: AI-Powered Vulnerability Risk Management Platform](./2025/07/27/project-vulnai-ai-powered-vulnerability-risk-management-platform.md)**
