@@ -45,7 +45,7 @@ IFD's philosophy centers on keeping the developer in an optimal **flow state** �
 
 • **UX-First Development:** The developer's flow is anchored in the end-user experience from the start. Before writing code, IFD advocates sketching the user journey and defining UX success criteria. Developers then describe the intended UX to the LLM (for example, "a chat interface with resizable textarea, live character count, and send-on-Enter"), letting the AI draft the initial UI implementation. This ensures that **user experience drives development** rather than technical infrastructure. The developer iteratively refines the AI's output to meet UX quality, e.g. adding input validation or focus handling that the LLM's first pass missed. This UX-centric, iterative design echoes the "vibe coding" focus on getting the *feel* right early, but with systematic refinement steps.
 
-• **Real-Data-First Approach:** IFD mandates using **real APIs and data from day one**, with no mocked data or stubbed services. This principle ensures the software is built and tested against real-world conditions, catching integration issues or API misunderstandings immediately. The backend (e.g. a FastAPI service) is created at project start and is called by the UI from the first version. Developers are encouraged to test API endpoints in isolation (e.g. with `curl` or http clients) before integrating them into the frontend, verifying that the real service behaves as expected. By getting **instant feedback from real systems**, the team avoids the common pitfall of code that works on fake data but breaks in production. This approach also enables *cache-aware* development – IFD components consider caching and performance from the beginning since they deal with real data volumes and latency.
+• **Real-Data-First Approach:** IFD promotes using **real APIs and data from day one**, with no mocked data or stubbed services. This principle ensures the software is built and tested against real-world conditions, catching integration issues or API misunderstandings immediately. The backend (e.g. a FastAPI service) is created at project start and is called by the UI from the first version. Developers are encouraged to test API endpoints in isolation (e.g. with `curl` or http clients) before integrating them into the frontend, verifying that the real service behaves as expected. By getting **instant feedback from real systems**, the team avoids the common pitfall of code that works on fake data but breaks in production. This approach also enables *cache-aware* development – IFD components consider caching and performance from the beginning since they deal with real data volumes and latency.
 
 • **Version Independence:** Each iteration in IFD is a **self-contained version** of the application that fully works on its own. Versions are developed in sequence (v0.1, v0.2, ...) but are isolated – no code is shared between versions, only concepts and lessons. This counterintuitive rule ("build on concepts, not code") allows radical experimentation and even breaking changes in early versions without fear of destabilizing the product. If a new idea fails or introduces bugs, developers can instantly roll back to a previous version by simply using the last stable folder, since nothing in that older version was overridden or corrupted by the new code. Freedom to "branch out" in each version encourages innovation and risk-taking, knowing that earlier work remains untouched (a contrast to traditional iterative development where codebase modifications can introduce regression in existing features). This principle of version independence also forces clear separation of concerns – code is not intertwingled across versions – and it yields a series of working benchmarks (v0.1, v0.2, ...) that document the project's evolution.
 
@@ -83,17 +83,19 @@ In air-gapped mode, professional developers maintain deliberate separation betwe
 
 This air gap has several advantages: it forces clear requirement articulation, prevents blind trust in AI output, maintains developer ownership, and encourages batching changes into meaningful chunks. Rather than using an AI plugin that directly modifies code, IFD advocates keeping this deliberate separation: the developer interacts with the LLM (e.g. via a chat interface or API) and then manually transfers the generated code into the project. This forces the developer to clearly think through and articulate requirements (since you have to describe the needed code in prose), prevents blindly trusting the AI – the human must review and integrate the code, maintaining ownership – and encourages batching changes into meaningful chunks rather than constant one-line edits. 
 
-In practice, this means the developer might work in an IDE like PyCharm or VSCode, and separately have the ChatGPT/Claude interface where they prompt for code, then copy results into their files. The slight friction of the air gap ironically **improves** efficiency by reducing thrash and encouraging more thoughtful prompts.
+In practice, this means the developer might work in an IDE like PyCharm or VSCode, and separately have the ChatGPT/Claude interface where they prompt for code, then copy results into their files. The slight friction of the air gap ironically **improves** efficiency by reducing churn and encouraging more thoughtful prompts.
 
 ### Mode Selection and Transition
 
 Teams typically choose modes based on:
+
 - **Project phase**: Vibe coding for initial exploration, air-gapped for production
 - **User expertise**: Non-coders use vibe mode, developers may prefer air-gapped
 - **Security requirements**: Critical systems demand air-gapped review
 - **Speed vs. control tradeoff**: Vibe for maximum velocity, air-gapped for maximum confidence
 
 Projects often transition between modes. A common pattern:
+
 - **v0.1-v0.3**: Business users rapidly prototype via vibe coding
 - **v0.4-v0.5**: Developers review and enhance in air-gapped mode
 - **v1.0**: Professional consolidation using air-gapped approach
@@ -111,16 +113,12 @@ In both modes, iterations complete rapidly – often in minutes for small featur
 To start an IFD project, preparation ensures productive flow regardless of chosen mode. The **pre-development checklist** includes having a clear project vision and problem definition, identifying target users and core features for the MVP (v0.1), and preparing the development environment. A simple FastAPI backend should be running with at least skeleton endpoints for core functionality (since the frontend will call real APIs from the outset).
 
 **For Vibe Coding Mode:**
-- Set up AI with direct access to development environment
-- Prime the AI with project context and constraints
-- Ensure real backend/APIs are accessible
-- Focus on describing desired outcomes, not implementation
+
+When operating in vibe coding mode, you'll need to set up the AI with direct access to your development environment, allowing it to create and modify code directly based on your natural language descriptions. Prime the AI with comprehensive project context and constraints at the start of each session, including your project goals, technical requirements, and any specific patterns to follow. Ensure that your real backend services and APIs are running and accessible, as the AI will be generating code that calls these endpoints from the outset. Most importantly, focus your communication on describing the desired outcomes and user experience rather than implementation details – let the AI handle the technical translation while you concentrate on what the application should do and how it should feel to users.
 
 **For Air-Gapped Mode:**
-- Prepare development environment (IDE, version control)
-- Set up separate AI interface (ChatGPT, Claude, etc.)
-- Create structured prompts with clear technical requirements
-- Establish workflow for reviewing and integrating AI suggestions
+
+In air-gapped mode, begin by preparing your development environment with your preferred IDE and version control system, ensuring you have a comfortable workspace for reviewing and integrating code. Set up a separate AI interface such as ChatGPT or Claude in a browser or dedicated application, maintaining deliberate separation between the AI and your codebase. Develop a practice of creating structured prompts that include clear technical requirements, context, constraints, and success criteria – treating prompt writing as a form of technical specification that will yield better AI outputs. Establish a consistent workflow for reviewing AI suggestions, integrating selected code into your project, testing immediately, and iterating based on results, ensuring you maintain full control and understanding of every piece of code that enters your codebase.
 
 Both modes require "priming" the LLM with project context – this might mean providing a summary of the project's goal and any relevant technical constraints at the start of the LLM session. For example, the developer might feed the LLM a brief like: *"I'm building a single-page text analysis app. Constraints: pure JavaScript (ES6), custom Web Components only, FastAPI backend at /api, no external libraries."* This context setting is crucial for effective AI assistance. 
 
@@ -135,16 +133,22 @@ Each version sits in its own directory (e.g. `/versions/v0.1/`, `/versions/v0.2/
 Every version is expected to be **complete and functional on its own**, with no reliance on files in other version directories. This means each version folder might have its own `index.html`, its own set of components, styles, and utilities. IFD provides clear file organization guidelines for this; for example, a version folder may contain a structured sub-tree of components, services (for API clients), utils, and CSS, all self-contained.
 
 **In Vibe Coding Mode:**
-- AI automatically creates new version directories
-- User describes features, AI implements directly
-- Version isolation happens automatically
-- Focus remains on functionality, not code structure
+
+The following describes how version management and code generation work when using vibe coding mode for rapid prototyping:
+
+- **Automatic Version Management:** AI automatically creates new version directories when you request new iterations, handling all file organization without manual intervention
+- **Natural Language Implementation:** User describes features in plain language, and the AI implements them directly in the codebase without requiring coding knowledge
+- **Seamless Version Isolation:** Version isolation happens automatically behind the scenes, ensuring each iteration remains independent without user configuration
+- **Functionality-First Focus:** Focus remains purely on whether the application works as intended, with code structure and quality concerns deferred to later consolidation
 
 **In Air-Gapped Mode:**
-- Developer manually manages version directories
-- Code is deliberately copied/modified between versions
-- Developer ensures clean separation and architecture
-- Focus includes both functionality and code quality
+
+These practices ensure controlled, deliberate development when working in air-gapped mode for production-quality code:
+
+- **Manual Version Control:** Developer manually manages version directories, creating new folders and copying files forward with full visibility into the structure
+- **Deliberate Code Migration:** Code is deliberately copied and modified between versions, allowing selective incorporation of proven features and improvements
+- **Architectural Oversight:** Developer ensures clean separation of concerns and maintains architectural integrity throughout the version progression
+- **Dual Focus on Function and Quality:** Focus includes both delivering functionality and maintaining code quality standards from the start, balancing speed with sustainability
 
 ##### Version 0.1: The Foundation
 
@@ -178,11 +182,12 @@ IFD even provides prompt templates to assist with merging code – e.g., an LLM 
 
 The architecture may be refined by selecting the best patterns observed (for example, maybe v0.5 had the most scalable state management, while v0.3 had a simpler event handling model, so the team standardizes one way or the other in v1.0). Extensive integration testing is done on v1.0 to ensure all pieces now work together outside their original version silos. 
 
-The result should meet a high quality bar: IFD sets v1.0 quality criteria like:
-- Clear separation of concerns in code organization
-- Thorough documentation
-- Performance benchmarks (e.g. load time under 2s)
-- No major known bugs
+The result should meet a high quality bar: IFD sets v1.0 quality criteria that ensure production readiness:
+
+- **Clear Separation of Concerns:** Code organization follows modular principles with distinct components, services, and utilities each handling specific responsibilities without overlap
+- **Thorough Documentation:** Complete inline comments, README files, and API documentation that enable new developers to understand and extend the codebase
+- **Performance Benchmarks:** Measurable targets like sub-2-second load times, 60fps UI updates, and response times under 100ms for user interactions
+- **No Major Known Bugs:** All critical and high-priority issues resolved through testing, with any remaining minor issues documented and tracked for future versions
 
 Essentially, v1.0 is what would be delivered to production, containing only proven features and optimizations, with the experimental chaff left behind in earlier versions.
 
@@ -192,16 +197,18 @@ A cornerstone of the IFD workflow is effective use of the LLM as a **pair progra
 
 #### Prompt Templates and Patterns
 
-For example, when creating a new component, a template prompt might outline:
-- The component's purpose
-- Technical requirements (e.g. "use ES6 class extending HTMLElement, no external dependencies, include its own CSS, and integrate with API endpoints X and Y")
-- The desired functionality in a list
-- UI requirements
-- Events to handle
+For example, when creating a new component, a template prompt provides structured sections to ensure comprehensive AI understanding:
+
+- **Component Purpose:** A clear statement of what the component does and why it exists in the application architecture
+- **Technical Requirements:** Specific constraints like "use ES6 class extending HTMLElement, no external dependencies, include its own CSS, and integrate with API endpoints X and Y"
+- **Desired Functionality:** An itemized list of features the component must support, from core behaviors to edge cases
+- **UI Requirements:** Visual and interaction specifications including layout, styling needs, and responsive behavior
+- **Events to Handle:** Both DOM events (clicks, input changes) and custom events the component should emit or listen for
 
 By supplying a structured prompt with sections (Context, Requirements, etc.), the developer ensures the LLM is aware of the important details. This often yields a surprisingly complete initial implementation from the AI – including not just the JavaScript class code, but also a stub of the CSS and how it should be used in HTML.
 
 Other templates include:
+
 - **Adding features to existing components**: Current component code is pasted in and the prompt describes what new feature to insert
 - **Debugging**: Provide the error and relevant code, ask the AI to fix it with logging and error handling
 - **Consolidation**: List how a feature was implemented in different versions and ask the AI to merge them
@@ -226,10 +233,11 @@ This is not to say automated testing is ignored, but the priority is given to **
 
 #### Visual and Interactive Testing
 
-IFD also advocates for **visual and interactive testing** during development. Patterns include:
-- Adding temporary instrumentation to UI actions (e.g., logging to console whenever a user action happens)
-- Giving immediate visual feedback, like highlighting a button when clicked
-- Using real sample datasets for testing UI components
+IFD also advocates for **visual and interactive testing** during development. These patterns provide immediate feedback and validation during the development flow:
+
+- **Temporary UI Instrumentation:** Adding console logging to track user actions and state changes, providing a real-time audit trail of application behavior during testing
+- **Immediate Visual Feedback:** Implementing visible responses like button highlights, loading spinners, or color changes to confirm that user interactions are being registered and processed
+- **Real Sample Datasets:** Using production-like data samples to test UI components under realistic conditions, exposing layout issues, performance problems, or edge cases early
 
 The backend can provide a test data endpoint that returns sample inputs. The frontend component can then loop through these samples and assert that outputs contain expected elements (this is a form of lightweight integration test). Because it's using real data and the real processing logic, such tests increase confidence that the feature truly works, not just in a contrived unit test environment.
 
@@ -242,6 +250,7 @@ When it comes to ensuring robustness, IFD relies heavily on **progressive refact
 3. **"Make it fast"** (later versions) – Optimize performance-critical parts (adding caching, debouncing, etc.)
 
 This staged approach is exemplified by a simple feature's evolution: 
+
 - Initial click handler may directly call `fetch` and dump results to the DOM (stage 1)
 - Later, it is rewritten to validate input, use async/await and proper error handling (stage 2)
 - Later still, it's optimized with caching and debouncing to handle rapid or repeated inputs efficiently (stage 3)
@@ -253,22 +262,26 @@ By spreading out these improvements over versions, IFD ensures that at each stag
 **Production readiness** is not an afterthought in IFD – each version is meant to be potentially shippable, and especially v1.0 is held to strict standards. The methodology defines clear criteria for **code quality, architecture, performance, and maintainability** that should be met:
 
 **Code Quality:**
-- Consistent error handling patterns
-- Avoid memory leaks and clean up event listeners (especially important in single-page apps)
+
+- **Consistent Error Handling:** Standardized try-catch patterns and error boundaries throughout the application, with meaningful error messages and graceful fallbacks for user-facing failures
+- **Memory Management:** Proper cleanup of event listeners, timers, and observers in component lifecycle methods, preventing memory leaks that degrade performance in long-running single-page applications
 
 **Architecture:**
-- Enforce separation of concerns (logic separated per component or service)
-- Use an event-driven approach to keep components loosely coupled
-- Favor statelessness where possible
+
+- **Separation of Concerns:** Each component or service handles a single responsibility, with business logic, presentation, and data access clearly separated into appropriate modules
+- **Event-Driven Communication:** Components communicate through custom events rather than direct method calls, maintaining loose coupling and enabling independent development
+- **Stateless Design:** Components favor functional patterns and avoid internal state where possible, making them more predictable and easier to test
 
 **Performance:**
-- Use lazy loading for heavy components
-- Debounce rapid actions (like search inputs)
-- Utilize caching for expensive operations
+
+- **Lazy Loading Strategy:** Heavy components load only when needed using dynamic imports, reducing initial bundle size and improving time-to-interactive
+- **Action Debouncing:** Rapid user actions like search typing or scroll events are debounced to prevent excessive API calls or expensive computations
+- **Strategic Caching:** Frequently accessed data and expensive operation results are cached with appropriate invalidation strategies, balancing freshness with performance
 
 **Maintainability:**
-- Clean file organization and naming
-- Document component interfaces and extension points
+
+- **Intuitive File Organization:** Consistent directory structure with clear naming conventions that make finding and adding code straightforward for any developer
+- **Interface Documentation:** Component APIs, expected props, emitted events, and extension points are clearly documented, enabling safe modifications and extensions
 
 All of these are supported by code patterns in the IFD architecture guide (e.g., examples of implementing debounce in a search component, or caching API responses in-memory).
 
@@ -310,11 +323,12 @@ The results were striking – by the end of the day, the developer had created *
 
 ### Development Mode Choice
 
-This project used **air-gapped mode** throughout, demonstrating how a skilled developer can achieve extraordinary productivity while maintaining complete code ownership and quality control. The developer:
-- Used Claude 4.1 as a code generation assistant via separate interface
-- Manually reviewed and integrated all AI suggestions into PyCharm IDE  
-- Maintained architectural decisions and code structure oversight
-- Ensured each integration was tested against real APIs immediately
+This project used **air-gapped mode** throughout, demonstrating how a skilled developer can achieve extraordinary productivity while maintaining complete code ownership and quality control. The developer's workflow exemplified the air-gapped approach:
+
+- **AI as Code Generator:** Used Claude 4.1 as a code generation assistant through a separate browser interface, maintaining clear separation between AI suggestions and the production codebase
+- **Manual Integration Control:** Manually reviewed and integrated all AI suggestions into PyCharm IDE, ensuring every line of code was understood and deliberately chosen rather than blindly accepted
+- **Architectural Ownership:** Maintained full control over architectural decisions and code structure, using AI for implementation speed while retaining human judgment for design choices
+- **Immediate Validation:** Ensured each integration was tested against real APIs immediately after adding to the codebase, catching integration issues within minutes rather than hours or days
 
 While this case study showcases air-gapped development, similar rapid prototyping could be achieved in vibe coding mode by non-technical users, though likely with less architectural sophistication and requiring later consolidation by developers.
 
@@ -525,6 +539,7 @@ The following combination of principles appears to be original to IFD:
 ### Related but Distinct Approaches
 
 The closest existing concepts include:
+
 - **Rapid Application Development (RAD):** Emphasizes quick iterations but lacks IFD's version independence and flow focus
 - **Extreme Programming (XP):** Shares some values around simplicity but is team-oriented rather than flow-oriented
 - **Personal Software Process (PSP):** Focuses on individual developers but emphasizes metrics and formal processes rather than flow
