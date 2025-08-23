@@ -8,9 +8,12 @@ inputs:
   s3-bucket:
     required: true
     description: "AWS S3 bucket name"
-  cloudfront-distribution-id:
+  cloudfront-distribution-id-docs:
     required: true
-    description: "AWS cloud front distribution ID"
+    description: "AWS cloud front distribution ID (for docs)"
+  cloudfront-distribution-id-files:
+    required: true
+    description: "AWS cloud front distribution ID (for files)"
 
 runs:
   using: "composite"
@@ -46,6 +49,10 @@ runs:
       shell: bash
       run: aws s3 sync ./site/ s3://${{ inputs.s3-bucket }}/ --delete
 
-    - name: Invalidate CloudFront Cache
+    - name: Invalidate CloudFront Cache (docs)
       shell: bash
-      run: aws cloudfront create-invalidation --distribution-id ${{ inputs.cloudfront-distribution-id }} --paths "/*"
+      run: aws cloudfront create-invalidation --distribution-id ${{ inputs.cloudfront-distribution-id-docs }} --paths "/*"
+
+    - name: Invalidate CloudFront Cache (files)
+      shell: bash
+      run: aws cloudfront create-invalidation --distribution-id ${{ inputs.cloudfront-distribution-id-files }} --paths "/*"

@@ -47,7 +47,7 @@ IFD's philosophy centers on keeping the developer in an optimal **flow state** �
 
 • **Real-Data-First Approach:** IFD promotes using **real APIs and data from day one**, with no mocked data or stubbed services. This principle ensures the software is built and tested against real-world conditions, catching integration issues or API misunderstandings immediately. The backend (e.g. a FastAPI service) is created at project start and is called by the UI from the first version. Developers are encouraged to test API endpoints in isolation (e.g. with `curl` or http clients) before integrating them into the frontend, verifying that the real service behaves as expected. By getting **instant feedback from real systems**, the team avoids the common pitfall of code that works on fake data but breaks in production. This approach also enables *cache-aware* development – IFD components consider caching and performance from the beginning since they deal with real data volumes and latency.
 
-• **Version Independence:** Each iteration in IFD is a **self-contained version** of the application that fully works on its own. Versions are developed in sequence (v0.1, v0.2, ...) but are isolated – no code is shared between versions, only concepts and lessons. This counterintuitive rule ("build on concepts, not code") allows radical experimentation and even breaking changes in early versions without fear of destabilizing the product. If a new idea fails or introduces bugs, developers can instantly roll back to a previous version by simply using the last stable folder, since nothing in that older version was overridden or corrupted by the new code. Freedom to "branch out" in each version encourages innovation and risk-taking, knowing that earlier work remains untouched (a contrast to traditional iterative development where codebase modifications can introduce regression in existing features). This principle of version independence also forces clear separation of concerns – code is not intertwingled across versions – and it yields a series of working benchmarks (v0.1, v0.2, ...) that document the project's evolution.
+• **Version Independence**: Major versions in IFD are self-contained releases of the application that fully work on their own. The development follows a two-tier versioning approach: minor versions (e.g., v3.1, v3.2, v3.3...) evolve incrementally within a shared codebase, accumulating features and improvements, while major versions (v1.0, v2.0, v3.0, v4.0) are standalone extractions that contain no dependencies on previous versions.The transition from the last minor version to a major version (e.g., v3.6 to v4.0) is purely a **consolidation and packaging** step with absolutely no functional or logical changes. All end-to-end tests and integration tests should pass identically between these versions. This "publishing" step locks in all incremental changes without introducing new variables. The last minor version (e.g., v3.6) is what QA teams, business users, and product owners sign off for release – the major version (v4.0) is simply that same code, extracted and made standalone.
 
 • **Progressive Enhancement:** IFD embraces an **incremental build-up of features**. The first iteration (v0.1) intentionally implements only the core Minimum Viable Product (MVP) functionality, nothing more. Subsequent versions (v0.2, v0.3, etc.) each add a focused set of enhancements or new features on top of the previous conceptual foundation. Importantly, features must prove their value in these 0.x versions *before* they are consolidated – experimental features that don't pan out can be discarded in a later version without affecting the main line. Only once a feature has been validated through use (and possibly iterated on through multiple versions) is it merged into the production candidate v1.0. This guards against over-engineering or premature optimization. The methodology explicitly warns against common pitfalls like trying to build complex future features in v0.1 or adding too many features at once. By focusing each version on one major area (for example, v0.2 might polish UI, v0.3 improve data handling, v0.4 add monitoring, etc.), teams maintain clarity of purpose and high velocity.
 
@@ -126,7 +126,29 @@ The methodology recommends **structured LLM briefs** that outline the context, t
 
 #### Version-by-Version Workflow
 
-Development in IFD proceeds through a sequence of **versioned iterations**, each producing a standalone working app. The typical progression starts at **v0.1**, the minimal viable product, and goes through intermediate versions v0.2, v0.3, ... up to v0.5 or v0.6 with incremental features, culminating in **v1.0** which is a production-ready consolidation. 
+Development in IFD proceeds through a **two-tier versioning system**: minor versions that evolve incrementally within a major version series, and major versions that represent standalone production releases. The typical progression follows this pattern:
+
+**Minor Versions (Incremental Development):**
+- **v0.1, v0.2, v0.3...** through **v0.n**: Incremental development within a shared codebase
+- **v1.1, v1.2, v1.3...** through **v1.n**: Post-release patches and features
+- **v2.1, v2.2, v2.3...** through **v2.n**: Next major feature set development
+
+**Major Versions (Standalone Releases):**
+- **v1.0**: First production release (consolidated from v0.n)
+- **v2.0**: Second major release (consolidated from v1.n)
+- **v3.0**: Third major release (consolidated from v2.n)
+
+Within a major version series, minor versions share a codebase and build incrementally upon each other. Each minor version adds features, fixes bugs, or improves existing functionality. The codebase evolves continuously, with each minor version being potentially shippable. Experiments and alternative implementations are managed through **Git branches** or **feature toggles**, not by creating separate version folders.
+
+When transitioning from the last minor version to a major version (e.g., v0.9 to v1.0, or v2.6 to v3.0), the process is purely administrative:
+
+1. **Code Extraction:** The last minor version's code is copied to a new, standalone directory
+2. **Dependency Cleanup:** Any references to previous versions are removed (though there shouldn't be any)
+3. **Documentation Update:** Version numbers and release notes are updated
+4. **Test Verification:** All existing tests pass without modification
+5. **Stakeholder Sign-off:** QA, business users, and product owners approve the last minor version before it becomes the major release
+
+**No functional or logical changes occur between the last minor version and the major release.** If v0.9 is the last minor version before v1.0, then v1.0 is functionally identical to v0.9 – it's simply packaged as a clean, standalone release. This ensures that what stakeholders approve is exactly what gets released, with no last-minute surprises or integration issues. 
 
 Each version sits in its own directory (e.g. `/versions/v0.1/`, `/versions/v0.2/`, etc.), containing all the code and assets for that iteration. Crucially, earlier version directories are never modified once created – new versions might copy code from them, but do not create interdependencies. This enforces the **"no shared code between versions"** rule. If, for example, a developer wants to reuse a component from v0.1 in v0.2, they copy the file forward into the v0.2 folder rather than importing it across versions. While this duplicates code, it prevents tangled dependencies and allows each version to evolve freely (or be discarded) without impacting others. 
 
@@ -150,46 +172,73 @@ These practices ensure controlled, deliberate development when working in air-ga
 - **Architectural Oversight:** Developer ensures clean separation of concerns and maintains architectural integrity throughout the version progression
 - **Dual Focus on Function and Quality:** Focus includes both delivering functionality and maintaining code quality standards from the start, balancing speed with sustainability
 
-##### Version 0.1: The Foundation
+#### Version 0.1: The Foundation
 
 The **v0.1** iteration is kept deliberately simple and focused. According to the IFD playbook, v0.1's purpose is to establish the core architecture and solve the primary use-case with minimal extras. A checklist for v0.1 ensures the basics are in place: project structure, one or two core components functioning, basic UI working, and an API call integrated end-to-end. 
 
 Any tendency to over-engineer at this stage is discouraged – no complex state management, no premature optimization, and definitely no "nice-to-have" features that distract from the core problem. For example, if building a text analysis app, v0.1 might allow a user to input text and get a simple analysis result from the backend. Features like rich UI polish, caching, multi-view dashboards, etc., are left for later versions. This disciplined scoping of v0.1 ensures the team **proves the concept** quickly and establishes a working baseline.
 
-##### Subsequent Versions: Themed Iterations
+#### Subsequent Versions: Continuous Integration
 
-With a solid v0.1 in hand, subsequent versions (v0.2, v0.3, ...) each have a **theme or focus**. The IFD methodology suggests a **version planning matrix** mapping each version to a focus area. For instance:
+With a solid v0.1 in hand, subsequent minor versions (v0.2, v0.3, ...) each incrementally build upon the previous version within the same evolving codebase. Rather than creating isolated experiments in separate folders, the IFD methodology promotes **continuous integration** where each minor version represents the current state of the product with all accumulated improvements.
 
-- **v0.2 – UI Polish:** improve the user interface, fix initial bugs, refine layout and styling, add responsiveness, etc.
-- **v0.3 – Data Enhancements:** introduce caching mechanisms, input validation, better handling of data outputs (e.g. filtering duplicates), etc.
-- **v0.4 – Monitoring & Logging:** add analytics, logging of user actions or application performance metrics for debugging.
-- **v0.5 – Advanced Features:** implement more complex capabilities or integrations that were out of scope for earlier versions (e.g. additional analysis algorithms, or integration with a third-party service).
-- **v1.0 – Consolidation:** integrate the best features and refinements from v0.1–v0.5 into a single polished product ready for production.
+The development pattern for minor versions follows this approach:
 
-An example planning matrix from the playbook illustrates how each version adds specific value (better UX, data quality, visibility, completeness) and has clear success criteria (e.g. "no functional regression" for the UI polish version, "improved data quality" for the data-focused version). 
+- **v0.2 – UI Polish:** Improve the user interface based on v0.1, fixing initial bugs, refining layout and styling, adding responsiveness, etc.
+- **v0.3 – Data Enhancements:** Build upon v0.2 by introducing caching mechanisms, input validation, better handling of data outputs, etc.
+- **v0.4 – Monitoring & Logging:** Add to v0.3 with analytics, logging of user actions, and performance metrics for debugging
+- **v0.5 – Advanced Features:** Enhance v0.4 with more complex capabilities or integrations
+- **v0.9 – Pre-release Candidate:** The final minor version with all features integrated, tested, and ready for stakeholder approval
 
-Because each version is independent, **breaking changes are allowed** between versions. The team doesn't need to maintain backward compatibility or migration scripts from v0.2 to v0.3 – they can change an API format or reorganize UI components freely, since earlier versions remain unaffected. This is liberating: developers can refactor boldly when moving to a new version, knowing they have the safety net of the previous version if needed. 
+Each minor version must be **potentially shippable** – it should work completely and could theoretically be deployed to production. This discipline ensures continuous quality and prevents the accumulation of half-finished features.
 
-It's common in IFD for a feature to undergo redesign across versions; for example, a feature might be implemented naïvely in v0.3 but then completely refactored for better performance in v0.5 – that's acceptable because each version stands alone until consolidation. What matters is that by the time v1.0 is assembled, the feature is in its best form.
+**Managing Experiments and Variations:**
 
-##### Version 1.0: Consolidation and Production Readiness
+When exploring different approaches (e.g., alternative UI designs or competing algorithms), teams should use:
 
-After v0.x iterations, **v1.0** is the integration point. Deciding *when* to consolidate to v1.0 is important – the playbook suggests doing it when all planned features are proven to work reliably and no major new features are on the horizon. 
+1. **Feature Toggles:** Multiple implementations can coexist in the same codebase, controlled by configuration flags. This allows A/B testing and gradual rollout without code divergence.
 
-In preparation for v1.0, developers perform a **feature inventory** across versions to decide which features to bring forward and which to drop. The consolidation process then involves taking the "best of" each version's implementations. If the same component was created in multiple versions (say a text analyzer component exists in v0.3, v0.4, v0.5), the team will choose the most robust implementation or merge aspects from each. 
+2. **Git Branches:** Experimental features are developed in separate branches and only merged into the main minor version line when proven valuable. Failed experiments simply have their branches deleted, never polluting the main codebase.
 
-IFD even provides prompt templates to assist with merging code – e.g., an LLM prompt that lists the implementations of a component in v0.2, v0.3, v0.5 and asks the AI to produce a unified version containing all features. The end result is a **v1.0** directory that contains the unified codebase: typically adopting the latest version's structure and bringing in components from various iterations that made the cut. 
+3. **Progressive Enhancement:** Rather than replacing functionality between versions, new features are added alongside existing ones, with deprecated features removed only after their replacements are proven.
 
-The architecture may be refined by selecting the best patterns observed (for example, maybe v0.5 had the most scalable state management, while v0.3 had a simpler event handling model, so the team standardizes one way or the other in v1.0). Extensive integration testing is done on v1.0 to ensure all pieces now work together outside their original version silos. 
+The key principle is that by the time a minor version series is ready for major version consolidation (e.g., v0.12 becoming v1.0), all experiments have been resolved, all chosen features are integrated and working together, and the codebase represents a cohesive whole rather than a collection of competing alternatives.
 
-The result should meet a high quality bar: IFD sets v1.0 quality criteria that ensure production readiness:
+#### Version 1.0: Consolidation and Production Readiness
 
-- **Clear Separation of Concerns:** Code organization follows modular principles with distinct components, services, and utilities each handling specific responsibilities without overlap
-- **Thorough Documentation:** Complete inline comments, README files, and API documentation that enable new developers to understand and extend the codebase
-- **Performance Benchmarks:** Measurable targets like sub-2-second load times, 60fps UI updates, and response times under 100ms for user interactions
-- **No Major Known Bugs:** All critical and high-priority issues resolved through testing, with any remaining minor issues documented and tracked for future versions
+#### Version 1.0: Publishing for Production
 
-Essentially, v1.0 is what would be delivered to production, containing only proven features and optimizations, with the experimental chaff left behind in earlier versions.
+After the minor version iterations reach a stable, feature-complete state, **v1.0** represents the formal production release. Critically, v1.0 is **not a development phase** – it's a publishing and packaging step that creates a standalone version from the last minor iteration.
+
+The transition from the last minor version (e.g., v0.9) to v1.0 involves:
+
+1. **Stakeholder Sign-off:** QA teams, business users, and product owners review and approve v0.9 (or whatever the last minor version is). This is the version they test, validate, and approve for production release.
+
+2. **Code Extraction:** The approved minor version's code is copied to a new v1.0 directory, creating a completely standalone codebase with no dependencies on any previous versions.
+
+3. **Documentation and Metadata:** Version numbers are updated, release notes are finalized, and deployment configurations are set for production.
+
+4. **Test Verification:** All existing end-to-end and integration tests are run against v1.0 to verify they pass identically to the last minor version. **No test changes should be needed** – if tests need modification, that's a red flag that functional changes have crept in.
+
+5. **Final Packaging:** The v1.0 directory becomes the deployable artifact, containing everything needed for production deployment.
+
+**Absolutely no functional or logical changes occur during this consolidation.** The v1.0 code should be functionally identical to v0.9. Any bugs, features, or improvements discovered after sign-off are deferred to v1.1 (the first minor version of the next series).
+
+This approach has several critical benefits:
+
+- **What you test is what you deploy:** Stakeholders approve a working system (v0.9), not a theoretical merge
+- **Zero integration risk:** Since all features were already integrated in minor versions, there's no last-minute integration surprises
+- **Clear rollback path:** If issues arise, you can return to any previous major version
+- **Clean codebase:** Each major version is self-contained, making maintenance and understanding easier
+
+The quality criteria for v1.0 remain high, but these are **achieved during minor version development**, not added during consolidation:
+
+- **Clear Separation of Concerns:** Already established in minor versions
+- **Thorough Documentation:** Accumulated throughout minor version development
+- **Performance Benchmarks:** Met and verified in the final minor versions
+- **No Major Known Bugs:** Resolved during minor version iterations
+
+Essentially, v1.0 is the polished, standalone packaging of what was already proven to work in v0.9, containing only tested and integrated features, with all experimental code either incorporated or discarded during the minor version progression.
 
 ### LLM Collaboration and Prompting
 
@@ -211,9 +260,64 @@ Other templates include:
 
 - **Adding features to existing components**: Current component code is pasted in and the prompt describes what new feature to insert
 - **Debugging**: Provide the error and relevant code, ask the AI to fix it with logging and error handling
-- **Consolidation**: List how a feature was implemented in different versions and ask the AI to merge them
+- **Minor version development**: Incremental feature additions within the evolving codebase
 
 These templates encapsulate best practices in prompting so developers can systematically get the most out of the LLM. Essentially, IFD treats prompt-writing as a new form of development art – part of the engineer's skill set is to communicate with the AI clearly and precisely, much like writing a mini design spec, which the AI then turns into code.
+
+#### LLM Excellence in Major Version Consolidation
+
+LLMs demonstrate particular strength during the minor-to-major version transition (e.g., v3.6 to v4.0), making them ideal partners for the consolidation step. When provided with complete context – the last major version's code plus all subsequent minor versions – LLMs can perform highly reliable refactoring and optimization without the hallucination issues that often plague greenfield code generation.
+
+**Why LLMs Excel at Consolidation:**
+
+1. **Complete Context Eliminates Guesswork:** With all the v3.x code available, the LLM has full visibility into every implementation detail, API contract, and component interaction. There's no need to "imagine" how something might work – it's all there in the provided code.
+
+2. **Pattern Recognition Across Versions:** LLMs can identify duplicate code, similar patterns, and optimization opportunities across the entire minor version series, suggesting consolidations that human developers might miss.
+
+3. **Consistent Refactoring:** The LLM can apply consistent code style, naming conventions, and architectural patterns across all components, eliminating the inconsistencies that naturally accumulate during rapid minor version development.
+
+4. **Safe Optimization:** Since the functionality is already proven and working, the LLM can focus purely on code quality improvements: reducing redundancy, improving performance, enhancing readability, and standardizing patterns.
+
+**Test-Driven Consolidation Process:**
+
+The key to confident LLM-assisted consolidation is maintaining an **immutable test suite** that governs the transition:
+
+1. **Freeze the Test Suite:** Before consolidation begins, lock all end-to-end and integration tests from v3.6. These tests become the unchangeable contract that v4.0 must fulfill.
+
+2. **LLM Consolidation Prompt:** Provide the LLM with:
+   - All code from the last major version (e.g., v3.0)
+   - All code from subsequent minor versions (v3.1 through v3.6)
+   - The frozen test suite as the acceptance criteria
+   - Clear instructions that all tests must pass without modification
+
+3. **Iterative Refinement:** The LLM consolidates the code, potentially through multiple iterations, merging duplicate functionality, standardizing interfaces, optimizing performance, and cleaning up technical debt.
+
+4. **Test Verification:** After each LLM consolidation pass, run the frozen test suite. Any test failure means the consolidation introduced a functional change and must be corrected.
+
+5. **Human Review:** While tests ensure functional equivalence, human review confirms that the consolidated code maintains architectural integrity and follows organizational standards.
+
+**Consolidation Prompt Template:**
+
+```
+Given the following code:
+- Last major version (v3.0): [complete codebase]
+- All minor versions (v3.1-v3.6): [complete codebases]
+
+Consolidate these into a clean v4.0 release that:
+1. Maintains identical functionality (all existing tests must pass unchanged)
+2. Removes code duplication across minor versions
+3. Standardizes component patterns and interfaces
+4. Optimizes performance where possible
+5. Improves code documentation
+6. Creates a standalone codebase with no external version dependencies
+
+The following test suite must pass without any modifications:
+[Include all e2e and integration tests]
+
+Generate the consolidated v4.0 code structure.
+```
+
+This approach transforms the major version consolidation from a risky integration exercise into a controlled optimization process. The LLM handles the mechanical work of merging and refactoring, while the frozen test suite ensures that no functionality is lost or altered. The result is a clean, optimized major version that is functionally identical to the last minor version but with superior code quality and maintainability.
 
 #### Maintaining Developer Control
 
@@ -344,7 +448,11 @@ What's notable is that all these features were implemented and working within th
 
 The case study provides some concrete **code quality metrics** as well: on average, each component was around 300–500 lines of JS with ~200 lines of CSS. This indicates reasonably sized components (not giant monoliths) and that styling was a significant part but kept in balance. The ratio of **boilerplate to logic** in code was estimated at 30/70 – meaning the majority of code was actually implementing logic, not just repetitive structure. This is likely due to the LLM taking care of a lot of repetitive patterns, freeing the developer to focus on custom logic. Complexity measures remained low: the average cyclomatic complexity of functions was 3–5 and nesting depth was shallow (max 3 levels). Functions were short (15 lines on average). These are hallmarks of a clean, maintainable codebase. It's remarkable to see such metrics in code produced so rapidly – a testament to how iterative refinement (with human oversight) and consolidation can yield high quality code even when using generative AI.
 
-**Version Evolution Efficiency:** The efficiency gains are evident when looking at how much was accomplished in each version versus time. The case study's summary shows that v0.1's ~3,000 lines of code laid the foundation in a few hours. Then, interestingly, v0.2 only added ~500 lines (small increment) in about 1 hour for UI polish – which makes sense since polishing might be more about tweaking than adding lots of code. v0.3 added ~2,000 lines in 2 hours, corresponding to adding a significant new feature (tracking). v0.4 and v0.5 each added 2,500–3,000 lines in ~2 hours, which is incredibly fast – on the order of 1,200–1,500 lines/hour – but plausible with AI generating the first drafts. By v1.0, interestingly, the total lines went down slightly (2,345 lines added at consolidation), which reflects the removal of redundant code and merging of components. The final product had fewer lines than the sum of all versions, since consolidation factors out duplicate implementations. This iterative pattern shows how IFD makes it possible to pack a lot of development (and redevelopment) into a short timeframe with minimal waste – code that didn't work or wasn't needed simply stayed in an earlier version and didn't burden the final build.
+**Version Evolution Efficiency:** The efficiency gains are evident when looking at how much was accomplished in each version versus time. The case study's progression shows that v0.1's ~3,000 lines of code laid the foundation in a few hours. Then v0.2 added ~500 lines (small increment) in about 1 hour for UI polish – building directly on v0.1's codebase rather than starting fresh. v0.3 added ~2,000 lines in 2 hours, integrating tracking features into the evolving application. v0.4 and v0.5 each added 2,500–3,000 lines in ~2 hours, continuously building upon the accumulated functionality.
+
+By v0.9 (the final minor version), all features were integrated and tested together in a single, cohesive codebase. The transition to v1.0 involved **no new development** – it was purely an extraction and consolidation of v0.9 into a standalone directory, with version numbers updated and final documentation added.
+
+This iterative pattern shows how IFD makes it possible to pack continuous development into a short timeframe while maintaining a clear path to production. Each minor version was potentially shippable, with experiments and alternatives resolved through feature toggles or branch merging rather than parallel version folders. The final v1.0 represented exactly what was tested and approved in v0.9, eliminating any risk of last-minute integration issues.
 
 In summary, the one-day text analysis app case study demonstrates that IFD can **accelerate development by an order of magnitude or more** while still producing a robust, feature-rich application. A single developer working with an LLM was able to do the work of what might traditionally require a small team for several weeks. All key features were finished and verified with real data. The system's architecture was clean enough to be maintained and extended, not just a one-off hack. This example provides empirical evidence for the productivity claims of IFD, which we will examine in the next section by comparing to traditional methods.
 
