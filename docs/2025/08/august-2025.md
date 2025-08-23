@@ -1,0 +1,30 @@
+# August 2025 Published Materials
+
+## Overview
+
+During August 2025, I published 2 significant research documents focused on software development methodologies and practices in the age of generative AI. Both publications, authored in collaboration with AI assistants (ChatGPT Deep Research and Claude Opus 4.1), address critical aspects of modern development workflows: rapid application development with AI assistance and offline-first development strategies. These works represent a concentrated exploration of how development practices must evolve to leverage AI capabilities while maintaining engineering rigor and operational resilience.
+
+The month's research demonstrates a strong emphasis on practical methodologies that bridge the gap between traditional software engineering and AI-augmented development. The Iterative Flow Development (IFD) methodology introduces a revolutionary approach to maintaining developer flow state while achieving 10-20x productivity gains, while the Surrogate Dependencies framework addresses the critical need for offline development capabilities. Together, these publications present complementary strategies for creating more efficient, resilient, and developer-friendly software engineering practices that acknowledge both the promise and challenges of AI-assisted development.
+
+## Publications Overview
+
+| Date | Title | Focus Area | Key Concepts |
+|------|-------|------------|--------------|
+| 08/22 | [Iterative Flow Development (IFD) Methodology: JavaScript Web Application Implementation](22/iterative-flow-development-ifd-methodology__javascript-web-application-implementation.md) | Development and GenAI | IFD, Vibe Coding, Air-Gapped Mode, Flow State, Version Independence |
+| 08/22 | [Surrogate Dependencies: Simulating Backends for Offline-First Development](22/surrogate-dependencies-simulating-backends-for-offline-first-development.md) | Development and GenAI | Surrogate Dependencies, Offline Development, API Simulation, TDD, Service Virtualization |
+
+## Detailed Summaries
+
+### Iterative Flow Development (IFD) Methodology: JavaScript Web Application Implementation
+*August 22, 2025*
+
+This comprehensive white paper introduces [Iterative Flow Development (IFD)](22/iterative-flow-development-ifd-methodology__javascript-web-application-implementation.md), a novel methodology that transforms how developers collaborate with Large Language Models (LLMs) to achieve unprecedented development speed without sacrificing software quality. The methodology centers on preserving developer flow state while leveraging AI for rapid code generation, introducing dual operational modes - "vibe coding" for non-technical users and "air-gapped" for professional developers - that bridge the gap between rapid prototyping and production-ready software. Through a detailed case study of a text analysis application built in a single day (13,000+ lines of production-ready code), the paper demonstrates how IFD can achieve 10-20x productivity gains while maintaining architectural integrity through principles like version independence, real-data-first development, and zero external dependencies.
+
+The implementation details reveal how IFD's two-tier versioning system enables continuous experimentation while ensuring production stability, with minor versions evolving incrementally and major versions representing clean, standalone releases. The methodology's emphasis on Web Components and native browser APIs eliminates framework dependencies, while its structured approach to LLM collaboration through templated prompts and consolidation workflows ensures that AI-generated code meets production standards. The paper provides extensive practical guidance including architectural patterns, team workflows, and adoption strategies, positioning IFD as a paradigm shift from team-centric to flow-centric development that makes both rapid innovation and production excellence achievable within the same methodology.
+
+### Surrogate Dependencies: Simulating Backends for Offline-First Development
+*August 22, 2025*
+
+This technical white paper presents [Surrogate Dependencies](22/surrogate-dependencies-simulating-backends-for-offline-first-development.md), a solution for enabling applications to run in fully offline mode by simulating backend systems with prerecorded JSON data. Originally proposed to align security and development needs, surrogate dependencies act as stand-ins for live APIs, serving consistent responses from local data instead of making network calls, thereby addressing challenges like fragile dev/QA environments, limited testing capabilities, and the inability to work offline. The paper demonstrates how this approach differs from traditional mocks and stubs by using real data captured from actual API calls, making it more realistic and easier to scale across many endpoints while remaining simpler than full service virtualization platforms.
+
+The implementation strategy centers on centralizing network communication through an abstracted layer that can switch between live and surrogate modes, organizing surrogate data in a structure that mirrors API routes, and integrating this capability into CI/CD workflows. The paper explores how surrogate dependencies enhance test-driven development by enabling integration tests to run without live backends, and discusses their increasing relevance in LLM-based development environments where AI assistants can leverage surrogate data for better code generation and testing. Through detailed code examples and best practices, the document provides a complete blueprint for implementing surrogate dependencies in modern web applications, particularly those using FastAPI backends, emphasizing how this approach fosters better API contract understanding, faster debugging cycles, and more resilient development processes.

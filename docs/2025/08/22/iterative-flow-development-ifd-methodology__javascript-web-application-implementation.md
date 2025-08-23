@@ -129,11 +129,13 @@ The methodology recommends **structured LLM briefs** that outline the context, t
 Development in IFD proceeds through a **two-tier versioning system**: minor versions that evolve incrementally within a major version series, and major versions that represent standalone production releases. The typical progression follows this pattern:
 
 **Minor Versions (Incremental Development):**
+
 - **v0.1, v0.2, v0.3...** through **v0.n**: Incremental development within a shared codebase
 - **v1.1, v1.2, v1.3...** through **v1.n**: Post-release patches and features
 - **v2.1, v2.2, v2.3...** through **v2.n**: Next major feature set development
 
 **Major Versions (Standalone Releases):**
+
 - **v1.0**: First production release (consolidated from v0.n)
 - **v2.0**: Second major release (consolidated from v1.n)
 - **v3.0**: Third major release (consolidated from v2.n)
@@ -285,6 +287,7 @@ The key to confident LLM-assisted consolidation is maintaining an **immutable te
 1. **Freeze the Test Suite:** Before consolidation begins, lock all end-to-end and integration tests from v3.6. These tests become the unchangeable contract that v4.0 must fulfill.
 
 2. **LLM Consolidation Prompt:** Provide the LLM with:
+
    - All code from the last major version (e.g., v3.0)
    - All code from subsequent minor versions (v3.1 through v3.6)
    - The frozen test suite as the acceptance criteria
