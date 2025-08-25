@@ -18,6 +18,12 @@ def define_env(env):
         return f'[:fontawesome-brands-linkedin: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
 
     @env.macro
+    def linkedin_article(url, label="LinkedIn Article"):
+        if not url:
+            return ''
+        return f'[:fontawesome-brands-linkedin: {label}]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'
+
+    @env.macro
     def google_slides(slides_id):
         url = f'https://docs.google.com/presentation/d/{slides_id}'
         return f'[:simple-googleslides: GSlides]({url}){{ .md-button .md-button--primary .md-button--small .no-print}}'

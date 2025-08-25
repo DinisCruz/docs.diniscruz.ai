@@ -4,12 +4,12 @@ authors: ["Dinis Cruz", "ChatGPT Deep Research", "Claude Opus 4.1"]
 date: 2025/08/22
 pdf_file: iterative-flow-development-ifd-methodology__javascript-web-application-implementation.pdf
 back_link: /research/development-and-genai
-# linkedin:  
+linkedin: https://www.linkedin.com/pulse/introducing-iterative-flow-development-ifd-how-i-built-dinis-cruz-ciice/  
 ---
 
 _by {{ authors | join(" and ") }}, {{ date }}_  
 
-{{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
+{{ download_pdf(date, pdf_file) }} {{ linkedin_article(linkedin) }} {{back_button(back_link)}}
 
 ## Introduction
 
