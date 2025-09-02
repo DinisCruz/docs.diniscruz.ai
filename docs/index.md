@@ -4,6 +4,11 @@
 
 Welcome to my research hub where I explore practical applications of generative AI, semantic knowledge graphs, and modern security practices. With 100+ published articles and ongoing projects, this site documents my journey building the future of cybersecurity and knowledge management.
 
+### 🔥 Latest Research (September 2025)
+- **[Next-Generation API Security Platform: Semantic Graphs, GenAI Testing & Ephemeral Environments for 2025](./2025/09/01/next-generation-api-security-platform-semantic-graphs-genai-testing-ephemeral-environments-2025.md)** - Open-source framework blending API testing lifecycle with AI-powered vulnerability detection
+- **[Dinis Cruz's Research on API Security (2009-2025)](./2025/09/01/dinis-cruz-research-on-api-security-2009-2025.md)** - Comprehensive overview of 16 years of API security research and evolution
+
+
 ### 🔥 Latest Research (August 2025)
 - **[Surrogate Dependencies: Simulating Backends for Offline-First Development](./2025/08/22/surrogate-dependencies-simulating-backends-for-offline-first-development.md)** - Enabling fully offline development with prerecorded API data
 - **[Iterative Flow Development (IFD) Methodology](./2025/08/22/iterative-flow-development-ifd-methodology__javascript-web-application-implementation.md)** - Approach to AI-assisted development achieving 10-20x productivity gains
