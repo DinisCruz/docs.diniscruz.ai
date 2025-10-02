@@ -8,6 +8,7 @@ tags: [development, genai, automation, no-code, methodologies]
 {{back_button('/index')}}
 
 ## Development Methodologies
+ - [Time as a Calibrator of Credibility and Trust in Information Systems](../2025/10/02/time-as-a-calibrator-of-credibility-and-trust-in-information-systems.md)
  - [Iterative Flow Development (IFD) Methodology: JavaScript Web Application Implementation](../2025/08/22/iterative-flow-development-ifd-methodology__javascript-web-application-implementation.md)
  - [Surrogate Dependencies: Simulating Backends for Offline-First Development](../2025/08/22/surrogate-dependencies-simulating-backends-for-offline-first-development.md)
  - [No Code Development (NCD): A Paradigm Shift Beyond 'Vibe Coding'](../2025/06/18/no-code-development--ndc--a-paradigm-shift-beyond-vibe-coding.md)

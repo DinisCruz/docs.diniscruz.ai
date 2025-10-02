@@ -10,6 +10,7 @@ tags: [projects, genai, innovation, partnerships, mvp]
 ## Major Projects
 
 ### Security & Risk Management
+- [Project Voice2SIEM: Turning Customer Support Audio Into Real-Time Security Events](../2025/10/02/project-voice2siem-turning-customer-support-audio-into-real-time-security-events.md)
 - [Next-Generation API Security Platform: Semantic Graphs, GenAI Testing & Ephemeral Environments for 2025](../2025/09/01/next-generation-api-security-platform-semantic-graphs-genai-testing-ephemeral-environments-2025.md)
 - [Dinis Cruz's Research on API Security (2009-2025)](../2025/09/01/dinis-cruz-research-on-api-security-2009-2025.md)
 - [Project VulnAI: AI-Powered Vulnerability Risk Management Platform](../2025/07/27/project-vulnai-ai-powered-vulnerability-risk-management-platform.md)

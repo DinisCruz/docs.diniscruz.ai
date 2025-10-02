@@ -30,7 +30,7 @@ tags: [cybersecurity, threat-modeling, appsec, siem, risk-management]
  - [Maturity Models vs. Traditional Standards in Application Security](../2025/04/02/maturity-modes-vs-traditional-standards-in-application-security.md)
  - [Semantic Knowledge Graphs, G³, and Sustainable AI: Aligning Innovations with ESG Objectives](../2025/07/06/semantic-knowledge-graphs-g3-and-sustainable-ai-aligning-innovations-with-esg-objectives.md)
 
-## Risk Management & Decision Making
+## Risk Management & Decision-Making
  - [Finding the "Good Enough" Threshold: Optimizing Risk, Creativity, and Product Decisions](../2025/07/06/finding-the-good-enough-threshold-optimizing-risk-creativity-and-product-decisions.md)
  - [FIST Meets the Semantic Knowledge Graph: Aligning Fast, Inexpensive, Simple, Tiny with Dinis Cruz's G³ Approach](../2025/06/22/fist-meets-the-semantic-knowledge-graph-aligning-fast-inexpensive-simple-tiny-with-dinis-cruzs-g3-approach.md)
  - [Fail Safe, Not Fail Big: Cyber-Security-Inspired Strategies to Prevent the Next Iberian Grid Crisis](../2025/04/29/fail-safe-not-fail-big__cyber-security-inspired-strategies-to-prevent-the-next-iberian-grid-crisis.md)

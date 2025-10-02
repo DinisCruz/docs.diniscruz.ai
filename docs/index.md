@@ -4,6 +4,9 @@
 
 Welcome to my research hub where I explore practical applications of generative AI, semantic knowledge graphs, and modern security practices. With 100+ published articles and ongoing projects, this site documents my journey building the future of cybersecurity and knowledge management.
 
+### 🔥 Latest Research (October 2025)
+- **[Project Voice2SIEM: Turning Customer Support Audio Into Real-Time Security Events](2025/10/02/project-voice2siem-turning-customer-support-audio-into-real-time-security-events.md)**
+- **[Time as a Calibrator of Credibility and Trust in Information Systems](2025/10/02/time-as-a-calibrator-of-credibility-and-trust-in-information-systems.md)**
 ### 🔥 Latest Research (September 2025)
 - **[Next-Generation API Security Platform: Semantic Graphs, GenAI Testing & Ephemeral Environments for 2025](./2025/09/01/next-generation-api-security-platform-semantic-graphs-genai-testing-ephemeral-environments-2025.md)** - Open-source framework blending API testing lifecycle with AI-powered vulnerability detection
 - **[Dinis Cruz's Research on API Security (2009-2025)](./2025/09/01/dinis-cruz-research-on-api-security-2009-2025.md)** - Comprehensive overview of 16 years of API security research and evolution
