@@ -46,6 +46,7 @@ tags: [projects, genai, innovation, partnerships, mvp]
 ## Business Ideas & Plans
 <a id="business-ideas"></a>
 
+- [GenLegalAdvise Project Plan](../2025/10/03/genlegaladvise-project-plan.md)
 - [GenAI Legacy Code Refactoring – Business Plan](../2025/06/07/genai-legacy-code-refactoring-business-plan.md)
 - [Project Plan: High Street GenAI Learning Hub](../2025/06/22/project-plan-high-street-genai-learning-hub.md)
 - [LinkedIn Vault: Professional Data Preservation Service](../2025/03/03/linkedin-vault__professional-data-preservation-servic.md)

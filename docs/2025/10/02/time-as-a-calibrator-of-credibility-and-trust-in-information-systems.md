@@ -7,9 +7,6 @@ back_link: /research/development-and-genai
 # linkedin:  
 ---
 
-# Time as a Calibrator of Credibility and Trust in Information Systems
-
-
 _by {{ authors | join(" and ") }}, {{ date }}_
 
 {{ download_pdf(date, pdf_file) }} {{ linkedin_post(linkedin) }} {{back_button(back_link)}}
